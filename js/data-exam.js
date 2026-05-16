@@ -343,7 +343,7 @@ window.EXAM_DATA = {
   });
 
   add('probuild', {
-    name:'Probuild v Shade Systems', cite:'(2018) 264 CLR 1', topic:'State privative',
+    name:'Probuild v Shade Systems', cite:'(2018) 264 CLR 1', topic:'W10',
     category:'Privative', icon:'◇', color:'c-ochre',
     en:{ facts:'NSW Building and Construction Industry Security of Payment Act privative provision; non-JE error of law on the face of the record.',
       issue:'Does the state privative clause oust certiorari for non-JE error?',
@@ -360,7 +360,7 @@ window.EXAM_DATA = {
   });
 
   add('abt17', {
-    name:'ABT17 v Minister', cite:'(2020) 269 CLR 439', topic:'State JR entrenchment',
+    name:'ABT17 v Minister', cite:'(2020) 269 CLR 439', topic:'W10',
     category:'Privative', icon:'◆', color:'c-ochre',
     en:{ facts:'IAA decision-making procedure under Migration Act Pt 7AA.',
       issue:'When does failure to consider new information amount to JE?',
@@ -428,7 +428,7 @@ window.EXAM_DATA = {
   });
 
   add('miah', {
-    name:'Re Minister; Ex parte Miah', cite:'(2001) 206 CLR 57', topic:'PF exclusion',
+    name:'Re Minister; Ex parte Miah', cite:'(2001) 206 CLR 57', topic:'W5',
     category:'PF', icon:'⊘', color:'c-violet',
     en:{ facts:'Migration code procedure said to exclude PF.',
       issue:'Does codification exclude common-law PF?',
@@ -462,7 +462,7 @@ window.EXAM_DATA = {
   });
 
   add('szmta', {
-    name:'Minister v SZMTA', cite:'(2019) 264 CLR 421', topic:'Notification + materiality',
+    name:'Minister v SZMTA', cite:'(2019) 264 CLR 421', topic:'W4',
     category:'PF', icon:'⊚', color:'c-violet',
     en:{ facts:'Notification under s 438 of Migration Act not given to tribunal.',
       issue:'Does failure to notify constitute JE?',

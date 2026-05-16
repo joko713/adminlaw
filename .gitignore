@@ -6,6 +6,7 @@ node_modules/
 package-lock.json
 package.json
 
-# Editor
+# Editor / local tooling
 .vscode/
 .idea/
+.claude/
