@@ -198,7 +198,7 @@ window.CASES_DATA = {
          facts:'NSW 정부가 치안판사단을 재편하면서 stipendiary magistrate 직을 폐지하고 새 직을 만들었다. 재임명되지 못한 일부 치안판사들이 정당한 기대를 근거로 결정을 다툰 사건.'}},
   bond: {
     id:'bond', name:'Australian Broadcasting Tribunal v Bond', cite:'[1990] HCA 33; (1990) 170 CLR 321', icon:'◉', color:'c-blue',
-    topic:'W3', category:'Case',
+    topic:'W2', category:'Case',
     en:{ rule:'A "decision" for the purposes of s 5 of the ADJR Act is a substantive determination that is final, operative and determinative — usually the ultimate or operative outcome of the statutory process. Preliminary or intermediate steps in the reasoning chain are normally "conduct" reviewable under s 6, not "decisions" reviewable under s 5.',
          principle:'Bond drew the s 5 / s 6 line that controls ADJR jurisdiction. The functional consequence: clients cannot run to the Federal Court to challenge every interim finding along the way to a decision; they generally have to wait for the substantive operative outcome (s 5) or use the narrower s 6 conduct-review path. The case also matters because it highlighted ADJR\'s structural narrowness — when a "decision" is held not to exist, the applicant must pivot to s 75(v) (the constitutional writ jurisdiction) or s 39B(1) (Cth officers) under Plaintiff S157, which cannot be ousted by privative clause.',
          when:'Bond is the threshold filter for ADJR jurisdiction. Reach for it whenever the respondent argues that what the applicant is challenging is not a "decision" — typical contexts: interim findings, recommendations, internal investigative steps, advisory determinations.',
@@ -256,7 +256,7 @@ window.CASES_DATA = {
          facts:'Griffith University의 박사과정생이 대학의 내부 학술 부정행위 정책에 따른 조사 후 제명됐다. 그녀는 그 결정이 대학을 설립한 "수권법에 따른" 것이라며 ADJR 심사를 구했다.'}},
   argos: {
     id:'argos', name:'Argos Pty Ltd v Corbell', cite:'[2014] HCA 50; (2014) 254 CLR 394', icon:'⌅', color:'c-teal',
-    topic:'W3', category:'Case',
+    topic:'W9', category:'Case',
     en:{ rule:'A third party who suffers economic detriment as a foreseeable, direct consequence of a statutory decision can have their interests affected "through statutory force" for ADJR purposes — and is therefore a "person aggrieved" with standing. The harm need not be a strict legal right; commercial detriment from a planning approval that authorises a competing use is enough.',
          principle:'Argos extended ADJR\'s "person aggrieved" / Tang-second-limb analysis to commercial competitors. The case rejected a narrow reading of "rights affected through statutory force" — the relevant question is whether the impugned decision, by force of the empowering Act, brings about a real economic consequence for the applicant. Argos also pulled back against an attempt to read Right to Life through a "statutory context" lens that would have constrained standing to interests the statute itself recognises; the proper question is the substance of the consequence, not the statute\'s thematic focus. The case sits alongside Bateman\'s Bay (commercial position) and ACF (the baseline) in defining standing\'s outer reach.',
          when:'Cite Argos in two contexts:\n(1) when a commercial competitor wants to challenge a planning, licensing or regulatory approval that lets a rival operate\n(2) when defending standing against a "your interest is not statutorily recognised" argument.',
@@ -407,7 +407,7 @@ window.CASES_DATA = {
          facts:'이민 tribunal이 Magistrates Court의 불리한 의뢰를 신청인에게 제시하지 않은 채 의존한 사건. 그 누락이 비자 결정에 중요했는지, 그리고 누가 입증책임을 지는지가 다투어졌다.'}},
   wzarh: {
     id:'wzarh', name:'Minister for Immigration and Border Protection v WZARH', cite:'[2015] HCA 40; (2015) 256 CLR 326', icon:'✉', color:'c-coral',
-    topic:'W4', category:'Case',
+    topic:'W5', category:'Case',
     en:{ rule:'In a procedural-fairness context, the inference that further submissions or evidence could have been made — and could realistically have changed the outcome — is readily drawn from the record. The materiality threshold for PF breaches is therefore low. The inferential approach signalled here was vindicated by LPDT (2024).',
          principle:'WZARH is the High Court\'s clearest pre-LPDT statement that PF materiality is established by inference from what could have been said, not by reconstructing what would have been decided. Read with Nathanson (low PF bar) and LPDT (no reconstruction).',
          when:'Use WZARH alongside Nathanson and LPDT to defeat "the decision would have been the same anyway" objections in PF cases.',
@@ -488,7 +488,7 @@ window.CASES_DATA = {
          facts:'베트남 출신 신청인의 비자가 s 501에 따라 취소됐다. 부처가 사전에 자녀 양육자 면담을 통해 취소 영향을 검토하겠다고 시사했지만 그 면담은 이뤄지지 않았다. 신청인이 PF 위반을 주장한 사건.'}},
   li: {
     id:'li', name:'Minister for Immigration and Citizenship v Li', cite:'[2013] HCA 18; (2013) 249 CLR 332', icon:'☼', color:'c-ochre',
-    topic:'W5', category:'Case',
+    topic:'W8', category:'Case',
     en:{ rule:'A discretionary decision is legally unreasonable when it lacks an "evident and intelligible justification" — when the result is disproportionate to the statutory purpose, or the path of reasoning is so opaque that no reasonable decision-maker on the same statute could have arrived there. The test is broader than Wednesbury\'s "so unreasonable that no reasonable person could" formulation.',
          principle:'Li reformulated unreasonableness for the modern era. Courts no longer need to find an "extreme" decision in the Wednesbury sense; an absence of evident, intelligible justification — the kind of justification a reasonable decision-maker would supply — is enough. This made unreasonableness a workable, mainstream sub-ground rather than a doctrinal last resort. Stretton (FCAFC) and DUA16 (HCA, on procedural unreasonableness) build on this footing.',
          when:'Reach for Li whenever a discretion has been exercised in a way that looks disproportionate, unexplained, or arbitrary on the face of the record. It is the standard ground when the applicant cannot point to a missed consideration or a PF breach but the result still feels indefensible.',
@@ -546,7 +546,7 @@ window.CASES_DATA = {
          facts:'상사 사건을 맡은 재판관이 당사자인 은행의 주식을 보유한 사실이 드러났고, 신청인들이 추정 편향을 이유로 회피를 신청한 사건.'}},
   peko: {
     id:'peko', name:'Minister for Aboriginal Affairs v Peko-Wallsend Ltd', cite:'[1986] HCA 40; (1986) 162 CLR 24', icon:'☰', color:'c-forest',
-    topic:'W6', category:'Case',
+    topic:'W7', category:'Case',
     en:{ rule:'A failure to take into account a mandatory relevant consideration is a reviewable error. Mason J\'s framework:\n(i) what is "mandatory" is determined by statutory construction (express words or necessary implication from subject-matter, scope and purpose);\n(ii) the court does not reweigh — it only asks whether the consideration was actually taken into account;\n(iii) weight is for the decision-maker, save for irrational weighting that crosses into unreasonableness.',
          principle:'Peko-Wallsend established the dominant Australian framework for the relevant-considerations sub-ground and built in two important guard-rails: the court does not substitute its own assessment of weight for the decision-maker\'s, and it polices only mandatory considerations identified by the statute (not every consideration counsel argues was important). Tickner extended the framework, and M1/2021 reaffirmed that the consideration must actually be considered, not merely listed in the reasons.',
          when:'Use Peko-Wallsend whenever the applicant says "the decision-maker did not take X into account, and they were required to". It is a structural sub-ground, not an unreasonableness argument — keep them separate.',
@@ -577,7 +577,7 @@ window.CASES_DATA = {
          facts:'Holding 장관이 우라늄 광상에 걸친 원주민 토지 청구를 결정할 때, 권고 이후 광업사 Peko-Wallsend가 제출한 추가 의견서를 검토하지 않은 사건. 의견서 내용은 법령상 기준에 명백히 들어맞는 사실관계였다.'}},
   schlieske: {
     id:'schlieske', name:'Schlieske v Minister for Immigration and Ethnic Affairs', cite:'(1988) 84 ALR 719; (1988) 26 FCR 540', icon:'◐', color:'c-coral',
-    topic:'W6', category:'Case',
+    topic:'W7', category:'Case',
     en:{ rule:'A statutory power exercised for an unauthorised purpose is invalid, even if the impugned action falls within the literal scope of the empowering provision. Where the dominant or operative purpose is one the Act does not authorise — for example, using a deportation power to effect a disguised extradition — the exercise is improper-purpose JE.',
          principle:'Schlieske is the leading Australian authority on improper-purpose JE. The court looks to the dominant operative purpose behind the exercise; if that purpose is unauthorised, the action is invalid even if it could nominally have been taken for a proper purpose.',
          when:'Use Schlieske when the impugned exercise looks dressed-up — formally within power, but actually pursuing some other end the empowering Act does not authorise.',
@@ -604,7 +604,7 @@ window.CASES_DATA = {
          facts:'서독 국적자. 두 차례의 형식적 인도 시도가 실패한 뒤, 독일 도착 시 독일 경찰이 그를 인도받도록 추방 명령이 주선됐다.'}},
   tickner: {
     id:'tickner', name:'Tickner v Chapman', cite:'[1995] FCAFC 1726; (1995) 57 FCR 451', icon:'✦', color:'c-violet',
-    topic:'W6', category:'Case',
+    topic:'W7', category:'Case',
     en:{ rule:'A statutory duty to "consider" representations or material requires the decision-maker\'s own active intellectual engagement — reading, identifying, understanding, evaluating. The mental act cannot be delegated to an adviser; reliance on an adviser\'s summary, without the decision-maker\'s own engagement with the material, is failure to consider and a relevant-considerations / due-consideration breach.',
          principle:'Tickner sets the personal-engagement requirement for "consider" obligations. Distinguish from M1/2021, which held the standard for engagement is not high — but it must be the decision-maker\'s own engagement, not the adviser\'s.',
          when:'Use Tickner when the decision-maker delegated the act of considering to an adviser, relied on a summary that filtered out content, or otherwise failed to personally engage with the required material.',
@@ -631,7 +631,7 @@ window.CASES_DATA = {
          facts:'Hindmarsh Island 다리 선언 검토에서 Tickner 장관이 400건의 의견을 받았다. 그는 그 의견들을 직접 읽지 않고 보좌관 Ms Kee가 준비한 요약에 의존했다.'}},
   'm1-2021': {
     id:'m1-2021', name:'Plaintiff M1/2021 v Minister for Home Affairs', cite:'[2022] HCA 17; (2022) 275 CLR 582', icon:'☷', color:'c-ochre',
-    topic:'W6', category:'Case',
+    topic:'W7', category:'Case',
     en:{ rule:'Standard for considering representations: read, identify, understand, evaluate. Not high — deferential majority view.',
          when:'Reasonable consideration of representations ground.',
          issue:'Whether 5-word treatment of non-refoulement claim was sufficient.',
@@ -913,7 +913,7 @@ window.CASES_DATA = {
          facts:'한 이민 신청인이 Refugee Review Tribunal의 결정을 다투었다. Migration Act 1958 s 474는 Tribunal 결정을 "종국적·확정적"이고 심사 불가로 규정하려 했다. 원고는 헌법 s 75(v)를 원용했다.'}},
   'kirk-jurisdiction': {
     id:'kirk-jurisdiction', name:'Kirk v Industrial Relations Commission (NSW)', cite:'[2010] HCA 1; (2010) 239 CLR 531', icon:'☷', color:'c-blue',
-    topic:'W9', category:'Case',
+    topic:'W4', category:'Case',
     en:{ rule:'State Supreme Court supervisory jurisdiction over jurisdictional error of inferior courts/tribunals constitutionally entrenched (Ch III).',
          when:'State equivalent of S157 — privative clauses cannot oust JE supervision.',
          issue:'Whether NSW IRC privative clause excluded review for JE.',
@@ -943,7 +943,7 @@ window.CASES_DATA = {
          facts:'WHS 법령 하의 자신에 대한 기소에서 Mr Kirk가 증인으로 호출되었다.'}},
   bhardwaj: {
     id:'bhardwaj', name:'Minister for Immigration and Multicultural and Indigenous Affairs v Bhardwaj', cite:'[2002] HCA 11; (2002) 209 CLR 597', icon:'∅', color:'c-violet',
-    topic:'General', category:'Case',
+    topic:'W4', category:'Case',
     en:{ rule:'A decision affected by jurisdictional error is no decision at all in law. Because there is no operative decision, the statutory power has not been exhausted and can be re-exercised by the same decision-maker without need for any external setting-aside or remittal. The doctrine flows from S157\'s reading-down of "decision" to mean lawful decision: a JE-affected decision is outside that meaning, so the decision-maker is free to act again.',
          principle:'Bhardwaj is the doctrinal foundation for self-correction by administrative decision-makers. It says that JE renders a decision a nullity, not merely voidable. Two practical consequences:\n(1) the original decision-maker can re-exercise the power and produce a fresh, valid decision without needing court intervention\n(2) for remedies analysis, Bhardwaj underpins why certiorari + mandamus are the standard JE pair (quash the nullity, compel re-exercise of an unexpired power). The case complements Plaintiff S157 (privative-clause framing of "decision" as lawful decision) and explains why JE-affected decisions sit outside the protected category.',
          when:'Use Bhardwaj in two contexts:\n(1) when a decision-maker realises they have made a JE-affected decision and wants to re-exercise the power without going to court\n(2) at the remedies stage, to explain why certiorari + mandamus is the structurally correct combination for JE.',
@@ -1429,7 +1429,7 @@ window.CASES_DATA = {
          facts:'광업권 결정의 영향을 받는 회사들의 주식을 보유한 부처 직원들이 장관에게 자문을 제공했고, 장관이 최종 결정을 내렸다. Hot Holdings는 직원의 이해 충돌이 결정을 추정 편향으로 오염시켰다고 주장했다.'}},
   graham:{
     id:'graham', name:'Graham v Minister for Immigration and Border Protection', cite:'[2017] HCA 33; (2017) 263 CLR 1', icon:'⛨', color:'c-blue',
-    topic:'W9', category:'Case',
+    topic:'W10', category:'Case',
     en:{ rule:'The constitutionally entrenched minimum of judicial review under s 75(v) cannot be defeated — by privative clauses, no-invalidity clauses, secrecy provisions, or any other legislative device — where the legal OR practical operation of the law denies a court the ability to enforce the legal limits of an officer\'s power. The test is one of "substance, and therefore of degree" [48]: it requires examination not only of the legal operation of the impugned provision but also of its practical impact on the court\'s capacity, through judicial process, to discern and declare whether the legislated conditions on lawful power have been observed. The extension at [46] is critical — the principle is not confined to privative clauses; it reaches ANY provision (including secrecy provisions) whose legal or practical operation denies that supervisory capacity.',
          principle:'Graham generalises the S157 entrenched-jurisdiction logic beyond privative clauses to information-control / secrecy provisions, and frames the operative test as substance-and-degree focused on practical impact. The constitutional root is the Hickman impossibility principle (impossible for Parliament to set jurisdictional limits and at the same time deprive the High Court of authority to enforce them — restated three ways: prohibition, mandamus, injunction). Bodruddaza is the illustrative companion: a blanket inflexible time-limit was struck down because its practical effect was to deprive s 75(v) jurisdiction, even though it was not formally a privative clause. The case also draws a sharp line between s 503A(2)(c) (court deprived in limine, with no access to the material) and statutory secrecy regimes that survive constitutional scrutiny (Gypsy Jokers, K-Generation, Condon v Pompano, Totani) precisely because the reviewing court still had access to the information underpinning the decision. PII (Sankey v Whitlam) is also distinguishable because under PII the court balances the competing public interests; under s 503A(2)(c) the executive controls disclosure with the court "deprived in limine". Conscious maladministration / fraud / dishonesty / improper purpose remain reviewable as always-JE (Plaintiff S157). Edelman J dissented; the majority severed using s 15A AIA, reading "court" in s 503A(2)(c) to exclude HCA under s 75(v) and FCA under s 476A when reviewing s 501-series decisions.',
          when:'Reach for Graham whenever a Cth statutory provision restricts what information may be put before the court in JR proceedings, or otherwise operates (legally or practically) to deny meaningful supervisory review — secrecy clauses, evidence-restriction provisions, inflexible time bars (Bodruddaza pattern), no-disclosure-to-court rules. It is the case that converts those drafting devices into constitutional questions even where they are not framed as privative clauses.',
@@ -1462,7 +1462,7 @@ window.CASES_DATA = {
          facts:'NZ 시민 Graham씨와 Te Puia씨가 Rebels Outlaw Motorcycle Gang과의 관계 의혹으로 s 501(3)에 따라 비자가 취소된 사건(s 501(6)(b) 인격 테스트 미충족). 장관은 s 503A로 어떤 사람이나 법원에도 공개 금지된 기밀 정보에 의존했고, Te Puia에 대해서는 그것이 유일한 고려 자료로 보였다. 이들이 s 503A(2)(c)가 헌법 s 75(v)에 모순된다고 다툰 사건.'}},
   futuris:{
     id:'futuris', name:'Commissioner of Taxation v Futuris Corporation Ltd', cite:'[2008] HCA 32; (2008) 237 CLR 146', icon:'⊟', color:'c-ochre',
-    topic:'W9', category:'Case',
+    topic:'W10', category:'Case',
     en:{ rule:'A "no-invalidity" clause — typified by s 175 ITAA 1936 — preserves the legal effect of an assessment despite non-compliance with statutory provisions, but DOES NOT oust s 75(v) / s 39B(1) review for jurisdictional error. Applying Project Blue Sky purposive construction, the question is whether the statute\'s purpose is that breach renders the assessment invalid; for ordinary process errors the answer is no (within the scheme of Pt IVC, which provides an alternative review pathway). However, s 175 does NOT reach (i) tentative or provisional purported assessments, or (ii) conscious maladministration of the assessment process — both of which "manifest jurisdictional error and attract the jurisdiction to issue the constitutional writs". s 177(1) (production = conclusive evidence) is "not a privative clause in the ordinary use of that term" and does not limit s 75(v) / s 39B(1).',
          principle:'Futuris draws three crucial lines in the no-invalidity / privative clause family.\n(1) Constitutional floor: a tax cannot be made incontestable (MacCormick; Richard Walter), but Pt IVC of the Taxation Administration Act provides the alternative contestability that satisfies that floor — which is why s 175 is constitutionally permissible despite shielding ordinary process errors.\n(2) Always-JE carve-out: conscious maladministration (deliberate failure), fraud, bribery, dishonesty and improper purpose remain reviewable as jurisdictional error under s 75(v) — supported by the tort of misfeasance in public office and s 13 Public Service Act\'s integrity obligations, which point decisively against reading s 175 to authorise deliberate failures.\n(3) Doctrinal mapping: s 175 (no-invalidity) is conceptually distinct from a true privative clause (S157) and from a secrecy/information-control clause (Graham); each is analysed differently but all are anchored in s 75(v) entrenchment. Note also that the principles of jurisdictional error control the CONSTITUTIONAL WRITS, but injunction and declaration (Enfield, PBS) operate on a different equitable basis; where s 175 applies and there is no affectation of validity, equitable remedies likewise have no foothold. F J Bloemen (Mason & Wilson JJ), to the extent inconsistent with this, should not be followed.',
          when:'Use Futuris\n(1) when defending a no-invalidity clause against a privative-clause-style constitutional challenge — distinguish the two and point to any alternative review path (Pt IVC analogue)\n(2) when arguing that an ordinary process error is shielded by a no-invalidity clause and so does not attract constitutional writs; OR conversely\n(3) when running a conscious-maladministration / fraud / dishonesty / improper-purpose argument that no no-invalidity clause can defeat.',
@@ -1549,7 +1549,7 @@ window.CASES_DATA = {
          facts:'민간 장례 보장 단체 Aboriginal Community Benefit Fund가 Bateman\'s Bay LSC가 법령상 권한을 넘어 장례 서비스로 확장하고 있다며 다툰 사건.'}},
   bodruddaza:{
     id:'bodruddaza', name:'Bodruddaza v Minister for Immigration and Multicultural Affairs', cite:'[2007] HCA 14; (2007) 228 CLR 651', icon:'⌛', color:'c-coral',
-    topic:'W9', category:'Case',
+    topic:'W10', category:'Case',
     en:{ rule:'A statutory time limit on bringing s 75(v) applications is constitutionally invalid where it operates as a blanket inflexible bar that fails to allow for the range of vitiating circumstances which may affect administrative decision-making. The vice is practical rather than formal: even a provision not framed as a privative clause is invalid if its practical effect is to deprive the High Court of its constitutional s 75(v) jurisdiction.',
          principle:'Bodruddaza is the leading illustration of the Graham-type principle: legislative devices that are not formally privative clauses can still be unconstitutional if their practical operation defeats s 75(v). The case is regularly invoked alongside Graham for the proposition that the substance-and-degree test reaches beyond privative-clause drafting. Section 486A of the Migration Act 1958 (Cth) — which imposed a strict 84-day time limit on s 75(v) applications in migration matters, with limited extension — was held invalid because it failed to accommodate genuinely vitiating circumstances (e.g. fraud only discoverable late). The fix later adopted by Parliament was a more flexible time-limit regime that allows extensions where the interests of justice require.',
          when:'Cite Bodruddaza whenever a statutory provision imposes a hard procedural bar (especially a time limit, but also evidentiary or other procedural restrictions) on s 75(v) review that does not allow for genuinely vitiating circumstances. Pair with Graham for the broader substance-and-degree framework.',
@@ -1787,7 +1787,7 @@ window.CASES_DATA = {
 
   hickman: {
     id:'hickman', name:'R v Hickman; Ex parte Fox and Clinton', cite:'(1945) 70 CLR 598', icon:'⚒', color:'c-ochre',
-    topic:'W9', category:'Case',
+    topic:'W10', category:'Case',
     en:{ rule:'Dixon J\'s impossibility principle, restated three ways: it is impossible for Parliament (i) to impose jurisdictional limits + deprive the HCA of prohibition to enforce them; (ii) to impose a public duty + deprive the HCA of mandamus; (iii) to constrain power + deprive the HCA of injunction. Privative clauses are read as conditions ("Hickman provisos") under which the clause protects — not as power-conferring mechanisms.',
          principle:'Hickman is the constitutional root of s 75(v) entrenchment. Plaintiff S157 confirmed that Hickman is a rule of construction (the three provisos are conditions before any protection applies), NOT a vehicle for expanding decision-maker authority. After S157 the impossibility principle directly underpins Graham\'s substance-and-degree test [46]: any provision that practically defeats s 75(v) enforcement is invalid, not just literal privative clauses.',
          when:'Cite Hickman as the foundational impossibility principle when defending or challenging a privative-type clause; pair with Plaintiff S157 / Kirk / Graham as the modern doctrinal evolution.',
