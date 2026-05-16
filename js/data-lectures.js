@@ -41,22 +41,22 @@ window.LECTURES = {
   },
   w3: {
     kr: {
-      lead: "심사적격은 사법심사의 \"입장권 검사\"다. 너무 이르거나(prematurity), 너무 추상적이거나(advisory), 정치적이거나(non-justiciability), 신청인이 충분한 이해관계를 갖지 못하면(standing) 본안에 들어갈 수 없다.",
+      lead: "이 주차의 질문은 \"누구의, 어떤 행위가 사법심사 대상이 되는가\" — 즉 심사의 범위(scope/amenability)다. 핵심 논쟁은 민영화·외주: 사적 형식을 띤 주체라도 공적 규제 체계의 일부이면 심사가 미치는가.",
       paras: [
-        "Standing의 보통법 표준은 ACF v Commonwealth(1980)가 정한 \"special interest in the subject matter\"이며, 이는 단순한 \"intellectual or emotional concern\"보다 더 큰 무엇을 요구한다. 환경·공익 단체에서는 Onus, North Coast EC, Bateman's Bay 등이 그 \"무엇\"을 점진적으로 넓혀 왔다.",
-        "정치적 사안 심사 가능성은 Hicks(2007), Habib(2010)이 보여주듯, 외교·국방 영역에서도 결정의 합법성 자체는 다툴 수 있다는 방향으로 정착되고 있다. 그러나 prematurity는 결정이 아직 \"법적 효력\"을 갖지 않은 단계에서는 사법심사를 막는 강력한 차단막으로 남아 있다.",
-        "ADJR ss5–7은 결정·행위·부작위(failure to act)를 명시적으로 분리한다. \"결정\"의 의미는 Bond에서 협소하게 정의되었지만 \"행위(conduct)\"는 더 넓어, 결정 이전 단계 절차도 다툼의 대상이 될 수 있다."
+        "ADJR ss 5–7은 결정·행위(conduct)·부작위(failure to act)를 명시적으로 나눈다. \"결정\"의 의미는 Bond에서 최종·실질·실체적인 것으로 좁게 정의됐지만 \"행위\"는 더 넓어(s 6), 결정 이전의 준비 단계도 다툼 대상이 될 수 있다.",
+        "Tang의 2단계 \"수권법에 따른\" 테스트: (1) 결정이 법률에 의해 수권/요구되고, (2) 그 법적 효력으로 권리에 영향을 줄 것. 대학 내부 학술 규정은 법적 효력이 없어 ADJR 밖이었다. M61은 외주·역외 단계라도 장관의 법적 권한과 연결되면 s 39B/75(v)로 여전히 심사된다는 점을 보였다.",
+        "NEAT은 법정 수출 체계 안에서 거부권을 행사한 사기업 AWB를 ADJR 대상이 아니라고 봤다 — 공적 체계 안이라도 사적 법형식이 심사를 차단할 수 있다. 영국 Datafin의 \"공적 기능\" 기준은 호주에서 채택되지 않았고(권한의 원천·형식이 여전히 판단을 지배), Fuller v Lawrence(2024)가 Tang 접근을 재확인했다. 비-사법심사성(non-justiciability, 주제 자체가 사법 판단에 부적합)은 언급되지만 시험 범위가 아니다."
       ],
-      aside: "심사적격은 \"법원이 들을 만한 분쟁인가\"이지 \"신청인이 옳은가\"가 아니다."
+      aside: "범위 심사는 \"이 주체의, 이 행위가 사법심사 대상인가\"를 묻는다 — 호주에서는 권한의 원천·형식이 여전히 지배한다."
     },
     en: {
-      lead: "Justiciability is judicial review's ticket gate. Premature, advisory, political, or brought by someone without sufficient interest — any of these knocks you out before merits.",
+      lead: "This week's question is which — and whose — actions are amenable to judicial review: the scope of review. The live controversy is privatisation and outsourcing: can review reach a body in private form that is nonetheless part of a public regulatory scheme?",
       paras: [
-        "Standing's common-law touchstone is ACF v Commonwealth (1980): a \"special interest in the subject matter\" that goes beyond mere intellectual or emotional concern. For environmental and public-interest groups Onus, North Coast EC and Bateman's Bay incrementally widened what counts.",
-        "Hicks (2007) and Habib (2010) settled that even in foreign-affairs and defence domains the legality of a decision can be contested, even if its policy wisdom cannot. Prematurity remains a strong filter where the decision has no legal effect yet.",
-        "ADJR ss 5–7 split decisions, conduct, and failure-to-act. \"Decision\" was narrowed by Bond, but \"conduct\" is broader, giving traction over preparatory steps."
+        "ADJR ss 5–7 split decision, conduct and failure-to-act. \"Decision\" was narrowed in Bond to the final, operative, determinative and substantive; \"conduct\" is broader (s 6), so even preparatory steps can be reached.",
+        "Tang's two-limb \"under enactment\" test: (1) the decision is authorised/required by statute; (2) it affects legal rights through that statutory force. Internal university rules lacked statutory force, so they fell outside ADJR. M61 showed that an outsourced or offshore step still connected to the Minister's statutory power remains reviewable via s 39B / s 75(v).",
+        "NEAT held that AWB, a private company exercising a veto inside a statutory export scheme, was not amenable to ADJR — private legal form can defeat review even within a public scheme. The UK \"public function\" test in Datafin has not been adopted in Australia (source/form of the power still dominates), and Fuller v Lawrence (2024) reaffirms the Tang approach. Non-justiciability (subject matter inapt for judicial resolution) is mentioned but is not examinable."
       ],
-      aside: "Justiciability asks whether the dispute is one a court should hear — not whether the applicant is right."
+      aside: "Scope asks whether this body's action is amenable to review — in Australia the source and form of the power still dominate."
     }
   },
   w4: {
@@ -161,7 +161,7 @@ window.LECTURES = {
   },
   w9: {
     kr: {
-      lead: "통합 분석 주차. 사실관계를 받으면\n(1) 관할 →\n(2) 심사적격 →\n(3) PBS →\n(4) 사유 →\n(5) materiality →\n(6) 구제 순으로 푼다. 이 흐름은 답안 골격이자 사고 도식이다.",
+      lead: "통합 분석 주차. 사실관계를 받으면\n(1) 관할 →\n(2) 심사 범위 →\n(3) PBS →\n(4) 사유 →\n(5) materiality →\n(6) 구제 순으로 푼다. 이 흐름은 답안 골격이자 사고 도식이다.",
       paras: [
         "이번 주는 새 법리를 배우지 않는다. 이미 배운 도구들을 한 사실관계 위에서 어떻게 \"시퀀스\"로 적용하는지를 익힌다. 좋은 답안은 사유의 나열이 아니라, 한 단계가 다음 단계를 어떻게 좁히는지의 서사다.",
         "예컨대 ADJR로 시작했는데 권한 밖이면 s 39B / s 75(v)로 옮겨가야 하고, 결정 이전 단계라면 \"conduct\"·\"failure to act\"로 재조준해야 한다. 사유로 옮겨가면 PBS 어느 단계가 실패했는지 명시해야 하고, 결과적으로 어떤 구제가 효과적인지를 마지막에 묶어야 한다.",
@@ -170,7 +170,7 @@ window.LECTURES = {
       aside: "법은 사실 위에서만 살아 있다. 도식은 그 생명을 잃지 않게 하는 골격이다."
     },
     en: {
-      lead: "An integration week. Given facts, you walk:\n(1) jurisdiction →\n(2) justiciability →\n(3) PBS →\n(4) grounds →\n(5) materiality →\n(6) remedies. This flow is both an answer skeleton and a mode of thought.",
+      lead: "An integration week. Given facts, you walk:\n(1) jurisdiction →\n(2) scope →\n(3) PBS →\n(4) grounds →\n(5) materiality →\n(6) remedies. This flow is both an answer skeleton and a mode of thought.",
       paras: [
         "No new doctrine is added this week. What you practise is sequence: how each stage narrows the next. A good answer is not a list of grounds — it is a narrative of constraint propagating through the structure.",
         "If ADJR fails for jurisdiction, pivot to s 39B / s 75(v); if the act is preparatory, reframe as \"conduct\" or \"failure to act\". When you reach grounds, name which PBS stage they hit; at the end, tie remedies back to what would actually be effective.",

@@ -40,8 +40,8 @@ window.STEPS_DATA = {
     ]
   },
   justiciability: {
-    en:{ label:'Justiciability', help:'Multiple gateways may apply.' },
-    kr:{ label:'심사적격', help:'여러 관문이 동시에 적용될 수 있음.' },
+    en:{ label:'Scope of review', help:'Is the action amenable to review? Multiple gateways may apply.' },
+    kr:{ label:'심사 범위', help:'그 행위가 심사 대상이 되는가? 여러 관문이 동시에 적용될 수 있음.' },
     multi:true,
     options:[
       {id:'bond', en:'Bond decision', kr:'Bond 결정', note_en:'Final / operative / determinative.', note_kr:'최종 / 실질 / 결정적.'},

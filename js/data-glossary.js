@@ -378,8 +378,8 @@ window.GLOSSARY_DATA = {
       abbr: 'Privative clause',
       full_en: 'Privative clause',
       full_kr: '배제조항',
-      desc_en: 'Statutory provision attempting to oust judicial review. At Cth level, read down by Plaintiff S157 to apply only to lawful decisions — cannot oust s 75(v) JE review. At State level, Kirk entrenches Supreme Court supervisory jurisdiction against ouster. "Or purported to be made" wording is a direct Kirk contravention (2024 feedback).',
-      desc_kr: '사법심사를 봉쇄하려는 법령상 조항. 영연방 차원에서는 Plaintiff S157이 적법한 결정에만 적용되도록 좁게 읽었다 — s 75(v) JE 심사를 봉쇄할 수 없다. 주(州) 차원에서는 Kirk가 대법원 감독관할을 봉쇄에 맞서 헌법적으로 보호한다. "Or purported to be made" 문구는 Kirk 정면 위반(2024 피드백).',
+      desc_en: 'Statutory provision attempting to oust judicial review. At Cth level, read down by Plaintiff S157 to apply only to lawful decisions — cannot oust s 75(v) JE review. At State level, Kirk entrenches Supreme Court supervisory jurisdiction against ouster. "Or purported to be made" wording is a direct Kirk contravention (examiner feedback).',
+      desc_kr: '사법심사를 봉쇄하려는 법령상 조항. 영연방 차원에서는 Plaintiff S157이 적법한 결정에만 적용되도록 좁게 읽었다 — s 75(v) JE 심사를 봉쇄할 수 없다. 주(州) 차원에서는 Kirk가 대법원 감독관할을 봉쇄에 맞서 헌법적으로 보호한다. "Or purported to be made" 문구는 Kirk 정면 위반(채점자 피드백).',
       cases: ['s157','kirk-jurisdiction','graham','futuris']
     },
     {

@@ -523,7 +523,11 @@ function Flashcards({ lang, onCase }) {
   const [idx, setIdx] = useState(0);
   const [progress, setProgress] = useState({}); // id → 0..3 confidence
   const all = Object.values(CASES);
-  const topics = ['all','W1','W2','W3','W4','W5','W6','W7','W8','W9'];
+  const topics = ['all', ...Array.from(new Set(all.map(c=>c.topic))).sort((a,b)=>{
+    const na = parseInt((a||'').replace(/\D/g,''), 10) || 999;
+    const nb = parseInt((b||'').replace(/\D/g,''), 10) || 999;
+    return na - nb;
+  })];
   const deck = useMemo(() => {
     const filtered = deckTopic==='all' ? all : all.filter(c=>c.topic===deckTopic);
     // SRS-like ordering: lowest confidence first
@@ -680,8 +684,8 @@ function ScenarioMode({ lang, onCase }) {
   const [picks, setPicks] = useState({jurisdiction:[], justiciability:[], grounds:[], materiality:null, remedies:[]});
   const stepKeys = ['scenario','jurisdiction','justiciability','grounds','materiality','remedies','irac'];
   const stepLabels = lang==='kr'
-    ? ['시나리오','관할','심사적격','사유','중요성','구제','IRAC']
-    : ['Scenario','Jurisdiction','Justiciability','Grounds','Materiality','Remedies','IRAC'];
+    ? ['시나리오','관할','심사 범위','사유','중요성','구제','IRAC']
+    : ['Scenario','Jurisdiction','Scope','Grounds','Materiality','Remedies','IRAC'];
   const scenario = SCENARIOS.find(s=>s.id===scenarioId);
   const facts = scenarioId ? (scenario[lang]||scenario.en).facts : customFacts;
 
@@ -779,7 +783,7 @@ function ScenarioMode({ lang, onCase }) {
             <strong>{lang==='kr'?'관할':'Jurisdiction'}:</strong> {lbl(jurOpts, picks.jurisdiction).join(' · ')||'—'}
           </div>
           <div className="irac-sub">
-            <strong>{lang==='kr'?'심사적격':'Justiciability'}:</strong> {lbl(justOpts, picks.justiciability).join(' · ')||'—'}
+            <strong>{lang==='kr'?'심사 범위':'Scope'}:</strong> {lbl(justOpts, picks.justiciability).join(' · ')||'—'}
           </div>
           <div className="irac-sub">
             <strong>{lang==='kr'?'사유':'Grounds'}:</strong> {lbl(groundOpts, picks.grounds).join(' · ')||'—'}
@@ -824,7 +828,7 @@ function ScenarioMode({ lang, onCase }) {
   return <div className="page">
     <p className="eyebrow">{lang==='kr'?'시나리오 분석':'scenario analyser'}</p>
     <h1 className="page-title">{T.nav.scenario}</h1>
-    <p className="lede">{lang==='kr'?'시나리오를 골라 5단계로 IRAC 답안 골격을 만든다.':'Pick a scenario, work through five steps, build an IRAC skeleton.'}</p>
+    <p className="lede">{lang==='kr'?'시나리오를 골라 단계별로 IRAC 답안 골격을 만든다 — 관할 → 심사 범위 → 사유 → 중요성 → 구제.':'Pick a scenario and build an IRAC skeleton step by step — jurisdiction → scope → grounds → materiality → remedies.'}</p>
     <div className="steps-bar">
       {stepLabels.map((lbl,i)=>(
         <button key={i} className={"step-pill"+(step===i?" active":"")+(i<step?" done":"")} onClick={()=>setStep(i)}>
