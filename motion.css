@@ -1,0 +1,340 @@
+/* ──────────────────────────────────────────────────────────────
+   motion.css — animations & interactive polish
+   Loaded LAST so it overrides flat states from earlier sheets.
+   ─────────────────────────────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes peg-pop {
+  0%   { transform: scale(.6) rotate(-8deg); opacity: 0; }
+  60%  { transform: scale(1.08) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes ink-bleed {
+  0%   { stroke-dashoffset: 100; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes confetti-fall {
+  0%   { transform: translate(var(--x,0), -20vh) rotate(0); opacity: 1; }
+  100% { transform: translate(var(--x,0), 110vh) rotate(720deg); opacity: 0; }
+}
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(44, 74, 122, .35); }
+  70%  { box-shadow: 0 0 0 12px rgba(44, 74, 122, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(44, 74, 122, 0); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ─── Page transitions: fade-up on every main view swap ─── */
+main > .page,
+main > div[class*="exam-page"],
+main > .exam-section {
+  animation: fade-up .42s cubic-bezier(.2,.7,.2,1) both;
+}
+main > .page > .points > * { animation: fade-up .5s cubic-bezier(.2,.7,.2,1) both; }
+main > .page > .points > *:nth-child(1) { animation-delay: .04s; }
+main > .page > .points > *:nth-child(2) { animation-delay: .08s; }
+main > .page > .points > *:nth-child(3) { animation-delay: .12s; }
+main > .page > .points > *:nth-child(4) { animation-delay: .16s; }
+main > .page > .points > *:nth-child(5) { animation-delay: .20s; }
+main > .page > .points > *:nth-child(6) { animation-delay: .24s; }
+main > .page > .points > *:nth-child(7) { animation-delay: .28s; }
+main > .page > .points > *:nth-child(8) { animation-delay: .32s; }
+
+/* ─── Sidebar nav: ink-stroke active marker ─────────────── */
+.mode-btn, .week-btn { transition: color .18s, transform .18s; }
+.mode-btn:hover { transform: translateX(2px); }
+.week-btn:hover { transform: translateX(2px); }
+.mode-btn:hover .glyph { transform: rotate(-6deg) scale(1.1); }
+.mode-btn .glyph { transition: transform .25s cubic-bezier(.4,1.6,.5,1); display: inline-block; }
+.mode-btn.active .glyph { animation: peg-pop .4s cubic-bezier(.4,1.6,.5,1) both; }
+
+/* ─── Memory pegs: tilt + lift on hover, pop on appear ── */
+.peg {
+  transition: transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .2s, filter .2s;
+  will-change: transform;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.case-card .peg, .result-card .peg, .scenario-card .peg {
+  animation: peg-pop .45s cubic-bezier(.34,1.56,.64,1) both;
+}
+.case-card:hover .peg,
+.result-card:hover .peg {
+  transform: rotate(-6deg) scale(1.12);
+  filter: drop-shadow(0 4px 12px rgba(44, 74, 122, .25));
+}
+.peg.lg { transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
+
+/* ─── Case cards: tactile lift, animated underline ─────── */
+.case-card, .result-card {
+  position: relative;
+  transition: transform .22s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .22s, border-color .2s, background .2s;
+  overflow: hidden;
+}
+.case-card::after, .result-card::after {
+  content: "";
+  position: absolute; left: 14px; right: 14px; bottom: 0;
+  height: 1px; background: var(--accent, var(--ink));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.case-card:hover, .result-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -8px rgba(20,30,60,.18), 0 2px 6px rgba(20,30,60,.06);
+  border-color: var(--accent, var(--ink-2)) !important;
+}
+.case-card:hover::after, .result-card:hover::after { transform: scaleX(1); }
+
+/* importance badge — subtle pulse on highest tier */
+.case-card.imp-1, .case-card.imp-1 .peg { animation: pulse-ring 2.4s ease-out infinite; }
+
+/* ─── Flashcards: real 3D flip + lift ────────────────────── */
+.flash-card {
+  perspective: 1400px;
+  transition: transform .25s ease;
+  cursor: pointer;
+}
+.flash-card:hover { transform: translateY(-3px); }
+.flash-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .65s cubic-bezier(.34,1.36,.5,1);
+}
+.flash-inner.flipped { transform: rotateY(180deg); }
+.flash-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flash-face.back { transform: rotateY(180deg); }
+.flash-card .peg.lg {
+  animation: peg-pop .5s cubic-bezier(.34,1.56,.64,1) both;
+}
+
+/* ─── Scenario step bar: animated underline + completion check ─── */
+.step-pill {
+  transition: color .22s ease;
+}
+.step-pill::after {
+  transition: width .42s cubic-bezier(.2,.8,.2,1), background .25s !important;
+}
+.step-pill.done .stp-num::before {
+  content: "✓ ";
+  color: var(--accent, var(--margin-green));
+  font-style: normal;
+  font-size: 18px;
+  margin-right: 4px;
+  display: inline-block;
+  animation: peg-pop .4s cubic-bezier(.34,1.56,.64,1) both;
+}
+.step-pill:hover:not(.active) { color: var(--ink) !important; cursor: pointer; }
+.step-pill:hover:not(.active)::after { width: 30%; background: var(--ink-3); }
+
+/* Scenario cards: inkpop on pick */
+.scenario-card, .opt-card {
+  transition: transform .2s, border-color .2s, background .2s, box-shadow .2s;
+}
+.scenario-card:hover, .opt-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px -6px rgba(20,30,60,.15);
+}
+.scenario-card.picked, .opt-card.picked {
+  animation: peg-pop .35s cubic-bezier(.34,1.56,.64,1);
+}
+.opt-card .ck { transition: all .25s cubic-bezier(.34,1.56,.64,1); }
+.opt-card.picked .ck { transform: rotate(360deg) scale(1.1); }
+
+/* ─── Buttons: ink-press effect ─────────────────────────── */
+.btn, .chip, .step-pill, .tab-btn {
+  transition: transform .12s ease, background .18s, color .18s, border-color .18s;
+}
+.btn:active, .chip:active { transform: scale(.97); }
+.btn.primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn.primary::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    transparent, rgba(255,255,255,.18), transparent);
+  background-size: 200% 100%;
+  background-position: 200% 0;
+  pointer-events: none;
+}
+.btn.primary:hover::before { animation: shimmer 1.4s ease-in-out infinite; }
+
+/* ─── Quiz: correct/wrong feedback animations ───────────── */
+@keyframes correct-bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.06); background: rgba(46, 74, 46, .12); }
+  100% { transform: scale(1); }
+}
+@keyframes wrong-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(2px); }
+}
+.quiz-opt.correct,
+.opt-card.correct,
+button[class*="quiz"].correct { animation: correct-bounce .55s ease-out; }
+.quiz-opt.wrong,
+button[class*="quiz"].wrong { animation: wrong-shake .4s ease-out; }
+
+/* ─── Tabs: animated underline ──────────────────────────── */
+.tab-btn { position: relative; }
+.tab-btn::after {
+  content: "";
+  position: absolute; left: 12px; right: 12px; bottom: -1px;
+  height: 2px; background: var(--accent, var(--ink));
+  transform: scaleX(0); transform-origin: center;
+  transition: transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.tab-btn.active::after { transform: scaleX(1); }
+body[data-accent] .tab-btn.active { border-bottom-color: transparent !important; }
+
+/* ─── Decision tree branches: ink-bleed on expand ──────── */
+.tree-branch, .branch-cases, .acc-body {
+  animation: fade-up .35s cubic-bezier(.2,.7,.2,1) both;
+}
+
+/* ─── Case panel slide-over: spring entry ──────────────── */
+.panel.open {
+  animation: panel-slide .45s cubic-bezier(.34,1.36,.5,1) both;
+}
+@keyframes panel-slide {
+  from { transform: translateX(100%); opacity: .6; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+.panel .panel-section {
+  animation: fade-up .4s cubic-bezier(.2,.7,.2,1) both;
+}
+.panel .panel-section:nth-child(2) { animation-delay: .05s; }
+.panel .panel-section:nth-child(3) { animation-delay: .10s; }
+.panel .panel-section:nth-child(4) { animation-delay: .15s; }
+.panel .panel-section:nth-child(5) { animation-delay: .20s; }
+.panel .panel-section:nth-child(6) { animation-delay: .25s; }
+
+/* ─── Highlighted keywords: marker sweep on appear ─── */
+mark, .keyword-hl {
+  background: linear-gradient(120deg,
+    transparent 0%,
+    var(--accent-soft, rgba(44,74,122,.15)) 25%,
+    var(--accent-soft, rgba(44,74,122,.15)) 75%,
+    transparent 100%);
+  background-size: 100% 60%;
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  padding: 0 2px;
+  border-radius: 0;
+}
+
+/* ─── Lecture-note drop-cap: ink-fade reveal ──────────── */
+.lecture-note p:first-of-type::first-letter {
+  animation: peg-pop .8s cubic-bezier(.34,1.56,.64,1) both;
+}
+
+/* ─── Search input: focus glow ─────────────────────────── */
+.search-bar input, input[type="search"], input[type="text"].search {
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.search-bar input:focus, input[type="search"]:focus {
+  outline: none;
+  border-color: var(--accent, var(--ink-2)) !important;
+  box-shadow: 0 0 0 3px var(--accent-soft, rgba(44,74,122,.12));
+}
+
+/* ─── Confetti container ────────────────────────────────── */
+.confetti-stage {
+  position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+  overflow: hidden;
+}
+.confetti-stage span {
+  position: absolute;
+  top: 0; left: 50%;
+  width: 8px; height: 12px;
+  border-radius: 1px;
+  animation: confetti-fall 1.6s cubic-bezier(.2,.6,.2,1) forwards;
+}
+
+/* ─── Final score reveal in mixed quiz ─────────────────── */
+.mixed-final .score {
+  animation: peg-pop .8s cubic-bezier(.34,1.56,.64,1) both;
+  background: linear-gradient(180deg, var(--accent, var(--ink)) 0%, var(--ink-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Brand: small ink-stroke hover on logo ───────── */
+.brand { transition: letter-spacing .3s; }
+.brand:hover { letter-spacing: .03em; }
+
+/* ─── Progress dots in flashcards (if present) ───── */
+.flash-progress span {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--rule);
+  margin: 0 3px;
+  transition: all .25s;
+}
+.flash-progress span.done { background: var(--accent, var(--margin-green)); transform: scale(1.2); }
+.flash-progress span.current { background: var(--accent, var(--ink)); transform: scale(1.4); }
+
+/* ─── Subtle background "page glow" on content scroll ─── */
+main {
+  background:
+    radial-gradient(at 50% -10%, var(--accent-soft, rgba(44,74,122,.04)) 0%, transparent 60%);
+}
+
+/* ─── Tweaks panel — subtle entrance ────────────────────── */
+.twk-panel {
+  animation: fade-up .4s cubic-bezier(.34,1.36,.5,1) both;
+}
+
+/* ─── Make IRAC letters reveal sequentially ─────────────── */
+.irac-block {
+  animation: fade-up .5s cubic-bezier(.2,.7,.2,1) both;
+}
+.irac-block:nth-of-type(1) { animation-delay: 0s; }
+.irac-block:nth-of-type(2) { animation-delay: .12s; }
+.irac-block:nth-of-type(3) { animation-delay: .24s; }
+.irac-block:nth-of-type(4) { animation-delay: .36s; }
+.irac-letter {
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+.irac-block:hover .irac-letter {
+  transform: translateX(-4px) scale(1.05);
+}
+
+/* ─── Week list: count-up effect on active number ──── */
+.week-btn.active .week-num {
+  animation: peg-pop .35s cubic-bezier(.34,1.56,.64,1) both;
+}
+
+/* ─── Hover ribbons on case-meta importance ─── */
+.case-card[class*="imp-1"]::before {
+  content: "";
+  position: absolute; top: 0; right: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0 14px 14px 0;
+  border-color: transparent var(--accent, #c4a45e) transparent transparent;
+  opacity: .9;
+}

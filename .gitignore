@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+
+# Dependencies (only used locally for the JSX syntax-check; not needed at runtime)
+node_modules/
+package-lock.json
+package.json
+
+# Editor
+.vscode/
+.idea/

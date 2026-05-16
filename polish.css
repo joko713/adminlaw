@@ -1,0 +1,264 @@
+/* ─── Polish layer — overrides the Claude-style left-bar accents
+       and elevates the scenario analyser. Loaded after themes.css. */
+
+/* 1 ── Replace inset-left-bar on active mode-btn with editorial bullet */
+body[data-accent] .mode-btn.active { box-shadow: none !important; padding-left: 22px; }
+.mode-btn { padding-left: 22px; position: relative; }
+.mode-btn::before {
+  content: "";
+  position: absolute; left: 8px; top: 50%;
+  width: 4px; height: 4px; border-radius: 50%;
+  background: transparent;
+  transform: translateY(-50%);
+  transition: background 120ms;
+}
+.mode-btn.active::before { background: var(--accent, var(--ink)); }
+.mode-btn.active {
+  background: transparent !important;
+  font-weight: 600;
+  letter-spacing: .005em;
+}
+.mode-btn.active .glyph { color: var(--accent, var(--ink)); }
+
+/* Week buttons — same idea, no big paper-3 fill */
+.week-btn { padding-left: 16px; position: relative; }
+.week-btn.active { background: transparent; }
+.week-btn::before {
+  content: "";
+  position: absolute; left: 0; top: 50%;
+  width: 8px; height: 1px;
+  background: transparent;
+  transform: translateY(-50%);
+}
+.week-btn.active::before { background: var(--accent, var(--ink)); width: 10px; height: 1.5px; }
+.week-btn.active .week-num { color: var(--accent, var(--ink-2)); }
+
+/* 2 ── Drop the heavy left-bar pattern everywhere it appears.
+       Replace with: top hairline + small-caps tag floated above the body */
+.facts-card,
+.irac-sub,
+.notes-area textarea + * {
+  border-left: none !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+  position: relative;
+}
+.facts-card {
+  margin-top: 24px;
+  padding-top: 20px !important;
+  border-top: 1px solid var(--rule);
+}
+.facts-card label {
+  position: absolute;
+  top: -8px; left: 0;
+  background: var(--paper);
+  padding-right: 10px;
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+body[data-theme="editorial"] .facts-card label { background: var(--paper); }
+
+.irac-sub {
+  margin-top: 14px !important;
+  padding: 6px 0 !important;
+  border-bottom: 1px dotted var(--rule);
+  font-size: 14.5px;
+  background: transparent !important;
+}
+.irac-sub strong {
+  display: inline-block;
+  min-width: 90px;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  vertical-align: baseline;
+}
+.irac-sub.app strong { color: var(--accent, var(--c-ochre-fg)); }
+
+/* Margin red blockquotes (e.g. notes-area::before) → drop bar; use serif glyph */
+.notes-area h2::before {
+  content: "✎";
+  color: var(--accent, var(--ink-3)) !important;
+}
+
+/* 3 ── Scenario analyser: refined step display ───────────── */
+.steps-bar {
+  border: none !important;
+  position: relative;
+  padding: 8px 0 18px;
+  margin-bottom: 28px !important;
+}
+.steps-bar::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: 1px; background: var(--rule);
+}
+.step-pill {
+  position: relative;
+  border-right: none !important;
+  border: none !important;
+  padding: 10px 12px !important;
+  background: transparent !important;
+  text-align: center !important;
+  color: var(--ink-3) !important;
+}
+.step-pill::after {
+  content: "";
+  position: absolute; left: 50%; bottom: -1px;
+  width: 0; height: 2px;
+  background: var(--accent, var(--ink));
+  transform: translateX(-50%);
+  transition: width 180ms ease;
+}
+.step-pill.active::after { width: 60%; }
+.step-pill.done { color: var(--ink-2) !important; }
+.step-pill.done::after { width: 60%; background: var(--rule); }
+.step-pill .stp-num {
+  font-family: var(--font-serif);
+  font-size: 28px !important;
+  font-style: italic !important;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: inherit !important;
+  text-transform: none !important;
+  display: block;
+  line-height: 1;
+  opacity: .35;
+}
+.step-pill.active .stp-num { opacity: 1; color: var(--accent, var(--ink)) !important; }
+.step-pill.done .stp-num { opacity: .6; }
+.step-pill .stp-l {
+  font-size: 11.5px !important;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: inherit !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  margin-top: 8px !important;
+}
+
+/* Scenario cards — flatter, no pink fill */
+.scenario-card {
+  background: transparent !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 2px !important;
+  transition: all 140ms ease !important;
+}
+.scenario-card:hover {
+  background: var(--paper-2) !important;
+  border-color: var(--ink-3) !important;
+}
+.scenario-card.picked {
+  background: transparent !important;
+  border-color: var(--accent, var(--ink)) !important;
+  border-width: 1px !important;
+  box-shadow: inset 0 0 0 1px var(--accent, var(--ink));
+}
+
+.opt-card {
+  background: transparent !important;
+  border-radius: 2px !important;
+}
+.opt-card.picked {
+  background: transparent !important;
+  border-color: var(--accent, var(--ink)) !important;
+  border-width: 1px !important;
+  box-shadow: inset 0 0 0 1px var(--accent, var(--ink));
+}
+.opt-card .ck { border-radius: 1px !important; }
+.opt-card.picked .ck {
+  background: var(--accent, var(--ink)) !important;
+  color: var(--paper) !important;
+  border-color: var(--accent, var(--ink)) !important;
+}
+
+/* 4 ── IRAC: dramatic typographic letters, asymmetric grid */
+.irac-grid {
+  grid-template-columns: 110px 1fr !important;
+  gap: 28px !important;
+  margin-top: 28px !important;
+}
+.irac-letter {
+  font-size: 96px !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-family: var(--font-serif);
+  line-height: .85 !important;
+  text-align: right !important;
+  padding-right: 4px !important;
+  padding-top: 0 !important;
+  border-right: 1px solid var(--rule);
+  align-self: stretch;
+}
+.irac-letter.I { color: var(--accent, var(--margin-blue)) !important; }
+.irac-letter.R { color: var(--ink) !important; }
+.irac-letter.A { color: var(--accent, var(--margin-blue)) !important; opacity: .65; }
+.irac-letter.C { color: var(--ink) !important; }
+.irac-block { padding-bottom: 32px !important; padding-top: 8px; }
+.irac-block h3 {
+  font-size: 13px !important;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-bottom: 14px !important;
+}
+
+/* Buttons in scenario — lift the primary */
+.btn.primary {
+  background: var(--accent, var(--ink)) !important;
+  border-color: var(--accent, var(--ink)) !important;
+  color: var(--paper) !important;
+}
+
+/* 5 ── Lecture-note expanded block (used in WeekPage) */
+.lecture-note {
+  margin-top: 26px;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 22px 0 24px;
+}
+.lecture-note .lec-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent, var(--ink-3));
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.lecture-note p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  margin: 0 0 14px;
+  text-wrap: pretty;
+}
+.lecture-note p:last-child { margin-bottom: 0; }
+.lecture-note p:first-of-type::first-letter {
+  font-family: var(--font-serif);
+  font-size: 52px;
+  float: left;
+  line-height: .9;
+  padding: 4px 10px 0 0;
+  font-weight: 500;
+  color: var(--ink);
+}
+.lecture-note .lec-aside {
+  margin-top: 16px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-3);
+  border-top: 1px dotted var(--rule);
+}
+.lecture-note .lec-aside::before {
+  content: "§ ";
+  font-style: normal;
+  color: var(--accent, var(--ink));
+  font-weight: 600;
+}

@@ -1,0 +1,152 @@
+/* ─── Theme overrides driven by [data-theme] on <body> ───
+   Each theme replaces the core paper palette with a more refined alternative.
+   Switching via Tweaks updates a single attribute. */
+
+/* EDITORIAL — generous off-white, charcoal ink, single accent */
+body[data-theme="editorial"] {
+  --paper:        #fafaf7;
+  --paper-2:      #f3f2ec;
+  --paper-3:      #e9e6dc;
+  --paper-edge:   #d6d2c3;
+  --ink:          #1a1a18;
+  --ink-2:        #3a3a36;
+  --ink-3:        #6e6e66;
+  --rule:         #d2cdbe;
+  --highlight:    #f1c873;
+  --margin-red:   #8b1a1a;
+  --margin-blue:  #1f3559;
+  --margin-green: #2e4a2e;
+  --tag-bg:       #ece9dd;
+  --modal-shadow: 0 24px 60px rgba(0,0,0,.12), 0 2px 12px rgba(0,0,0,.06);
+
+  --c-blue-bg:   #e6ebf2;  --c-blue-fg:   #1f3b66;  --c-blue-edge:  #2c4a7a;
+  --c-teal-bg:   #e0eae6;  --c-teal-fg:   #1d4a44;  --c-teal-edge:  #2a6a60;
+  --c-ochre-bg:  #efe4cd;  --c-ochre-fg:  #6b4716;  --c-ochre-edge: #8a5b1c;
+  --c-coral-bg:  #f0dccf;  --c-coral-fg:  #732b13;  --c-coral-edge: #9b3919;
+  --c-violet-bg: #e6dfee;  --c-violet-fg: #3d2e63;  --c-violet-edge:#4f3e7a;
+  --c-forest-bg: #dde5d2;  --c-forest-fg: #2f4a1e;  --c-forest-edge:#3f5e2b;
+  --c-gray-bg:   #e7e2d2;  --c-gray-fg:   #4a3f30;  --c-gray-edge:  #6a5a45;
+}
+body[data-theme="editorial"] {
+  background-image: none;
+}
+
+/* ARCHIVE — cool ivory + deep navy ink, library feel */
+body[data-theme="archive"] {
+  --paper:        #f6f3eb;
+  --paper-2:      #ece8db;
+  --paper-3:      #ddd6c1;
+  --paper-edge:   #b8ad8f;
+  --ink:          #18223a;
+  --ink-2:        #2c3a5c;
+  --ink-3:        #5a6480;
+  --rule:         #b9b29a;
+  --highlight:    #e8c97a;
+  --margin-red:   #7a1f24;
+  --margin-blue:  #1a3460;
+  --margin-green: #284d3a;
+  --tag-bg:       #e3dcc4;
+  --modal-shadow: 0 24px 60px rgba(20,30,60,.16), 0 2px 12px rgba(20,30,60,.08);
+}
+body[data-theme="archive"] {
+  background-image:
+    radial-gradient(at 12% 20%, rgba(120,140,180,.04) 0, transparent 40%),
+    radial-gradient(at 80% 60%, rgba(120,140,180,.03) 0, transparent 40%);
+}
+
+/* NOIR — sophisticated dark sepia */
+body[data-theme="noir"] {
+  --paper:        #1d1a17;
+  --paper-2:      #25211c;
+  --paper-3:      #2f2a23;
+  --paper-edge:   #463e30;
+  --ink:          #e8ddc6;
+  --ink-2:        #c2b69c;
+  --ink-3:        #8a7e66;
+  --rule:         #4a4032;
+  --highlight:    #d9a945;
+  --margin-red:   #d4775a;
+  --margin-blue:  #82a8d8;
+  --margin-green: #95b58a;
+  --tag-bg:       #332d24;
+  --modal-shadow: 0 30px 80px rgba(0,0,0,.6), 0 4px 16px rgba(0,0,0,.4);
+
+  --c-blue-bg:   #1f2c40;  --c-blue-fg:   #b9cce8;  --c-blue-edge:  #5b7aa8;
+  --c-teal-bg:   #1d2e2b;  --c-teal-fg:   #a8d2c8;  --c-teal-edge:  #4a8a7e;
+  --c-ochre-bg:  #3a2c18;  --c-ochre-fg:  #e8c47a;  --c-ochre-edge: #b08542;
+  --c-coral-bg:  #3a221a;  --c-coral-fg:  #e8a890;  --c-coral-edge: #b8624a;
+  --c-violet-bg: #292240;  --c-violet-fg: #c8b8e2;  --c-violet-edge: #8268b0;
+  --c-forest-bg: #1f2e1d;  --c-forest-fg: #b8d2a8;  --c-forest-edge: #6a8a5a;
+  --c-gray-bg:   #2c2820;  --c-gray-fg:   #c4b89e;  --c-gray-edge:  #7a6e58;
+}
+body[data-theme="noir"] {
+  background-image:
+    radial-gradient(at 12% 20%, rgba(220,180,120,.03) 0, transparent 40%),
+    radial-gradient(at 80% 60%, rgba(220,180,120,.02) 0, transparent 40%);
+}
+body[data-theme="noir"] mark { background: rgba(217,169,69,.35); color: var(--ink); }
+
+/* Density — compact mode tightens vertical rhythm */
+body[data-density="compact"] {
+  font-size: 15.5px;
+}
+body[data-density="compact"] main { padding: 36px 56px 80px; }
+body[data-density="compact"] .page-title { font-size: 30px; margin: 4px 0 14px; }
+body[data-density="compact"] .lede { font-size: 15px; margin-bottom: 22px; }
+body[data-density="compact"] .point { padding: 10px 0; gap: 12px; }
+body[data-density="compact"] .meta-grid { padding: 12px 16px; }
+body[data-density="compact"] .case-card { padding: 12px 14px; }
+
+/* Type — sans option for headings (more modern) */
+body[data-headfont="sans"] {
+  --font-display: 'Inter Tight', 'Pretendard', system-ui, sans-serif;
+}
+body[data-headfont="sans"] .page-title,
+body[data-headfont="sans"] .point-h,
+body[data-headfont="sans"] .acc-h,
+body[data-headfont="sans"] .brand,
+body[data-headfont="sans"] h1, body[data-headfont="sans"] h2, body[data-headfont="sans"] h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.012em;
+  font-weight: 600;
+}
+body[data-headfont="sans"] .page-title { letter-spacing: -0.022em; font-weight: 650; }
+
+/* Texture — disable when off */
+body[data-texture="off"] {
+  background-image: none !important;
+}
+
+/* Accent — drives the highlight + tab underline + active states */
+body[data-accent="sepia"]    { --accent: #8a5b1c; --accent-soft: rgba(138,91,28,.12); }
+body[data-accent="forest"]   { --accent: #3f5e2b; --accent-soft: rgba(63,94,43,.12); }
+body[data-accent="indigo"]   { --accent: #2c4a7a; --accent-soft: rgba(44,74,122,.12); }
+body[data-accent="rust"]     { --accent: #9b3919; --accent-soft: rgba(155,57,25,.12); }
+body[data-accent="plum"]     { --accent: #5a3266; --accent-soft: rgba(90,50,102,.12); }
+
+body[data-accent] .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+body[data-accent] .mode-btn.active { box-shadow: inset 2px 0 0 var(--accent); }
+body[data-accent] .chip.active { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+body[data-accent] .step-pill.active { border-color: var(--accent); color: var(--accent); }
+body[data-accent] .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+body[data-accent] .btn.primary:hover { filter: brightness(1.08); }
+body[data-accent] mark { background: var(--accent-soft); color: var(--accent); padding: 0 2px; }
+
+/* Subtle global polish for sophistication: tighten radii, refine focus */
+body { letter-spacing: 0.005em; }
+.case-card, .result-card, .acc-item, .scenario-card, .opt-card { border-radius: 3px; }
+.btn, .chip, .step-pill { border-radius: 2px; }
+.peg { border-radius: 2px; }
+button:focus-visible { outline: 1.5px solid var(--accent, var(--ink-2)); outline-offset: 2px; }
+
+/* Extra polish: make sidebar feel lighter & more editorial */
+body[data-theme="editorial"] aside.sidebar,
+body[data-theme="archive"] aside.sidebar {
+  background: transparent;
+  border-right-color: var(--rule);
+}
+body[data-theme="editorial"] .brand,
+body[data-theme="archive"] .brand {
+  font-feature-settings: "smcp", "liga";
+  text-transform: none;
+}

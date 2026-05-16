@@ -1,0 +1,220 @@
+/* Extended lecture notes per week — bilingual prose blocks
+   Surfaced on the Overview tab as a "강의 노트 / Lecture note" section. */
+window.LECTURES = {
+  w1: {
+    kr: {
+      lead: "행정법은 \"누가 무엇을 결정할 수 있는가\"라는 권한 분배의 학문이다. W1은 사법심사가 정책에 개입하는 것이 아니라 결정권자가 자신의 권한 안에서 머물렀는지를 검토하는 장치임을 분명히 한다.",
+      paras: [
+        "Marbury v Madison(1803)이 \"무엇이 법인가를 말하는 것은 사법부의 영역\"이라고 선언한 이후, 보통법 세계의 사법심사는 결정의 옳고 그름이 아니라 적법성(legality)에 묶여 있다. 호주에서는 Marbury의 명제가 헌법 제75조(v)에 직접 박혀 있어, High Court가 영연방 공무원에 대해 mandamus·prohibition·injunction을 발할 수 있는 권한을 의회조차 박탈할 수 없다.",
+        "이 구도가 \"merits–legality 이분법\"으로 굳어진다. 정책이 현명했는지, 사실 인정이 합리적이었는지는 행정의 영역이지만, 권한의 한계를 넘었거나 법이 요구한 절차를 어겼다면 법원은 이를 무효로 선언할 수 있다. 강의 후반에 나올 모든 사유(부여된 목적, 관련 고려사항, 절차공정, 합리성)는 이 한 쪽 분리선 위에서 작동한다."
+      ],
+      aside: "사법심사는 결정을 다시 내리지 않는다. 결정을 \"존재한 적 없는 것\"으로 만들 뿐이다."
+    },
+    en: {
+      lead: "Administrative law is the discipline of allocating decision-making power. W1 frames judicial review as a device to police whether a decision-maker stayed within their authority — not whether their decision was wise.",
+      paras: [
+        "Since Marbury v Madison (1803) declared it the province of the courts to say what the law is, common-law judicial review has been tied to legality, not correctness. In Australia that Marbury principle is cemented into s 75(v) of the Constitution: the High Court's jurisdiction to issue mandamus, prohibition and injunction against Commonwealth officers cannot be stripped, even by Parliament.",
+        "This sets up the merits–legality divide that runs through the whole course. Whether a policy was sound or a fact-finding reasonable belongs to the executive; but if a power has been exceeded or a statutory procedure ignored, the court may declare the act invalid. Every later ground (proper purpose, relevant considerations, procedural fairness, reasonableness) operates on this single side of the line."
+      ],
+      aside: "Judicial review does not re-make the decision. It treats it as if it had never been made."
+    }
+  },
+  w2: {
+    kr: {
+      lead: "관할은 \"누구에게 묻고 무엇을 받을 수 있는가\"의 문제다. ADJR 단순화 vs 헌법 75(v)의 견고함, 그리고 ss39B와 주(州) 보통법까지 — 이 세 채널의 교차점이 W2의 지도다.",
+      paras: [
+        "ADJR Act 1977은 \"administrative character의 결정\"을 단일 절차로 통합해 9가지 사유로 다투게 했지만, 의사결정 정의의 협소함(Bond), 명단(Schedule 1) 제외, 그리고 가장 결정적으로 GBRMPA, ASIC 같은 수많은 권한이 명시적으로 빠져 있다는 한계를 안고 있다.",
+        "Plaintiff S157(2003)은 헌법 75(v)에 \"jurisdictional error로 인한 결정은 결정이 아니다\"라는 의미를 주입함으로써 의회가 사법심사를 봉쇄하는 privative clause를 사실상 무력화했다. ss39B Judiciary Act는 75(v)의 관할을 Federal Court로도 끌어와 일상 사건에서의 진입로를 제공한다.",
+        "주(州) 차원에서는 Kirk(2010)가 같은 논리를 주 대법원으로 확장했다 — \"jurisdictional error를 봉쇄하는 것은 헌법상 불가능하다.\""
+      ],
+      aside: "관할은 게이트가 아니라 게이트의 갯수다. 한쪽이 닫히면 다른 쪽이 열린다."
+    },
+    en: {
+      lead: "Jurisdiction is the question of who you ask and what they can give you. ADJR's simplicity, s 75(v)'s constitutional bedrock, s 39B, and state common-law review — the W2 map is the intersection of these channels.",
+      paras: [
+        "The ADJR Act 1977 collapsed disparate prerogative writs into a single procedure with nine grounds, but it bites only on \"decisions of an administrative character\" (narrowed by Bond), is bounded by Schedule 1 exclusions, and crucially leaves whole regimes (GBRMPA, ASIC and many others) unreviewable under it.",
+        "Plaintiff S157 (2003) read s 75(v) of the Constitution as meaning \"a decision affected by jurisdictional error is no decision at all\", neutering privative clauses that try to oust review. s 39B of the Judiciary Act ports s 75(v)'s jurisdiction into the Federal Court, giving you a workable forum for everyday cases.",
+        "At state level Kirk (2010) extended the same logic to the Supreme Courts — it is constitutionally impossible to immunise jurisdictional error from review."
+      ],
+      aside: "Jurisdiction isn't one gate. It's a count of gates: when one is shut, another opens."
+    }
+  },
+  w3: {
+    kr: {
+      lead: "심사적격은 사법심사의 \"입장권 검사\"다. 너무 이르거나(prematurity), 너무 추상적이거나(advisory), 정치적이거나(non-justiciability), 신청인이 충분한 이해관계를 갖지 못하면(standing) 본안에 들어갈 수 없다.",
+      paras: [
+        "Standing의 보통법 표준은 ACF v Commonwealth(1980)가 정한 \"special interest in the subject matter\"이며, 이는 단순한 \"intellectual or emotional concern\"보다 더 큰 무엇을 요구한다. 환경·공익 단체에서는 Onus, North Coast EC, Bateman's Bay 등이 그 \"무엇\"을 점진적으로 넓혀 왔다.",
+        "정치적 사안 심사 가능성은 Hicks(2007), Habib(2010)이 보여주듯, 외교·국방 영역에서도 결정의 합법성 자체는 다툴 수 있다는 방향으로 정착되고 있다. 그러나 prematurity는 결정이 아직 \"법적 효력\"을 갖지 않은 단계에서는 사법심사를 막는 강력한 차단막으로 남아 있다.",
+        "ADJR ss5–7은 결정·행위·부작위(failure to act)를 명시적으로 분리한다. \"결정\"의 의미는 Bond에서 협소하게 정의되었지만 \"행위(conduct)\"는 더 넓어, 결정 이전 단계 절차도 다툼의 대상이 될 수 있다."
+      ],
+      aside: "심사적격은 \"법원이 들을 만한 분쟁인가\"이지 \"신청인이 옳은가\"가 아니다."
+    },
+    en: {
+      lead: "Justiciability is judicial review's ticket gate. Premature, advisory, political, or brought by someone without sufficient interest — any of these knocks you out before merits.",
+      paras: [
+        "Standing's common-law touchstone is ACF v Commonwealth (1980): a \"special interest in the subject matter\" that goes beyond mere intellectual or emotional concern. For environmental and public-interest groups Onus, North Coast EC and Bateman's Bay incrementally widened what counts.",
+        "Hicks (2007) and Habib (2010) settled that even in foreign-affairs and defence domains the legality of a decision can be contested, even if its policy wisdom cannot. Prematurity remains a strong filter where the decision has no legal effect yet.",
+        "ADJR ss 5–7 split decisions, conduct, and failure-to-act. \"Decision\" was narrowed by Bond, but \"conduct\" is broader, giving traction over preparatory steps."
+      ],
+      aside: "Justiciability asks whether the dispute is one a court should hear — not whether the applicant is right."
+    }
+  },
+  w4: {
+    kr: {
+      lead: "Hossain(2018)의 3단계 분석 —\n(1) 권한이 부여되었는가,\n(2) 그 권한의 PBS(precondition · breadth · scope)가 충족되었는가,\n(3) 충족되었다 해도 sub-grounds(목적·고려사항·절차·합리성)에 위배되지 않았는가 — 가 이번 주의 뼈대다.",
+      paras: [
+        "이 \"empowering provision → PBS → sub-grounds\" 구조는 모든 사유 분석을 같은 도식 위에 올려놓는다. 예컨대 부적절한 목적은 PBS의 \"scope\"를 벗어났는가의 문제이고, 절차공정 위반은 PBS가 묵시적으로 요구한 절차요건을 어긴 것이며, 비합리성은 \"reasonable decision-maker가 도달할 수 있었던 결과의 범위\"를 벗어난 문제로 환원된다.",
+        "여기에 W7에서 도입되는 materiality 요건이 더해진다. Hossain·SZMTA·Nathanson는 \"오류가 있어도 결과를 바꿀 현실적 가능성이 없다면 jurisdictional error가 아니다\"는 규칙을 정착시켰고, 이는 사법심사를 \"결과 지향적\" 도구로 다듬는다.",
+        "Project Blue Sky(1998)는 두 번째 갈래를 만든다 — 절차요건 위반이 \"의회가 무효를 의도했는가\"의 해석 문제로 처리되어, 자동 무효(invalid)와 단순 위법(unlawful)을 분리한다."
+      ],
+      aside: "법원이 묻는 것은 \"왜 잘못되었나\"가 아니라 \"이 잘못이 권한 한계 안에 있는가\"이다."
+    },
+    en: {
+      lead: "Hossain's three-stage frame —\n(1) was a power conferred,\n(2) were its preconditions / breadth / scope satisfied,\n(3) and even if so, did the sub-grounds (purpose, considerations, procedure, reasonableness) bite — is the spine of W4.",
+      paras: [
+        "This \"empowering provision → PBS → sub-grounds\" structure lets every ground sit on the same lattice. Improper purpose becomes a question of the power's scope; procedural unfairness, an implied PBS condition; unreasonableness, the bounded range a reasonable decision-maker could reach.",
+        "Onto this stack you bolt materiality (W7). Hossain, SZMTA and Nathanson establish that an error which had no realistic possibility of changing the outcome is not jurisdictional, sharpening review into an outcome-sensitive instrument.",
+        "Project Blue Sky (1998) adds a second branch: a breach of procedure becomes a question of statutory intent, dividing automatic invalidity from mere unlawfulness."
+      ],
+      aside: "The court asks not why something went wrong but whether the wrong was within power."
+    }
+  },
+  w5: {
+    kr: {
+      lead: "위임입법(delegated legislation)은 의회가 \"틀\"만 정하고 세부는 행정에 맡기는 양식이다. 그 틀이 너무 헐거우면 의회가 입법권을 행정에 양도한 것이 되고, 너무 빡빡하면 입법은 무용해진다 — 그 균형이 이번 주의 핵심.",
+      paras: [
+        "McEldowney v Forde(1971)는 \"수권조항(empowering provision) → 위임입법(delegated legislation)\"의 검토 도식을 정착시켰다. 즉 위임입법은 모법이 부여한 권한의 명시적·묵시적 범위 안에서만 유효하며, 그 범위는 모법의 목적·맥락·기존 권리에 비추어 해석된다.",
+        "W1–W4의 sub-grounds — 부적절한 목적, 고려사항 누락, 절차공정 결여, 비합리성 — 는 그대로 위임입법에도 적용된다. \"의회가 위임한 권한\"이라는 출발점만 바뀔 뿐이다. 추가로 등장하는 것이 (a) sub-delegation 금지(필요시 명시적 권한이 있어야), (b) 모법과의 inconsistency 금지(Federal Capital Commission), (c) 불확실성(uncertainty) 금지다.",
+        "ADJR Act는 \"administrative character의 결정\"에 적용되므로 입법성격을 가진 위임입법은 ADJR 밖의 채널 — s 75(v), s 39B, declaration 등 — 으로 다투어야 한다."
+      ],
+      aside: "위임입법은 \"행정\"이지만 \"법\"이다. 법원이 풀 때 두 얼굴을 동시에 본다."
+    },
+    en: {
+      lead: "Delegated legislation lets Parliament set a frame and the executive fill in the detail. Too loose a frame and the legislature has surrendered its power; too tight and the device is useless — W5 is the calibration.",
+      paras: [
+        "McEldowney v Forde (1971) crystallised the test as \"empowering provision → delegated legislation\": valid only within the express and implied scope of what the parent Act conferred, read against its purposes, context, and pre-existing rights.",
+        "All W1–W4 sub-grounds — improper purpose, irrelevant considerations, procedural unfairness, unreasonableness — apply mutatis mutandis. What is added is (a) the rule against sub-delegation absent express power, (b) consistency with the parent Act (Federal Capital Commission), and (c) the bar on uncertainty.",
+        "Because ADJR is anchored to \"decisions of an administrative character\", challenges to instruments that are legislative in character must use s 75(v), s 39B, or declaratory routes."
+      ],
+      aside: "Delegated legislation is administrative, but it is law. Courts read it with both faces visible."
+    }
+  },
+  w6: {
+    kr: {
+      lead: "Procedural fairness는 \"공정한 절차의 hearing rule + 편향 배제 bias rule\"의 두 축이다. Kioa(1985) 이후 호주에서는 사실상 모든 결정이 이 의무를 묵시적으로 진다는 출발점이 자리잡았다.",
+      paras: [
+        "Hearing rule은\n(i) 결정에 \"adverse한\" 정보를 알리고,\n(ii) 의견 제출 기회를 주며,\n(iii) 그 의견을 \"진정으로 고려\"하는 의무다. 어떤 정도의 절차가 요구되는지는 \"이해관계의 성격\"과 \"결정의 맥락\"에 따라 변동한다 — Annetts(1990)는 본래 권리가 아니어도 \"정당한 기대(legitimate expectation)\"가 있으면 절차의무가 발생한다고 했다.",
+        "Bias rule은 \"객관적 관찰자가 보기에 합리적 의심을 가질 만한가\"라는 외관 테스트(Webb v R, Ebner)를 쓴다. 결정자가 실제로 편향되지 않아도 그 외관만으로 결정을 무효로 만들 수 있다.",
+        "두 규칙 모두 \"의회가 묵시적으로 요구한\" 절차요건이라는 점에서 PBS 분석에 환원된다 — 즉 W4 도식의 \"breadth\" 단계에서 작동한다."
+      ],
+      aside: "공정성은 \"누가 옳은가\"가 아니라 \"어떻게 듣는가\"의 규범이다."
+    },
+    en: {
+      lead: "Procedural fairness sits on two pillars: the hearing rule and the rule against bias. After Kioa (1985), almost every administrative decision in Australia carries the obligation by implication.",
+      paras: [
+        "The hearing rule requires\n(i) disclosure of adverse material,\n(ii) an opportunity to respond, and\n(iii) genuine consideration of the response. How much process is owed varies with the nature of the interest and the statutory context. Annetts (1990) confirmed that even where no antecedent right exists, a legitimate expectation can summon the duty.",
+        "The bias rule turns on appearance: would a fair-minded informed observer reasonably apprehend prejudgment (Webb v R, Ebner)? Actual bias is not required.",
+        "Both rules feed back into the PBS frame — they are implied conditions on the breadth of the empowering provision, satisfying or failing W4 stage 2."
+      ],
+      aside: "Fairness is not who is right; it is how we listen."
+    }
+  },
+  w7: {
+    kr: {
+      lead: "Hossain·SZMTA·Nathanson는 \"오류 + 결과를 바꿀 현실적 가능성\"을 jurisdictional error의 새 정의로 굳혔다. 동시에 Wei v Min for Immigration는 \"입증책임은 신청인에게\"라는 부담의 분배를 명확히 했다.",
+      paras: [
+        "전통적 \"any error voids the decision\" 접근은 행정부담을 과도하게 늘렸다. Hossain(2018)은 \"realistic possibility of a different outcome\"이라는 문턱을 도입했고, SZMTA(2019)는 그 문턱을 통계적·증거적으로 평가하는 방식을 다듬었다. Nathanson(2022)은 절차공정 위반에서도 같은 문턱을 적용하면서, \"공정성의 본질적 침해\"는 별도로 다뤄야 한다는 단서를 달았다.",
+        "Materiality는 사법심사를 \"기술적\"에서 \"실질적\"으로 옮겨 놓는다. 그러나 동시에, 무엇이 \"realistic\"인지에 대한 판단이 사실상 merits에 가까워질 위험도 있다 — 강의는 이 긴장을 명시적으로 다룬다.",
+        "Wei는 입증책임 분배를 정리했다: 오류 자체는 신청인이, 그 오류가 결과를 바꿀 가능성이 없었다는 점은 행정청이 입증해야 한다."
+      ],
+      aside: "오류는 무효를 자동적으로 부르지 않는다. 결과를 바꿀 수 있어야 한다."
+    },
+    en: {
+      lead: "Hossain, SZMTA and Nathanson reframed jurisdictional error around \"error + a realistic possibility of a different outcome\". Wei sorted out who must prove what.",
+      paras: [
+        "The old \"any error voids\" approach loaded administrators unfairly. Hossain (2018) introduced the realistic-possibility threshold; SZMTA (2019) refined how it is evaluated on the evidence; Nathanson (2022) extended it to procedural unfairness while preserving a carve-out for breaches that cut to fairness's core.",
+        "Materiality reorients review from the technical toward the substantive — at some risk of straying back into merits. The course is explicit about that tension.",
+        "Wei (2015) settled the burden: the applicant proves the error; the decision-maker proves it could not have changed the result."
+      ],
+      aside: "Error does not automatically invalidate. It must have been able to change the outcome."
+    }
+  },
+  w8: {
+    kr: {
+      lead: "구제수단(remedies)은 \"무엇을 원하는가\"의 답이다. Certiorari는 결정을 무효화하고, mandamus는 결정자를 다시 결정하게 만들고, prohibition은 권한 외 행위를 막고, declaration은 법적 상태를 확정한다.",
+      paras: [
+        "사법심사는 결정을 다시 내리지 않는다. 그러므로 거의 모든 사건은 결국 mandamus + certiorari의 조합으로 귀결된다 — 잘못된 결정을 무효로 하고, 다시 정당한 절차로 결정하라는 명령.",
+        "Declaration은 가장 \"부드러운\" 구제수단으로 보이지만 강력하다. \"이 법은 이렇게 해석된다\"는 선언만으로도 행정청은 따라야 할 의무를 지며, 후속 결정의 합법성이 그 위에서 평가된다(Plaintiff M61).",
+        "Discretionary considerations — laches(지연), futility(무용), alternative remedies, conduct of applicant — 가 모든 구제수단에 깔려 있다. 즉 권리가 있어도 법원이 그 사건에서 그 구제수단을 거부할 수 있다."
+      ],
+      aside: "구제수단은 권리의 그림자가 아니라 권리의 형태다."
+    },
+    en: {
+      lead: "Remedies answer \"what do you want?\". Certiorari quashes; mandamus compels reconsideration; prohibition prevents ultra vires action; declaration fixes the legal state of play.",
+      paras: [
+        "Judicial review never re-makes the decision, so most cases land on the same pair: mandamus + certiorari — quash the decision and order it remade according to law.",
+        "Declaration looks gentle but is potent: a statement that \"the Act means X\" binds the administrator and supplies the platform on which subsequent decisions are tested (Plaintiff M61).",
+        "Discretionary factors — laches, futility, alternative remedies, applicant conduct — sit beneath every remedy. A right does not entitle you to a remedy the court can withhold."
+      ],
+      aside: "Remedies are not the shadow of rights; they are the shape of rights."
+    }
+  },
+  w9: {
+    kr: {
+      lead: "통합 분석 주차. 사실관계를 받으면\n(1) 관할 →\n(2) 심사적격 →\n(3) PBS →\n(4) 사유 →\n(5) materiality →\n(6) 구제 순으로 푼다. 이 흐름은 답안 골격이자 사고 도식이다.",
+      paras: [
+        "이번 주는 새 법리를 배우지 않는다. 이미 배운 도구들을 한 사실관계 위에서 어떻게 \"시퀀스\"로 적용하는지를 익힌다. 좋은 답안은 사유의 나열이 아니라, 한 단계가 다음 단계를 어떻게 좁히는지의 서사다.",
+        "예컨대 ADJR로 시작했는데 권한 밖이면 s 39B / s 75(v)로 옮겨가야 하고, 결정 이전 단계라면 \"conduct\"·\"failure to act\"로 재조준해야 한다. 사유로 옮겨가면 PBS 어느 단계가 실패했는지 명시해야 하고, 결과적으로 어떤 구제가 효과적인지를 마지막에 묶어야 한다.",
+        "시나리오 분석기가 이 시퀀스를 그대로 따라가도록 설계되어 있다 — 직접 풀어보면서 자기 사고의 빈 칸을 발견하라."
+      ],
+      aside: "법은 사실 위에서만 살아 있다. 도식은 그 생명을 잃지 않게 하는 골격이다."
+    },
+    en: {
+      lead: "An integration week. Given facts, you walk:\n(1) jurisdiction →\n(2) justiciability →\n(3) PBS →\n(4) grounds →\n(5) materiality →\n(6) remedies. This flow is both an answer skeleton and a mode of thought.",
+      paras: [
+        "No new doctrine is added this week. What you practise is sequence: how each stage narrows the next. A good answer is not a list of grounds — it is a narrative of constraint propagating through the structure.",
+        "If ADJR fails for jurisdiction, pivot to s 39B / s 75(v); if the act is preparatory, reframe as \"conduct\" or \"failure to act\". When you reach grounds, name which PBS stage they hit; at the end, tie remedies back to what would actually be effective.",
+        "The scenario analyser is built to walk you through this exact chain — use it to expose the gaps in your own reasoning."
+      ],
+      aside: "Law lives only on facts. The frame is the skeleton that keeps the life intact."
+    }
+  },
+  w10: {
+    kr: {
+      lead: "헌법적 한계 주차. Hickman → S157 → Kirk → Futuris → Graham 로 이어지는 \"사법심사를 입법으로 우회하려는 시도\"의 계보 — 그리고 그 한계.\nMcDonald 교수의 핵심 강조:\n(1) 진짜 전장은 정면 privative clause 가 아니라 \"실질적으로 JR을 어렵게 만드는 우회 기법들\"이다.\n(2) S157·Kirk 이후 입법자들은 거의 frontal clause 를 만들지 않는다 — secrecy(Graham), no-invalidity(Futuris), time bars(Bodruddaza)가 진짜 싸움터.",
+      paras: [
+        "Hickman 의 원조 해법(Dixon J): privative clause 와 statute 의 limits 사이 inconsistency 를 풀기 위해, clause 를 \"administrator 의 권한을 확장하는 것\"으로 reread 했다. 결과 — admin 의 결정은 다음 3가지가 충족되면 valid: bona fide attempt · reasonably connected to subject matter · reasonable reference to the power. 당시 courts 가 strike down 하지 않은 이유는 institutional: 옴부즈만·merits review·정치적 책임 같은 다른 mechanism 이 살아 있었고, 산업분쟁의 신속해결 같은 economic cost 도 인정되었으며, pre-Kirk 라 state 차원 entrenched minimum 이 없었기 때문.",
+        "Plaintiff S157(2003)의 \"ingenious\" reframing — 핵심은 두 가지.\n첫째, Hickman 접근은 standard presumption 이 아니다. Privative clause 를 읽기 전에 먼저 두 가지 background principle 을 적용해야 한다: (a) Constitution 과 consistent 하게 (b) court jurisdiction 을 preserve 하게.\n둘째, 그 결과 clause 안의 \"decision\"은 JE-free decision 만 가리킨다. JE 가 있으면 Bhardwaj 따라 \"no decision at all\" → clause 의 범위 밖이라 75(v) review 가능. McDonald 의 솔직한 평가: \"it's nuts, it's crazy\" — clause 를 사실상 eviscerate 시키지만, HCA 는 이후 이 reading 으로 돌아오지 않았다.",
+        "S157 의 postscript — 본 사건 결과에 불필요한 obiter 이지만 의도된 헌법적 경고: (1) Groom's case 처럼 \"rule of conduct\"가 없는 guideline 입법은 head of power 와 disconnected 라 invalid. (2) Admin 이 자기 jurisdiction 한계를 conclusively 결정하면 judicial power 침해 — separation 위반. (3) 가장 강력 — 법령 의미와 행정권의 한계를 conclusively 정하는 권한은 exclusively judicial power. 메시지는 한 마디: \"don't push us too far — 우리 헌법적 탄약 있다.\"",
+        "Kirk(2010) — \"funky, creative constitutional analysis.\" 정치적 communication 의 implied right 와 같은 결의 implied entrenched minimum: 주(州) 차원에서도 Supreme Court 의 감독관할은 헌법적으로 박탈 불가. Logic 은 S157 과 동일 — privative clause 는 JE review 를 막을 수 없다.",
+        "포스트-S157·Kirk 의 전략 변화(시험 핵심): legislatures 는 더 이상 정면 privative clause 를 만들지 않는다. 대신 \"실질적으로 JR 을 어렵게 만드는 alternative techniques\" — secrecy clauses(Graham), no-invalidity clauses(Futuris), inflexible time bars(Bodruddaza). \"In practice make JR very difficult\" — 이 한 줄이 W10 의 키워드.",
+        "Futuris(2008) 의 nuance — McDonald 의 강한 critique: HCA 의 reading 은 매우 literal 이다. s 175 는 broadly framed (\"any breach\")이고 court 는 Project Blue Sky 분석을 적용하면서도 \"rule of law\"는 단 한 번도 언급하지 않는다. 실무적으로 tax 결정에 JR 은 거의 unavailable. 그런데도 HCA 가 unperturbed 했던 이유 = Pt IVC TAA 라는 alternative review path 존재 (Federal Court appeal on question of law) — \"functional equivalent of JR.\" McDonald 의 경고: Futuris 에서 너무 extrapolate 하지 마라. PBS 자체가 implied no-invalidity clause 를 만든다는 점을 기억하면, targeted no-invalidity 는 명백히 valid; 문제는 Futuris 식 broad/blanket clause 뿐.",
+        "No-invalidity clauses 의 일반 원칙(강의에서 Olivia·Cassidy 가 끌어낸 framing): (1) clause 가 broader 일수록 + alternative appeal 부재일수록 → 더 restrictive 한 해석 + S157-style 헌법 위협. (2) 법원은 \"clause 가 실무에서 무엇을 하는지(practical operation)\"를 본다 — Futuris 가 OK 였던 건 Pt IVC 가 있어서 \"complete no JR at all\"이 아니었기 때문. Functional equivalent 가 없으면 → S157·Kirk territory. 추가: Futuris 에서 HCA 는 또한 \"Federal Court 가 재량으로 거부했어야 한다\"고 말함 — alternative avenue 의 존재 자체가 discretionary refusal 의 사유가 된다.",
+        "ADJR Act 실무 지침 — McDonald 가 강의에서 명시: ADJR 이 적용되면 parallel s 39B 분석 생략. ADJR 만으로 풀어라. 핵심 조항: s 16(order of review = certiorari/mandamus/injunction 등가), s 5(decision not authorised by the Act = 기본 JE 개념), s 5(1)(j)(\"decision was otherwise contrary to law\" = JE species 의 catch-all), s 5(1)(f)(error of law on the face of the record — 유일하게 명시된 non-JE ground).",
+        "Reasonableness · Irrationality — 시험 차원의 구별:\n• Wednesbury (ADJR 상 ground) — narrow 한 \"bizarre\" 기준, McDonald 도 실제 적용을 본 적이 거의 없다.\n• Li 의 legal unreasonableness — discretion 결정에 적용; ADJR 에선 s 5(1)(j) catch-all 로 들어간다.\n• SZMDS 의 irrationality — jurisdictional fact / state of mind(satisfaction) 결정에 적용; SZMDS 는 unreasonableness 가 available 하지 않다는 전제에서 출발 (discretion 이 아니라 satisfaction 이라).\nGageler J in Li 는 이 distinction 이 중요하지 않을 수 있다고 시사했지만 minority. Safe approach — jurisdictional fact 결정에 unreasonableness 를 가져갈 때는 그 도전이 어렵다는 점을 인정.",
+        "Agency vs Delegation(짧게): delegation 은 명시적 statutory authority 필요 → delegate 가 own name 으로 권한 행사. Agency 는 statutory authority 불필요 → agent 가 repository(원래 결정권자)의 name 으로 서명. Justification 은 administrative efficiency. 단 agency 가 부적절한 영역 — 권한이 매우 significant 한 경우(예: 형사범죄 활동 승인), rare decisions, criminal element 와 연관된 경우.",
+        "Materiality 의 ADJR 적용: ADJR 에서도 materiality 가 요구된다(long established). Hossain 의 self-sufficient criterion 과 Harold-type \"one of many considerations\" 문제는 구별. LPDT(2024) 의 핵심 — reasoning processes 자체의 오류는 immaterial 하다고 주장하기가 매우 어렵다. Cameron's question 에 대한 답: \"어차피 의존하지 않았을 것\"이라는 admin 의 자기증언만으로는 부족하다 — 다른 factors 와의 weighing 맥락에서 여전히 material 할 수 있다.",
+        "AAT → ART 전환(2024년 10월): McDonald 가 Scrutiny of Bills Committee 용 explanatory memorandum 을 직접 읽었음. \"basic powers 가 바뀌지 않도록 한다\"는 intention 이 매우 명확. 따라서 AAT case law (Shi · Frugtniet · Drake No 2) 는 ART 에 그대로 continues to apply. Section numbers 만 바뀐 정도 — 다음 강의에 정리 예정. 학생들에게 새 입법을 직접 읽으라고 요구하지는 않는다."
+      ],
+      aside: "헌법적 탄약은 있다. 다만 의회가 너무 밀어붙이지 않는 한 쏘지 않을 뿐이다. — 그래서 진짜 싸움은 정면 privative clause 가 아니라, \"in practice make JR very difficult\" 한 우회 기법들에서 일어난다."
+    },
+    en: {
+      lead: "Constitutional-limits week. The lineage of legislative attempts to insulate decisions from JR — Hickman → S157 → Kirk → Futuris → Graham — and the limits the High Court has imposed on each.\nMcDonald's framing:\n(1) The real battleground is not frontal privative clauses but the alternative techniques that \"in practice make JR very difficult.\"\n(2) After S157 and Kirk, legislatures rarely enact full-frontal clauses — secrecy (Graham), no-invalidity (Futuris) and inflexible time bars (Bodruddaza) are where the fight actually happens.",
+      paras: [
+        "Hickman's original solution (Dixon J): resolve the inconsistency between a statute's limits and a privative clause by rereading the clause as expanding the administrator's authority. A decision is then valid where there is (i) a bona fide attempt, (ii) reasonable connection to the subject matter, and (iii) reasonable reference to the power. Courts didn't strike privative clauses down at the time because other accountability mechanisms existed (ombuds, merits review, politics), industrial-relations contexts valued speedy resolution, and pre-Kirk there was no entrenched state-level supervisory minimum.",
+        "Plaintiff S157 (2003) reframes the whole approach in two moves. First, Hickman is not a standard presumption — before reading a privative clause you apply two background principles of construction: consistency with the Constitution and preservation of court jurisdiction. Second, the \"decision\" the clause talks about is read down to mean a JE-free decision; on Bhardwaj a JE-affected act is \"no decision at all\" and so falls outside the clause's scope, leaving s 75(v) review intact. McDonald's blunt assessment: \"it's nuts, it's crazy\" — the reading eviscerates the clause — but the High Court has not gone back on it.",
+        "S157's postscript — obiter, unnecessary to the result, but a deliberate constitutional warning. (1) Per Groom's case, a law without a \"rule of conduct\" (just guidelines) is invalid as disconnected from the head of power. (2) If an administrator conclusively determines the limits of their own jurisdiction, that intrudes on judicial power. (3) Strongest: the power conclusively to determine the meaning of legislation (including the limits of administrative jurisdiction) is exclusively judicial. The message: \"don't push us too far — we have constitutional ammunition.\"",
+        "Kirk (2010) — \"funky, creative constitutional analysis\" of the same family as the implied right to political communication: an implied entrenched minimum at state level. Supreme Court supervisory jurisdiction over JE cannot be ousted. Same logic as S157, applied to the states.",
+        "The strategic shift after S157 and Kirk (exam key point): legislatures stop drafting full-frontal privative clauses. The action moves to alternative techniques that \"in practice make JR very difficult\" — secrecy clauses (Graham), no-invalidity clauses (Futuris), inflexible time bars (Bodruddaza). \"In practice\" is the W10 keyword.",
+        "Futuris (2008) — McDonald's strong critique: the HCA's reading is highly literal. s 175 is broadly framed (\"any breach\"), the Court analyses it through a Project Blue Sky lens, and the words \"rule of law\" never appear. In practice JR of tax decisions is virtually unavailable. Why wasn't the Court perturbed? Because Pt IVC TAA provides an alternative review path (Federal Court appeal on a question of law) — a functional equivalent of JR. McDonald's warning: don't over-extrapolate from Futuris. Project Blue Sky itself manufactured an implied no-invalidity clause, so targeted no-invalidity is plainly valid — the problem is Futuris-style broad/blanket clauses.",
+        "General principles for no-invalidity clauses (drawn out in seminar by Olivia and Cassidy): (1) The broader the clause and the more absent any alternative appeals process, the more restrictive the construction — and the closer it sails to S157 trouble. (2) Courts look at what the clause does in practice — Futuris was fine because Pt IVC meant there was not \"no JR at all.\" Where no functional equivalent exists, you're back in S157/Kirk territory. Note also that Futuris held the Federal Court should have refused relief on discretionary grounds in any event — the existence of an alternative avenue is itself a reason a court may decline JR remedies in its discretion.",
+        "ADJR Act practical guidance — McDonald in lecture: where the ADJR Act applies, drop the parallel s 39B analysis and just run ADJR. Core provisions: s 16 (orders of review — functional equivalents of certiorari, mandamus, injunction); s 5 (decision not authorised by the Act = basic JE concept); s 5(1)(j) (\"decision was otherwise contrary to law\" — the catch-all that captures most JE species); s 5(1)(f) (error of law on the face of the record — the one explicit non-JE ground).",
+        "Reasonableness · irrationality — exam-level distinctions.\n• Wednesbury (an ADJR ground) — narrow \"bizarre\" threshold; McDonald has rarely seen it actually carry a case.\n• Li legal unreasonableness — for discretionary decisions; under the ADJR Act it sneaks in via s 5(1)(j).\n• SZMDS irrationality — for jurisdictional-fact / state-of-satisfaction decisions; SZMDS expressly proceeds on the footing that unreasonableness is not available because the power is conditioned on satisfaction, not discretion.\nGageler J in Li suggested the distinction may not be important, but that's a minority view. Safe approach — when running unreasonableness against a jurisdictional-fact decision, acknowledge it's a harder argument.",
+        "Agency vs delegation (brief): delegation needs express statutory authority and the delegate exercises the power in their own name. Agency needs no statutory authority — the agent signs in the repository's name. The justification is administrative efficiency. Agency is unsuitable where the power is particularly significant (e.g. authorising criminalised activity), where decisions are rare, or where criminal elements are in play.",
+        "Materiality under ADJR: materiality is required (long established). Distinguish Hossain (self-sufficient criterion) from Harold-type problems (one consideration among many). LPDT (2024) holds that errors in reasoning processes themselves are very hard to dismiss as immaterial. Answering Cameron's question: a decision-maker's self-report that \"I wouldn't have relied on it anyway\" is not enough — the factor can still be material in the weighing against others.",
+        "AAT → ART transition (October 2024): McDonald personally read the explanatory memorandum for Scrutiny of Bills Committee. The intention is very clearly that the basic powers do not change. AAT case law (Shi, Frugtniet, Drake No 2) continues to apply to ART; only section numbers shift. Students are not asked to read the new legislation themselves — McDonald will distribute updated section numbers."
+      ],
+      aside: "The constitutional ammunition exists. It just doesn't fire unless Parliament pushes too far — which is why the real fight is not against frontal privative clauses but against the workaround techniques that \"in practice make JR very difficult.\""
+    }
+  }
+};

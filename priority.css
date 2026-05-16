@@ -1,0 +1,185 @@
+/* ─────────────────────────────────────────────────────────────
+   Priority badges + chips — Seminar Plan reading-list visibility
+   - required (필수)    : dark blue, strong
+   - recommended (권장) : ochre / warm gold
+   - mentioned (배경)   : neutral gray
+   - external (보충)    : muted violet (dashed)
+   Used on case cards, case panel header, map chips, glossary chips.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --prio-required-bg:    #1f3559;     /* deep blue (matches margin-blue tone) */
+  --prio-required-fg:    #f4ecd9;
+  --prio-required-edge:  #1f3559;
+
+  --prio-recommended-bg: #c79a3a;     /* warm ochre */
+  --prio-recommended-fg: #2a221b;
+  --prio-recommended-edge:#a07a23;
+
+  --prio-mentioned-bg:   #d9d2bf;     /* soft paper tone */
+  --prio-mentioned-fg:   #4d3f31;
+  --prio-mentioned-edge: #b9a884;
+
+  --prio-external-bg:    transparent;
+  --prio-external-fg:    #75614c;
+  --prio-external-edge:  #b9a884;
+}
+
+/* ─── Badge — small inline label, used on cards + panel + filter chip ─── */
+.prio-badge {
+  display: inline-flex; align-items: center;
+  padding: 2px 8px;
+  margin-left: 6px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  border: 1px solid var(--prio-mentioned-edge);
+  background: var(--prio-mentioned-bg);
+  color: var(--prio-mentioned-fg);
+  white-space: nowrap;
+  vertical-align: baseline;
+  line-height: 1.3;
+}
+.prio-badge.prio-required {
+  background: var(--prio-required-bg);
+  color: var(--prio-required-fg);
+  border-color: var(--prio-required-edge);
+}
+.prio-badge.prio-recommended {
+  background: var(--prio-recommended-bg);
+  color: var(--prio-recommended-fg);
+  border-color: var(--prio-recommended-edge);
+}
+.prio-badge.prio-mentioned {
+  background: var(--prio-mentioned-bg);
+  color: var(--prio-mentioned-fg);
+  border-color: var(--prio-mentioned-edge);
+}
+.prio-badge.prio-external {
+  background: var(--prio-external-bg);
+  color: var(--prio-external-fg);
+  border-color: var(--prio-external-edge);
+  border-style: dashed;
+}
+
+/* Larger panel badge */
+.panel-prio {
+  font-size: 11px;
+  padding: 3px 10px;
+  margin-left: 10px;
+}
+
+/* ─── DBSearch result-card priority accent — small dot on the peg ─── */
+.result-card.has-prio { position: relative; }
+.result-card.has-prio::before {
+  content: "";
+  position: absolute;
+  left: 18px; top: 12px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--prio-mentioned-edge);
+  border: 1.5px solid var(--paper);
+  z-index: 1;
+}
+.result-card.prio-required::before    { background: var(--prio-required-bg); }
+.result-card.prio-recommended::before { background: var(--prio-recommended-edge); }
+.result-card.prio-mentioned::before   { background: var(--prio-mentioned-edge); }
+.result-card.prio-external::before    { background: var(--prio-external-edge); opacity: .65; }
+
+/* ─── case-card (week page Cases tab) badges container ─── */
+.case-card-badges {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-bottom: 6px;
+}
+.case-card.has-prio { position: relative; }
+.case-card.prio-required    { border-left: 3px solid var(--prio-required-bg); }
+.case-card.prio-recommended { border-left: 3px solid var(--prio-recommended-edge); }
+.case-card.prio-mentioned   { border-left: 3px solid var(--prio-mentioned-edge); }
+.case-card.prio-external    { border-left: 3px dashed var(--prio-external-edge); }
+
+/* ─── Priority filter chips in DBSearch ─── */
+.prio-chip { position: relative; }
+.prio-chip .chip-count {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  background: var(--paper-2);
+  color: var(--ink-3);
+  border-radius: 999px;
+  line-height: 1.3;
+}
+.prio-chip.active .chip-count {
+  background: rgba(244, 236, 217, .25);
+  color: var(--paper);
+}
+/* Active state accents per priority */
+.prio-chip.prio-required.active {
+  background: var(--prio-required-bg);
+  color: var(--prio-required-fg);
+  border-color: var(--prio-required-bg);
+}
+.prio-chip.prio-recommended.active {
+  background: var(--prio-recommended-bg);
+  color: var(--prio-recommended-fg);
+  border-color: var(--prio-recommended-edge);
+}
+.prio-chip.prio-mentioned.active {
+  background: var(--prio-mentioned-edge);
+  color: var(--paper);
+  border-color: var(--prio-mentioned-edge);
+}
+.prio-chip.prio-external.active {
+  background: var(--prio-external-edge);
+  color: var(--paper);
+  border-color: var(--prio-external-edge);
+}
+/* Hint dot on inactive prio chips */
+.prio-chip:not(.active)::before {
+  content: "";
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+  background: var(--ink-3);
+  opacity: .35;
+}
+.prio-chip.prio-required:not(.active)::before    { background: var(--prio-required-bg); opacity: .85; }
+.prio-chip.prio-recommended:not(.active)::before { background: var(--prio-recommended-edge); opacity: .85; }
+.prio-chip.prio-mentioned:not(.active)::before   { background: var(--prio-mentioned-edge); opacity: .85; }
+.prio-chip.prio-external:not(.active)::before    { background: var(--prio-external-edge); opacity: .6; }
+
+/* ─── Map-case-tag (used on home + glossary chips) — priority tinting ─── */
+.map-case-tag.prio-required {
+  background: var(--prio-required-bg);
+  border-color: var(--prio-required-bg);
+  color: var(--prio-required-fg);
+}
+.map-case-tag.prio-required em { color: var(--prio-required-fg); }
+.map-case-tag.prio-required:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.map-case-tag.prio-recommended {
+  background: var(--prio-recommended-bg);
+  border-color: var(--prio-recommended-edge);
+  color: var(--prio-recommended-fg);
+}
+.map-case-tag.prio-recommended em { color: var(--prio-recommended-fg); }
+.map-case-tag.prio-mentioned {
+  background: var(--prio-mentioned-bg);
+  border-color: var(--prio-mentioned-edge);
+}
+.map-case-tag.prio-external {
+  border-style: dashed;
+  border-color: var(--prio-external-edge);
+  color: var(--prio-external-fg);
+}
+.map-case-tag.prio-external em { color: var(--prio-external-fg); }

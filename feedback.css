@@ -1,0 +1,140 @@
+/* Examiner-feedback tab styling */
+.fb-section { padding-top: 4px; }
+.fb-hero {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 22px 0 24px;
+  margin: 8px 0 28px;
+}
+.fb-hero .eyebrow {
+  font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent, var(--margin-red)); font-weight: 600; margin: 0;
+}
+.fb-quote {
+  margin: 18px 0 0;
+  padding: 14px 0 4px 22px;
+  border-left: 3px double var(--accent, var(--margin-red));
+  font-style: italic;
+  color: var(--ink-2);
+  font-size: 15px; line-height: 1.6;
+  text-wrap: pretty;
+}
+.fb-grid-2 {
+  display: grid; grid-template-columns: 1.4fr 1fr;
+  gap: 28px; margin-bottom: 28px;
+}
+@media (max-width: 900px) { .fb-grid-2 { grid-template-columns: 1fr; } }
+
+.fb-panel { margin-bottom: 32px; }
+.fb-h {
+  font-family: var(--font-serif);
+  font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-2);
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 500;
+}
+.fb-steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.fb-steps li {
+  display: grid; grid-template-columns: 44px 1fr; gap: 14px;
+  padding: 10px 0; border-bottom: 1px dotted var(--rule);
+  align-items: baseline;
+}
+.fb-num {
+  font-family: var(--font-serif);
+  font-size: 22px; font-style: italic;
+  color: var(--accent, var(--ink-3));
+  font-weight: 500; line-height: 1;
+}
+.fb-mantra-panel { background: transparent; padding: 0; }
+.fb-mantra {
+  list-style: none; padding: 0; margin: 0;
+}
+.fb-mantra li {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  line-height: 1.55;
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--rule);
+  position: relative; padding-left: 22px;
+  font-style: italic;
+  color: var(--ink);
+}
+.fb-mantra li::before {
+  content: "§"; position: absolute; left: 0; top: 10px;
+  font-style: normal; color: var(--accent, var(--margin-red)); font-weight: 600;
+}
+
+.fb-dont {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; border: 1px solid var(--rule);
+}
+.fb-dont-row {
+  display: contents;
+}
+.fb-dont .fb-bad, .fb-dont .fb-good {
+  padding: 12px 14px; font-size: 13.5px; line-height: 1.55;
+  border-bottom: 1px solid var(--rule);
+}
+.fb-dont .fb-bad {
+  color: var(--ink-2);
+  border-right: 1px solid var(--rule);
+  background: rgba(160, 46, 26, .04);
+}
+.fb-dont .fb-good { color: var(--ink); }
+.fb-dont .fb-bad:last-of-type, .fb-dont .fb-good:last-of-type { border-bottom: none; }
+.fb-x {
+  display: inline-block; width: 16px; height: 16px;
+  text-align: center; line-height: 16px;
+  font-size: 11px; font-weight: 700;
+  color: var(--margin-red); margin-right: 6px;
+}
+.fb-check {
+  display: inline-block; width: 16px;
+  color: var(--accent, var(--margin-green));
+  font-weight: 700; margin-right: 6px;
+}
+
+.fb-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 13.5px;
+}
+.fb-table th, .fb-table td {
+  padding: 10px 14px; text-align: left;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top; line-height: 1.55;
+}
+.fb-table th {
+  width: 38%;
+  font-family: var(--font-serif);
+  font-weight: 600; color: var(--ink);
+  font-size: 13.5px;
+  border-right: 1px solid var(--rule);
+}
+.fb-table td { color: var(--ink-2); }
+.fb-table-cases th { width: 28%; font-style: italic; }
+
+.fb-note {
+  margin: 12px 0 0; padding: 10px 14px;
+  font-size: 12.5px; font-style: italic; color: var(--ink-3);
+  background: rgba(180, 150, 100, .06);
+  border-left: 2px solid var(--accent, var(--ink-3));
+}
+
+.fb-lines { display: flex; flex-direction: column; gap: 0; }
+.fb-line {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px;
+  padding: 14px 0; border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.fb-line:last-child { border-bottom: none; }
+.fb-line-num {
+  font-family: var(--font-serif);
+  font-style: italic; font-size: 42px; line-height: 1;
+  color: var(--rule); font-weight: 500;
+  text-align: right;
+}
+.fb-line-3 .fb-line-num { color: var(--accent, var(--margin-red)); }
+.fb-line-t { font-family: var(--font-serif); font-weight: 600; font-size: 15.5px; margin: 0 0 4px; }
+.fb-line-b { margin: 0; color: var(--ink-2); font-size: 13.5px; line-height: 1.55; }
