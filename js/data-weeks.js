@@ -84,7 +84,7 @@ window.WEEKS_DATA = [
         {h:'McEldowney 하위 사유',t:'(i) 목적 불일치(Toohey 식 해석);\n(ii) 비례성 결여 / 과도한 범위(Vanstone);\n(iii) Wednesbury 비합리성(Kruse);\n(iv) 기본권·합법성(Evans, Coco).'}
       ]
     },
-    cases:['vanstone','evans','toohey','coco','kruse','pbs'],
+    cases:['vanstone','evans','mceldowney','toohey','coco','kruse'],
     quiz:[
       { en:{q:'A regulation defines "misbehaviour" as any imprisonable offence and triggers automatic suspension. Which McEldowney sub-ground best fits?',
             opts:['Improper purpose','Disproportionate breadth','Wednesbury unreasonableness','Burden on fundamental right'],
@@ -106,7 +106,7 @@ window.WEEKS_DATA = [
   },
   {
     id:'w2', num:2,
-    en:{ title:'Judicial review framework',
+    en:{ title:'Sources of judicial review',
          summary:'Skeleton: jurisdiction, justiciability, grounds, materiality (PBS at decision-stage), remedy. Legality not merits (Quin).',
          meta:[
            {label:'Forums',value:'ADJR · 39B(1) · 75(v) · State'},
@@ -119,7 +119,7 @@ window.WEEKS_DATA = [
            {h:'Legality / merits boundary',t:'Court reviews legality, not the wisdom of the decision (Quin).',c:['quin']},
            {h:'Remedy follows ground',t:'Certiorari, mandamus, prohibition, declaration, injunction — chosen for the breach found.',c:[]}
          ]},
-    kr:{ title:'사법심사의 골격',
+    kr:{ title:'사법심사의 법원(法源)',
          summary:'골격: 관할, 심사적격, 사유, 중요성(결정 단계 PBS), 구제수단. 본안이 아닌 합법성을 심사한다(Quin).',
          meta:[
            {label:'관할',value:'ADJR · 39B(1) · 75(v) · 주'},
@@ -169,7 +169,7 @@ window.WEEKS_DATA = [
         {h:'합법성 경계',t:'Quin(Brennan J): 법원의 의무와 관할은 법을 집행하는 것이며, 결정자의 결정을 자신의 결정으로 대체하는 것이 아니다. 결과의 지혜가 아닌 절차를 심사한다.'}
       ]
     },
-    cases:['bond','tang','m61','quin','pbs'],
+    cases:['quin','bond','pbs','ainsworth','m68'],
     quiz:[
       { en:{q:'A federal officer\'s decision under a Cth Act is challenged. Which forums are available?',
             opts:['ADJR only','s 75(v) only','ADJR + s 39B(1) + s 75(v)','State Supreme Court only'],
@@ -183,31 +183,31 @@ window.WEEKS_DATA = [
   },
   {
     id:'w3', num:3,
-    en:{ title:'Justiciability',
-         summary:'Bond decision (final, operative, determinative); Tang under enactment (two limbs); M61 outsourcing workaround; Argos third-party affected.',
+    en:{ title:'Scope of judicial review',
+         summary:'Amenability of government action to JR: Tang two-limb "under enactment"; M61 outsourced step still reviewable; NEAT privatised body not amenable; Datafin UK functional test — not adopted in Australia.',
          meta:[
-           {label:'Bond',value:'Final / operative / determinative'},
-           {label:'Tang',value:'2-limb test'},
-           {label:'M61',value:'Workaround for outsourcing'},
-           {label:'Argos',value:'3rd-party rights'}],
+           {label:'Tang',value:'2-limb "under enactment"'},
+           {label:'M61',value:'Outsourced step reviewable'},
+           {label:'NEAT',value:'Privatised body — no review'},
+           {label:'Datafin',value:'UK functional test (rejected)'}],
          points:[
-           {h:'Bond decision',t:'A "decision" under ADJR is final, operative, determinative. Preliminary findings → not decisions, but conduct may still be reviewable under s 6.',c:['bond']},
-           {h:'Tang under enactment',t:'(1) authorised/required by statute,\n(2) affects legal rights through statutory force.',c:['tang']},
-           {h:'M61 workaround',t:'Outsourced steps integrated into statutory scheme remain reviewable on common law grounds via s 39B(1) / s 75(v).',c:['m61']},
-           {h:'Third parties (Argos)',t:'Person aggrieved standard: commercial competitors with affected statutory interest can sue.',c:['argos']}
+           {h:'Tang under enactment',t:'Two limbs, both required:\n(1) the decision is authorised/required by statute,\n(2) it affects legal rights through that statutory force. Internal university rules lacked statutory force → not "under enactment".',c:['tang']},
+           {h:'M61 — outsourcing reaches review',t:'Where the Commonwealth outsources a step (e.g. offshore RSAs by contractors), the step is still an exercise of statutory power and stays within s 39B(1) / s 75(v).',c:['m61']},
+           {h:'NEAT — privatisation limit',t:'AWB, a private company exercising a veto within a statutory export scheme, was held not amenable to ADJR — private legal form can defeat review even within a public scheme.',c:['neat']},
+           {h:'Datafin (UK, not adopted)',t:'The UK "public function" functional test for amenability has not been adopted in Australia — the source/form of the power still dominates the inquiry. Fuller v Lawrence (2024) reaffirms the Tang approach.',c:['datafin','fuller']}
          ]},
-    kr:{ title:'심사적격',
-         summary:'Bond 결정(최종·실질·결정적); Tang 수권법에 따른(2단계); M61 외주 우회; Argos 제3자 영향.',
+    kr:{ title:'사법심사의 범위',
+         summary:'정부 행위가 JR 대상이 되는가: Tang 2단계 "수권법에 따른"; M61 외주 단계도 심사 가능; NEAT 민영화 주체는 대상 아님; Datafin 영국 기능적 기준 — 호주 미채택.',
          meta:[
-           {label:'Bond',value:'최종 / 실질 / 결정적'},
-           {label:'Tang',value:'2단계 테스트'},
-           {label:'M61',value:'외주 우회 경로'},
-           {label:'Argos',value:'제3자 권리'}],
+           {label:'Tang',value:'2단계 "수권법에 따른"'},
+           {label:'M61',value:'외주 단계 심사 가능'},
+           {label:'NEAT',value:'민영화 주체 — 심사 불가'},
+           {label:'Datafin',value:'영국 기능적 기준(미채택)'}],
          points:[
-           {h:'Bond 결정',t:'ADJR의 "결정" = 최종·실질·결정적. 예비적 인정 → 결정 아님이나, 행위는 s 6에서 심사 가능할 수 있다.',c:['bond']},
-           {h:'Tang 수권법에 따른',t:'(1) 법률에 의해 수권/요구되며,\n(2) 법적 효력을 통해 권리에 영향을 준다.',c:['tang']},
-           {h:'M61 우회',t:'법체계에 편입된 외주 단계는 s 39B(1) / s 75(v)을 통해 common law 사유로 여전히 심사 가능하다.',c:['m61']},
-           {h:'제3자(Argos)',t:'person aggrieved 기준: 영향을 받는 법적 이해를 가진 경쟁자도 제소할 수 있다.',c:['argos']}
+           {h:'Tang 수권법에 따른',t:'두 단계 모두 필요:\n(1) 결정이 법률에 의해 수권/요구되고,\n(2) 그 법적 효력으로 권리에 영향을 준다. 내부 대학 규정은 법적 효력이 없어 "수권법에 따른"이 아니다.',c:['tang']},
+           {h:'M61 — 외주도 심사 미침',t:'연방이 단계를 외주화해도(예: 계약자의 역외 RSA), 그 단계는 여전히 법적 권한의 행사이며 s 39B(1) / s 75(v) 안에 남는다.',c:['m61']},
+           {h:'NEAT — 민영화의 한계',t:'법정 수출체계 안에서 거부권을 행사한 사기업 AWB는 ADJR 대상이 아니라고 봤다 — 공적 체계 안이라도 사적 법형식이 심사를 차단할 수 있다.',c:['neat']},
+           {h:'Datafin (영국, 미채택)',t:'영국의 "공적 기능" 기준은 호주에서 채택되지 않았다 — 권한의 원천·형식이 여전히 판단을 지배한다. Fuller v Lawrence(2024)가 Tang 접근을 재확인.',c:['datafin','fuller']}
          ]},
     tree:{ en:[
       {id:'a',label:'ADJR challenge?',children:[
@@ -222,7 +222,7 @@ window.WEEKS_DATA = [
             ]}
           ]}
         ]},
-        {id:'a-n',label:'No (s 39B(1) / s 75(v))',leaf:true,result:'proceed',note:'Justiciability: common law not Bond/Tang; M61 may apply.'}
+        {id:'a-n',label:'No (s 39B(1) / s 75(v))',leaf:true,result:'proceed',note:'Scope under the common-law model (not Bond/Tang); M61 outsourcing path may apply.'}
       ]}
     ], kr:[
       {id:'a',label:'ADJR 다툼인가?',children:[
@@ -237,7 +237,7 @@ window.WEEKS_DATA = [
             ]}
           ]}
         ]},
-        {id:'a-n',label:'아니오 (s 39B(1) / s 75(v))',leaf:true,result:'proceed',note:'심사적격: common law(Bond/Tang 아님); M61 적용 가능.'}
+        {id:'a-n',label:'아니오 (s 39B(1) / s 75(v))',leaf:true,result:'proceed',note:'common-law 모델의 범위(Bond/Tang 아님); M61 외주 경로 적용 가능.'}
       ]}
     ]},
     detail:{
@@ -252,7 +252,7 @@ window.WEEKS_DATA = [
         {h:'M61 실무',t:'연방이 단계를 외주화한 경우(예: 계약자 RSA), 그 단계는 여전히 법적 권한의 행사이며 s 39B(1) / s 75(v) 안에 남는다.'}
       ]
     },
-    cases:['bond','tang','m61','argos'],
+    cases:['neat','tang','m61','datafin','fuller'],
     quiz:[
       { en:{q:'University excludes a PhD candidate under internal academic regulations. ADJR jurisdiction?',
             opts:['Yes — clearly under enactment','No — Tang second limb fails (no statutory force)','Yes — Bond decision satisfied','No — Bond fails'],
@@ -266,7 +266,7 @@ window.WEEKS_DATA = [
   },
   {
     id:'w4', num:4,
-    en:{ title:'Jurisdictional error & materiality',
+    en:{ title:'Remedies & consequences of legal error',
          summary:'Hossain three-stage analysis with materiality threshold. LPDT rejects reconstruction; WZARH applies for PF; MZAPC formal onus; Kirk-egregious always-JE.',
          meta:[
            {label:'Doctrine',value:'Hossain 3-stage'},
@@ -279,7 +279,7 @@ window.WEEKS_DATA = [
            {h:'Stage 3 — materiality',t:'LPDT: realistic possibility decision could differ. WZARH inferred submissions for PF. Court must NOT reconstruct.',c:['hossain','lpdt','wzarh','mzapc']},
            {h:'Always-JE exceptions',t:'Bias, final unreasonableness, Kirk-egregious PF, jurisdictional facts, delegated legislation — no materiality test.',c:['kirk-criterion']}
          ]},
-    kr:{ title:'관할권적 오류 및 중요성',
+    kr:{ title:'구제 및 법적 오류의 결과',
          summary:'Hossain 3단계 + 중요성 문턱. LPDT가 재구성을 거부, PF는 WZARH, 입증책임은 MZAPC, Kirk 중대 PF는 항상 JE.',
          meta:[
            {label:'법리',value:'Hossain 3단계'},
@@ -339,7 +339,7 @@ window.WEEKS_DATA = [
         {h:'항상-JE 목록',t:'(1) 추정/실제 편향(Ebner);\n(2) Kirk 중대 PF;\n(3) 최종 결정의 비합리성;\n(4) 관할권적 사실 오류(Enfield);\n(5) 위임입법의 무효(중요성 없음).'}
       ]
     },
-    cases:['hossain','lpdt','wzarh','mzapc','kirk-criterion','bhardwaj','pbs'],
+    cases:['kirk-jurisdiction','kirk-criterion','hossain','mzapc','lpdt','bhardwaj','m174'],
     quiz:[
       { en:{q:'A tribunal failed to consider one mandatory factor. To establish JE, the applicant must show:',
             opts:['Outcome would have been different on balance','Realistic possibility outcome could have been different','That the factor was decisive','Nothing — automatic JE'],
@@ -432,7 +432,7 @@ window.WEEKS_DATA = [
         {h:'실질적 부정의',t:'Lam(Gleeson CJ): 신청자가 실제로 실질적 불이익을 겪었는지가 핵심이다 — 정당한 기대는 더 이상 판단의 핵심 기준이 아니다.'}
       ]
     },
-    cases:['annetts','lam','wzarh','lpdt'],
+    cases:['kioa','saeed','s10','veal','wzarh','nathanson','annetts','lam'],
     quiz:[
       { en:{q:'A tribunal does not put adverse country information to the applicant. The most direct consequence is:',
             opts:['No issue — country info is public','Possible PF breach — opportunity to respond denied','Bias','Improper purpose'],
@@ -446,7 +446,7 @@ window.WEEKS_DATA = [
   },
   {
     id:'w6', num:6,
-    en:{ title:'Bias rule + reasoning norms',
+    en:{ title:'Bias rule & reasons requirements',
          summary:'Ebner two-step apprehended bias; Tickner active intellectual process; Peko-Wallsend mandatory considerations; Schlieske improper purpose; M1/2021 representations.',
          meta:[
            {label:'Bias test',value:'Ebner double-might'},
@@ -459,7 +459,7 @@ window.WEEKS_DATA = [
            {h:'Mandatory considerations',t:'Peko-Wallsend (Mason J\'s 5 principles): mandatory considerations identified by statutory construction.',c:['peko']},
            {h:'Improper purpose',t:'Schlieske: dominant operative purpose; disguised extradition under deportation power held invalid.',c:['schlieske']}
          ]},
-    kr:{ title:'편향 규칙 + 추론 규범',
+    kr:{ title:'편향 규칙 · 이유제시 의무',
          summary:'Ebner 2단계 추정 편향; Tickner 적극적 지적 과정; Peko-Wallsend 의무 고려사항; Schlieske 부정한 목적; M1/2021 의견 진술.',
          meta:[
            {label:'편향 테스트',value:'Ebner 이중 might'},
@@ -513,7 +513,7 @@ window.WEEKS_DATA = [
         {h:'부정한 목적',t:'Schlieske는 지배적 작용 목적이 수권되지 않은 것이어야 한다고 요구했다. 복합 목적 사건은 어느 목적이 실제로 결정을 주도했는가에 달려 있다.'}
       ]
     },
-    cases:['ebner','tickner','peko','schlieske','m1-2021'],
+    cases:['ebner','jia','isbester','cny17','hotholdings'],
     quiz:[
       { en:{q:'A judge holds shares in a litigant company. The Ebner test asks:',
             opts:['Whether the judge is actually biased','Whether a fair-minded lay observer might reasonably apprehend the judge might not be impartial','Whether the share value is material','Whether the parties consent'],
@@ -527,7 +527,7 @@ window.WEEKS_DATA = [
   },
   {
     id:'w7', num:7,
-    en:{ title:'Policy norms + cross-cutting',
+    en:{ title:'Reasoning process norms — considerations · purpose · policy',
          summary:'Green v Daniels inflexible application; M64 lawful priority policy with exception clause; cross-cutting reading of multiple grounds.',
          meta:[
            {label:'Inflexible',value:'Unlawful (Green)'},
@@ -539,7 +539,7 @@ window.WEEKS_DATA = [
            {h:'Lawful priority',t:'M64: tiered priorities lawful where exception clause preserves evaluative discretion.',c:['m64']},
            {h:'Cross-cutting',t:'Many problems engage multiple grounds (PF + reasoning + policy). Plead in the alternative; identify common materiality.',c:[]}
          ]},
-    kr:{ title:'정책 규범 + 교차 쟁점',
+    kr:{ title:'추론과정 규범 — 고려사항 · 목적 · 정책',
          summary:'Green v Daniels 경직된 적용; M64 예외 조항 있는 적법한 우선순위 정책; 다중 사유의 교차 분석.',
          meta:[
            {label:'경직성',value:'위법(Green)'},
@@ -592,7 +592,7 @@ window.WEEKS_DATA = [
         {h:'교차 사유',t:'하나의 문제에서 PF + 추론 + 정책이 모두 가능할 수 있다. 항상 예비적으로 주장하고, 최종 결정의 비합리성이 여러 결함을 흡수할 수 있다.'}
       ]
     },
-    cases:['green','m64','tickner','peko'],
+    cases:['peko','tickner','m1-2021','schlieske','green','m64'],
     quiz:[
       { en:{q:'A policy ranks IMA-proposed visas lowest, but PAM 3 allows departure in exceptional cases. Lawful?',
             opts:['No — automatic ranking unlawful','Yes — exception clause preserves evaluative discretion','No — Green v Daniels applies','Maybe — depends on outcome'],
@@ -659,7 +659,7 @@ window.WEEKS_DATA = [
         {h:'관할권적 사실',t:'Enfield: 법률이 사실을 권한의 전제 조건으로 한 경우, 법원이 증거로 판단한다. 결정자의 견해에 특별한 비중이 주어지지 않는다.'}
       ]
     },
-    cases:['li','szmds','enfield','dua16','stretton'],
+    cases:['szmds','li','stretton','dua16','enfield','m70'],
     quiz:[
       { en:{q:'A tribunal refused an adjournment despite an obviously pending evidence review. Best ground:',
             opts:['Apprehended bias','Improper purpose','Legal unreasonableness (Li)','Illogicality'],
@@ -742,7 +742,7 @@ window.WEEKS_DATA = [
         {h:'Kirk 헌법적 보호',t:'하급 법원·tribunal의 JE에 대한 주 대법원의 감독 관할은 Ch III에 의해 보호되는 정의적 특성이다. 주 의회가 이를 제거할 수 없다.'}
       ]
     },
-    cases:['acf','onus','s157','kirk-jurisdiction'],
+    cases:['acf','onus','rtl','argos','batemans','northcoast','s157'],
     quiz:[
       { en:{q:'A State Act says a tribunal\'s decision "is final and conclusive". Can the State Supreme Court still review for JE?',
             opts:['No — clear ouster','Yes — Kirk entrenches supervisory jurisdiction','Only if Cth law applies','Only with consent'],
@@ -905,7 +905,7 @@ window.WEEKS_DATA = [
          t:'(1) 다투어진 조항을 식별하고 성격을 정한다(배제조항 / no-invalidity / 비밀 / 기간 제한 / 그 외). (2) 각 유형별로 위의 대응 분석을 적용한다. (3) 분석 틀을 실질-정도(Graham [48])로 짠다 — 법적 작동과 실질적 영향 함께. (4) Always-JE 바닥선을 확인 — 의도적 행정부정·사기·부정직·부적절한 목적은 여전히 심사 가능. (5) 무효가 인정되면 전면 무효화보다 분리·축소해석(s 15A AIA)을 선호.'}
       ]
     },
-    cases:['graham','futuris','s157','kirk-jurisdiction','bodruddaza'],
+    cases:['graham','futuris','bodruddaza','hickman','sankey','gypsy_jokers'],
     quiz:[
       { en:{q:'A statutory provision prevents the Minister from being required to disclose certain confidential information to a court reviewing a visa cancellation. The provision does not say "no review" — it simply controls the evidence the court can see. Is the provision constitutionally valid?',
             opts:['Yes — only privative clauses can offend s 75(v)','Yes — secrecy is always permissible','It depends — apply Graham\'s substance-and-degree test focusing on practical impact','No — any restriction on information automatically fails'],
