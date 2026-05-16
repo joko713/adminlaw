@@ -107,66 +107,74 @@ window.WEEKS_DATA = [
   {
     id:'w2', num:2,
     en:{ title:'Sources of judicial review',
-         summary:'Skeleton: jurisdiction, justiciability, grounds, materiality (PBS at decision-stage), remedy. Legality not merits (Quin).',
+         summary:'Navigating the multiple provisions for JR. State Supreme Court supervisory jurisdiction; Commonwealth s 75(v) constitutional writs, s 39B Judiciary Act, and the ADJR Act. JR polices legality, not merits (Quin). Bond fixes the ADJR meaning of "decision" (final, operative, substantive) and "conduct" under s 6. Kirk entrenches state-level supervisory review for jurisdictional error.',
          meta:[
-           {label:'Forums',value:'ADJR · 39B(1) · 75(v) · State'},
-           {label:'Boundary',value:'Legality not merits'},
-           {label:'Anchor',value:'Quin (Brennan J)'},
-           {label:'Output',value:'Quash / direct / declare'}],
+           {label:'State',value:'Supreme Court supervisory'},
+           {label:'Cth',value:'s 75(v) · s 39B · ADJR'},
+           {label:'Boundary',value:'Legality not merits (Quin)'},
+           {label:'ADJR',value:'"decision"/"conduct" (Bond)'}],
          points:[
-           {h:'Jurisdiction first',t:'Pick the forum: ADJR (Cth admin under enactment), s 39B(1) (Cth officer), s 75(v) (constitutional writs), or State Supreme Court.',c:['bond','tang']},
-           {h:'Justiciability',t:'Bond decision; Tang under enactment; M61 workaround for outsourced steps.',c:['bond','tang','m61']},
-           {h:'Legality / merits boundary',t:'Court reviews legality, not the wisdom of the decision (Quin).',c:['quin']},
-           {h:'Remedy follows ground',t:'Certiorari, mandamus, prohibition, declaration, injunction — chosen for the breach found.',c:[]}
+           {h:'Legality, not merits (Quin)',t:'The court enforces the limits of the power; it does not remake the decision or judge its wisdom (Brennan J). This is the organising idea behind every provision of review.',c:['quin']},
+           {h:'The multiple Cth provisions',t:'Three federal sources:\n(1) s 75(v) Constitution — mandamus / prohibition / injunction against an officer of the Commonwealth (cannot be ousted);\n(2) s 39B Judiciary Act — ports s 75(v) into the Federal Court;\n(3) the ADJR Act — statutory grounds with de-centred remedies, but limited to a "decision of an administrative character made under an enactment".',c:['m68']},
+           {h:'Bond — "decision" vs "conduct"',t:'Mason CJ: a reviewable "decision" under the ADJR Act is final, operative and determinative and substantive; preliminary findings are usually not "decisions" but may be "conduct" reviewable under s 6.',c:['bond']},
+           {h:'State courts + entrenchment (Kirk)',t:'State Supreme Courts have a supervisory jurisdiction for jurisdictional error that a privative clause cannot remove (Kirk) — the state analogue of the s 75(v) entrenched minimum. The constitutional remedies have become central since the 1990s.',c:[]},
+           {h:'Remedial breadth (Ainsworth; PBS)',t:'Review can reach even an act with no direct legal effect — a declaration is available where the writs are not (Ainsworth). The jurisdictional / non-jurisdictional error distinction (and Project Blue Sky on whether breach invalidates) runs across all the provisions.',c:['ainsworth','pbs']}
          ]},
     kr:{ title:'사법심사의 법원(法源)',
-         summary:'골격: 관할, 심사적격, 사유, 중요성(결정 단계 PBS), 구제수단. 본안이 아닌 합법성을 심사한다(Quin).',
+         summary:'사법심사의 다중 법원 항해. 주 대법원 감독관할; 연방의 s 75(v) 헌법적 영장, s 39B Judiciary Act, ADJR Act. JR은 본안이 아니라 합법성을 심사한다(Quin). Bond가 ADJR상 "결정"(최종·실질·실체)과 s 6의 "행위" 의미를 확정. Kirk가 주 차원의 관할권적 오류 감독심사를 헌법적으로 보호.',
          meta:[
-           {label:'관할',value:'ADJR · 39B(1) · 75(v) · 주'},
-           {label:'경계',value:'본안 아닌 합법성'},
-           {label:'기준점',value:'Quin (Brennan J)'},
-           {label:'결과',value:'취소 / 명령 / 선언'}],
+           {label:'주',value:'대법원 감독관할'},
+           {label:'연방',value:'s 75(v) · s 39B · ADJR'},
+           {label:'경계',value:'본안 아닌 합법성(Quin)'},
+           {label:'ADJR',value:'"결정"/"행위"(Bond)'}],
          points:[
-           {h:'관할 먼저',t:'관할 선택: ADJR(연방 행정·수권법에 따른 결정), s 39B(1)(연방 공무원), s 75(v)(헌법적 영장), 주 대법원.',c:['bond','tang']},
-           {h:'심사적격',t:'Bond — 결정; Tang — 수권법에 따른; M61 — 외주 단계의 우회 경로.',c:['bond','tang','m61']},
-           {h:'합법성·본안 경계',t:'법원은 결정의 지혜가 아닌 합법성을 심사한다(Quin).',c:['quin']},
-           {h:'사유에 따른 구제',t:'certiorari, mandamus, prohibition, declaration, injunction — 발견된 위반에 따라 선택한다.',c:[]}
+           {h:'본안 아닌 합법성 (Quin)',t:'법원은 권한의 한계를 집행할 뿐, 결정을 다시 내리거나 그 지혜를 판단하지 않는다(Brennan J). 이것이 모든 심사 법원(法源)을 관통하는 조직 원리다.',c:['quin']},
+           {h:'연방의 다중 법원',t:'연방 세 가지 원천:\n(1) 헌법 s 75(v) — 연방 공무원에 대한 mandamus / prohibition / injunction(배제 불가);\n(2) s 39B Judiciary Act — s 75(v)을 연방법원으로 끌어옴;\n(3) ADJR Act — 사유 기반·구제 탈중심화이나 "수권법에 따른 행정적 성격의 결정"에 한정.',c:['m68']},
+           {h:'Bond — "결정" vs "행위"',t:'Mason CJ: ADJR상 심사 대상 "결정"은 최종·실질·결정적이며 실체적이다; 예비적 인정은 보통 "결정"이 아니지만 s 6의 "행위"로 심사될 수 있다.',c:['bond']},
+           {h:'주 법원 + 헌법적 보호 (Kirk)',t:'주 대법원은 배제조항이 제거할 수 없는 관할권적 오류 감독관할을 가진다(Kirk) — s 75(v) 최소선의 주(州) 등가물. 헌법적 영장은 1990년대 이후 중심이 되었다.',c:[]},
+           {h:'구제의 넓이 (Ainsworth; PBS)',t:'심사는 직접적 법적 효력이 없는 행위에도 미칠 수 있다 — 영장이 안 되는 자리에서 declaration이 가능(Ainsworth). 관할권적/비관할권적 오류 구분(과 위반이 무효화하는지에 관한 Project Blue Sky)은 모든 법원을 관통한다.',c:['ainsworth','pbs']}
          ]},
     tree:{ en:[
-      {id:'j',label:'Which forum?',children:[
-        {id:'j-adjr',label:'Cth admin under enactment → ADJR',children:[
-          {id:'b',label:'Bond decision? Tang under enactment?',children:[
-            {id:'b-y',label:'Both yes',leaf:true,result:'proceed',note:'Standard ADJR review.'},
-            {id:'b-n',label:'No',leaf:true,result:'switch',note:'Try s 39B(1) or M61 workaround.'}
+      {id:'j',label:'Whose decision?',children:[
+        {id:'j-state',label:'State / Territory decision',leaf:true,result:'proceed',note:'State Supreme Court supervisory jurisdiction — entrenched for JE (Kirk).'},
+        {id:'j-cth',label:'Commonwealth decision',children:[
+          {id:'j-adjr',label:'"decision of an administrative character made under an enactment"? (Bond)',children:[
+            {id:'j-adjr-y',label:'Yes',leaf:true,result:'proceed',note:'ADJR Act available (ground-based, de-centred remedies).'},
+            {id:'j-adjr-n',label:'No / preliminary',children:[
+              {id:'j-conduct',label:'"Conduct" under s 6?',children:[
+                {id:'j-c-y',label:'Yes',leaf:true,result:'proceed',note:'ADJR s 6 review of conduct.'},
+                {id:'j-c-n',label:'No',leaf:true,result:'switch',note:'Use s 39B Judiciary Act / s 75(v) constitutional writs.'}
+              ]}
+            ]}
           ]}
-        ]},
-        {id:'j-39b',label:'Cth officer → s 39B(1)',leaf:true,result:'proceed',note:'Common law grounds + remedies.'},
-        {id:'j-75v',label:'Constitutional → s 75(v)',leaf:true,result:'proceed',note:'Constitutional writs; cannot be ousted (S157).'},
-        {id:'j-state',label:'State decision → State Supreme Court',leaf:true,result:'proceed',note:'Kirk preserves supervisory jurisdiction.'}
+        ]}
       ]}
     ], kr:[
-      {id:'j',label:'어느 관할인가?',children:[
-        {id:'j-adjr',label:'연방 행정·수권법에 따른 결정 → ADJR',children:[
-          {id:'b',label:'Bond 결정? Tang 수권법에 따른?',children:[
-            {id:'b-y',label:'둘 다 예',leaf:true,result:'proceed',note:'표준 ADJR 심사.'},
-            {id:'b-n',label:'아니오',leaf:true,result:'switch',note:'s 39B(1) 또는 M61 우회 경로 시도.'}
+      {id:'j',label:'누구의 결정인가?',children:[
+        {id:'j-state',label:'주/준주 결정',leaf:true,result:'proceed',note:'주 대법원 감독관할 — 관할권적 오류에 대해 헌법적으로 보호(Kirk).'},
+        {id:'j-cth',label:'연방 결정',children:[
+          {id:'j-adjr',label:'"수권법에 따른 행정적 성격의 결정"인가? (Bond)',children:[
+            {id:'j-adjr-y',label:'예',leaf:true,result:'proceed',note:'ADJR Act 가능(사유 기반·구제 탈중심화).'},
+            {id:'j-adjr-n',label:'아니오 / 예비적',children:[
+              {id:'j-conduct',label:'s 6의 "행위"인가?',children:[
+                {id:'j-c-y',label:'예',leaf:true,result:'proceed',note:'ADJR s 6 행위 심사.'},
+                {id:'j-c-n',label:'아니오',leaf:true,result:'switch',note:'s 39B Judiciary Act / s 75(v) 헌법적 영장 사용.'}
+              ]}
+            ]}
           ]}
-        ]},
-        {id:'j-39b',label:'연방 공무원 → s 39B(1)',leaf:true,result:'proceed',note:'common law 사유 + 구제수단.'},
-        {id:'j-75v',label:'헌법 → s 75(v)',leaf:true,result:'proceed',note:'헌법적 영장; 배제 불가(S157).'},
-        {id:'j-state',label:'주 결정 → 주 대법원',leaf:true,result:'proceed',note:'Kirk가 감독 관할을 보호한다.'}
+        ]}
       ]}
     ]},
     detail:{
       en:[
-        {h:'Forum selection',t:'ADJR is the most common federal route but limited by Bond + Tang gateways. Where statute uses outsourcing (M61) or a constitutional writ is needed (S157, Kirk), choose s 75(v) or s 39B(1).'},
-        {h:'Step ladder',t:'Jurisdiction → justiciability → grounds → materiality (Hossain stage 3) → remedy. Each step is a hurdle the applicant must clear.'},
-        {h:'Legality boundary',t:'Quin (Brennan J): "The duty and jurisdiction of the court is to enforce the law, not to substitute its decision for that of the administrator." Courts test process, not outcome wisdom.'}
+        {h:'The provisions map',t:'State: Supreme Court supervisory jurisdiction (common-law writs / equitable relief), entrenched for jurisdictional error by Kirk. Commonwealth: s 75(v) Constitution (against officers of the Cth, un-oustable), s 39B Judiciary Act (s 75(v) in the Federal Court), and the ADJR Act. s 75(iii) is a separate jurisdiction (the Commonwealth as a party), not the supervisory writ jurisdiction.'},
+        {h:'Bond categorisation',t:'ABT v Bond: only a "decision" — final, operative, determinative and substantive — is reviewable under ADJR s 5; preparatory steps go to s 6 "conduct". This narrowing is one reason applicants often pivot to s 39B / s 75(v).'},
+        {h:'Legality boundary (Quin)',t:'Brennan J: the court\'s duty is to enforce the law, not to substitute its own decision for the administrator\'s. Review tests the legal limits and process, not the wisdom of the outcome — the through-line for the whole course.'}
       ],
       kr:[
-        {h:'관할 선택',t:'ADJR이 가장 흔한 연방 경로이지만 Bond·Tang 관문에 제약된다. 외주가 사용된 경우(M61)나 헌법적 영장이 필요한 경우(S157, Kirk)는 s 75(v) 또는 s 39B(1)을 선택한다.'},
-        {h:'단계 사다리',t:'관할 → 심사적격 → 사유 → 중요성(Hossain 3단계) → 구제. 각 단계는 원고가 넘어야 할 관문이다.'},
-        {h:'합법성 경계',t:'Quin(Brennan J): 법원의 의무와 관할은 법을 집행하는 것이며, 결정자의 결정을 자신의 결정으로 대체하는 것이 아니다. 결과의 지혜가 아닌 절차를 심사한다.'}
+        {h:'법원(法源) 지도',t:'주: 대법원 감독관할(보통법 영장/형평법 구제), Kirk가 관할권적 오류에 대해 헌법적으로 보호. 연방: 헌법 s 75(v)(연방 공무원 대상, 배제 불가), s 39B Judiciary Act(연방법원의 s 75(v)), ADJR Act. s 75(iii)은 별개 관할(연방이 당사자)이며 감독 영장 관할이 아니다.'},
+        {h:'Bond 범주화',t:'ABT v Bond: ADJR s 5에서 심사되는 것은 "결정"(최종·실질·결정적·실체적)뿐이고, 준비 단계는 s 6 "행위"로 간다. 이 협소화 때문에 원고는 종종 s 39B / s 75(v)로 옮겨간다.'},
+        {h:'합법성 경계 (Quin)',t:'Brennan J: 법원의 의무는 법을 집행하는 것이지 결정자의 결정을 자신의 것으로 대체하는 것이 아니다. 심사는 법적 한계와 절차를 보지 결과의 지혜를 보지 않는다 — 과목 전체의 관통선.'}
       ]
     },
     cases:['quin','bond','pbs','ainsworth','m68'],
@@ -267,76 +275,74 @@ window.WEEKS_DATA = [
   {
     id:'w4', num:4,
     en:{ title:'Remedies & consequences of legal error',
-         summary:'Hossain three-stage analysis with materiality threshold. LPDT rejects reconstruction; WZARH applies for PF; MZAPC formal onus; Kirk-egregious always-JE.',
+         summary:'The JR remedies — certiorari, prohibition, mandamus, declaration, injunction — and what each can and cannot do. The jurisdictional / non-jurisdictional error distinction governs the constitutional writs (JE only), now complicated by the presumption of materiality (Hossain · MZAPC onus · LPDT no reconstruction). Consequences of invalidity: a JE-affected decision is in law no decision and may be re-made (Bhardwaj).',
          meta:[
-           {label:'Doctrine',value:'Hossain 3-stage'},
-           {label:'Materiality',value:'Realistic possibility'},
-           {label:'Standard',value:'No reconstruction'},
-           {label:'Onus',value:'Applicant (MZAPC)'}],
+           {label:'Writs',value:'Cert / prohib / mandamus'},
+           {label:'Constitutional writs',value:'JE only'},
+           {label:'Materiality',value:'Hossain presumption'},
+           {label:'Consequence',value:'Bhardwaj nullity'}],
          points:[
-           {h:'Stage 1 — condition',t:'Identify any condition on the power: PF, mandatory consideration, time limit, jurisdictional fact.',c:[]},
-           {h:'Stage 2 — PBS validity',t:'Was Parliament\'s intent that breach invalidate? Most decisional grounds presumed validity-conditioning.',c:['pbs']},
-           {h:'Stage 3 — materiality',t:'LPDT: realistic possibility decision could differ. WZARH inferred submissions for PF. Court must NOT reconstruct.',c:['hossain','lpdt','wzarh','mzapc']},
-           {h:'Always-JE exceptions',t:'Bias, final unreasonableness, Kirk-egregious PF, jurisdictional facts, delegated legislation — no materiality test.',c:['kirk-criterion']}
+           {h:'The remedies and their limits',t:'Certiorari quashes; prohibition restrains; mandamus compels a lawful exercise — not a particular outcome (M174). Declaration / injunction are flexible (available even where a writ is not, e.g. Project Blue Sky). Certiorari is not available for every error of law — only jurisdictional error, or non-jurisdictional error on the face of the record.',c:['m174','pbs']},
+           {h:'Jurisdictional vs non-jurisdictional error (Kirk)',t:'The constitutional writs (s 75(v)) issue only for jurisdictional error. Kirk affirms the centrality and breadth of jurisdictional error and treats the JE / non-JE line as a constitutional matter, not one Parliament can re-draw at will.',c:['kirk-jurisdiction','kirk-criterion']},
+           {h:'Presumption of materiality (Hossain · MZAPC · LPDT)',t:'A breach is jurisdictional only if material — a realistic possibility the outcome could have been different. MZAPC: the onus is on the applicant. LPDT: the court must not reconstruct the decision; the inferential approach (WZARH) applies and the onus is light where the possibility is self-evident.',c:['hossain','mzapc','lpdt']},
+           {h:'Consequences of legal error (Bhardwaj)',t:'A decision affected by jurisdictional error is, in law, no decision at all. So the decision-maker may re-exercise the power and make it again, and the invalid decision cannot, as a valid decision, ground rights or an appeal.',c:['bhardwaj']}
          ]},
     kr:{ title:'구제 및 법적 오류의 결과',
-         summary:'Hossain 3단계 + 중요성 문턱. LPDT가 재구성을 거부, PF는 WZARH, 입증책임은 MZAPC, Kirk 중대 PF는 항상 JE.',
+         summary:'사법심사 구제수단 — certiorari·prohibition·mandamus·declaration·injunction — 과 각자의 한계. 관할권적/비관할권적 오류 구분이 헌법적 영장을 지배(관할권적 오류만)하며, 이제 중요성 추정으로 복잡해짐(Hossain·MZAPC 입증책임·LPDT 재구성 금지). 무효의 결과: 관할권적 오류 결정은 법적으로 결정이 아니며 재결정 가능(Bhardwaj).',
          meta:[
-           {label:'법리',value:'Hossain 3단계'},
-           {label:'중요성',value:'현실적 가능성'},
-           {label:'기준',value:'재구성 금지'},
-           {label:'입증책임',value:'원고(MZAPC)'}],
+           {label:'영장',value:'cert / prohib / mandamus'},
+           {label:'헌법적 영장',value:'관할권적 오류만'},
+           {label:'중요성',value:'Hossain 추정'},
+           {label:'결과',value:'Bhardwaj 무효'}],
          points:[
-           {h:'1단계 — 조건',t:'권한의 조건 식별: PF, 의무 고려사항, 기간, 관할권적 사실 등.',c:[]},
-           {h:'2단계 — PBS 유효성',t:'위반이 무효화한다는 의회 의도가 있었는가. 대부분의 결정 사유는 유효성 조건으로 추정된다.',c:['pbs']},
-           {h:'3단계 — 중요성',t:'LPDT: 결과가 달라질 현실적 가능성. PF는 WZARH가 추가 주장을 추론. 법원은 의사결정을 재구성해서는 안 된다.',c:['hossain','lpdt','wzarh','mzapc']},
-           {h:'항상-JE 예외',t:'편향, 최종 비합리성, Kirk 중대 PF, 관할권적 사실, 위임입법 — 중요성 테스트 없음.',c:['kirk-criterion']}
+           {h:'구제수단과 그 한계',t:'certiorari는 취소, prohibition은 금지, mandamus는 적법한 행사를 강제 — 특정 결과를 강제하지 않는다(M174). declaration/injunction은 유연해서 영장이 안 되는 자리에도 가능(예: Project Blue Sky). certiorari는 모든 법률 오류에 되는 게 아니라 관할권적 오류, 또는 기록 표면상 비관할권적 오류에만 된다.',c:['m174','pbs']},
+           {h:'관할권적 vs 비관할권적 오류 (Kirk)',t:'헌법적 영장(s 75(v))은 관할권적 오류에만 발해진다. Kirk는 관할권적 오류의 중심성과 폭을 확인하고, 관할권적/비관할권적 경계를 의회가 임의로 다시 그을 수 없는 헌법 문제로 다룬다.',c:['kirk-jurisdiction','kirk-criterion']},
+           {h:'중요성 추정 (Hossain · MZAPC · LPDT)',t:'위반은 중요할 때만 관할권적이다 — 결과가 달라질 현실적 가능성. MZAPC: 입증책임은 원고에게. LPDT: 법원은 결정을 재구성해선 안 되고, 추론적 접근(WZARH)이 적용되며 가능성이 자명한 경우 입증책임은 가볍다.',c:['hossain','mzapc','lpdt']},
+           {h:'법적 오류의 결과 (Bhardwaj)',t:'관할권적 오류 결정은 법적으로 처음부터 결정이 아니다. 따라서 결정자는 권한을 다시 행사해 재결정할 수 있고, 그 무효 결정은 유효한 결정으로서 권리나 항소의 근거가 될 수 없다.',c:['bhardwaj']}
          ]},
     tree:{ en:[
-      {id:'s1',label:'Stage 1: identify condition',children:[
-        {id:'s2',label:'Stage 2: PBS validity-conditioning?',children:[
-          {id:'s2-n',label:'No',leaf:true,result:'no-je',note:'Directory only.'},
-          {id:'s2-y',label:'Yes',children:[
-            {id:'cat',label:'Always-JE category?',children:[
-              {id:'cat-y',label:'Yes (bias / Kirk PF / jurisdictional fact / final unreasonableness)',leaf:true,result:'je',note:'Skip materiality.'},
-              {id:'cat-n',label:'No',children:[
-                {id:'mat',label:'Stage 3: realistic possibility of different outcome?',children:[
-                  {id:'mat-y',label:'Yes',leaf:true,result:'je',note:'Material → JE.'},
-                  {id:'mat-n',label:'No',leaf:true,result:'no-je',note:'Not material; no JE.'}
-                ]}
-              ]}
+      {id:'r',label:'What remedy / question?',children:[
+        {id:'r-cert',label:'Certiorari (quash)',children:[
+          {id:'cert-je',label:'Jurisdictional error?',children:[
+            {id:'cert-je-y',label:'Yes',leaf:true,result:'proceed',note:'Certiorari available; constitutional writs also (s 75(v)).'},
+            {id:'cert-je-n',label:'No — error on the face of the record?',children:[
+              {id:'cert-f-y',label:'Yes',leaf:true,result:'proceed',note:'Certiorari for non-JE error on the face (not the constitutional writs).'},
+              {id:'cert-f-n',label:'No',leaf:true,result:'no-je',note:'No certiorari.'}
             ]}
           ]}
-        ]}
+        ]},
+        {id:'r-mand',label:'Mandamus (compel)',leaf:true,result:'proceed',note:'Compels a lawful exercise of a duty/discretion — not a chosen outcome (M174).'},
+        {id:'r-decl',label:'Declaration / injunction',leaf:true,result:'proceed',note:'Flexible; available even with no legal effect (Ainsworth) or where a writ is not (PBS).'},
+        {id:'r-cons',label:'Consequence of an invalid decision',leaf:true,result:'proceed',note:'JE → no decision at all (Bhardwaj): may be re-made; no valid decision to appeal.'}
       ]}
     ], kr:[
-      {id:'s1',label:'1단계: 조건 식별',children:[
-        {id:'s2',label:'2단계: PBS 유효성 조건인가?',children:[
-          {id:'s2-n',label:'아니오',leaf:true,result:'no-je',note:'훈시 규정에 그친다.'},
-          {id:'s2-y',label:'예',children:[
-            {id:'cat',label:'항상-JE 범주?',children:[
-              {id:'cat-y',label:'예(편향 / Kirk PF / 관할권적 사실 / 최종 비합리성)',leaf:true,result:'je',note:'중요성 생략.'},
-              {id:'cat-n',label:'아니오',children:[
-                {id:'mat',label:'3단계: 결과가 달라질 현실적 가능성?',children:[
-                  {id:'mat-y',label:'예',leaf:true,result:'je',note:'중요 → JE.'},
-                  {id:'mat-n',label:'아니오',leaf:true,result:'no-je',note:'중요하지 않음 — JE 아님.'}
-                ]}
-              ]}
+      {id:'r',label:'어떤 구제 / 질문인가?',children:[
+        {id:'r-cert',label:'Certiorari (취소)',children:[
+          {id:'cert-je',label:'관할권적 오류인가?',children:[
+            {id:'cert-je-y',label:'예',leaf:true,result:'proceed',note:'Certiorari 가능; 헌법적 영장도(s 75(v)).'},
+            {id:'cert-je-n',label:'아니오 — 기록 표면상 오류?',children:[
+              {id:'cert-f-y',label:'예',leaf:true,result:'proceed',note:'표면상 비관할권적 오류엔 certiorari(헌법적 영장은 아님).'},
+              {id:'cert-f-n',label:'아니오',leaf:true,result:'no-je',note:'Certiorari 불가.'}
             ]}
           ]}
-        ]}
+        ]},
+        {id:'r-mand',label:'Mandamus (강제)',leaf:true,result:'proceed',note:'의무·재량의 적법한 행사를 강제 — 특정 결과는 아님(M174).'},
+        {id:'r-decl',label:'Declaration / injunction',leaf:true,result:'proceed',note:'유연; 법적 효력 없어도(Ainsworth), 영장 안 되는 자리에도(PBS).'},
+        {id:'r-cons',label:'무효 결정의 결과',leaf:true,result:'proceed',note:'관할권적 오류 → 처음부터 결정 아님(Bhardwaj): 재결정 가능; 항소할 유효 결정 없음.'}
       ]}
     ]},
     detail:{
       en:[
-        {h:'Hossain framework',t:'Materiality is presumed an implied condition. Without showing realistic possibility, breach does not amount to JE — but courts must not reconstruct hypothetical decisions.'},
-        {h:'LPDT clarification',t:'LPDT v Minister [2024] HCA 12: rejects "(a) had it been disregarded, same conclusion would follow" reasoning; reaffirms WZARH inferential approach; applicant\'s onus is light where realistic possibility self-evident.'},
-        {h:'Always-JE list',t:'(1) Apprehended/actual bias (Ebner);\n(2) Kirk-egregious PF;\n(3) Final-decision unreasonableness;\n(4) Jurisdictional fact errors (Enfield);\n(5) Delegated legislation invalidity (no materiality).'}
+        {h:'Remedies overview',t:'Prerogative/constitutional writs (certiorari, prohibition, mandamus) plus equitable declaration and injunction. Declarations are flexible but have disadvantages — non-coercive and they do not quash. The ADJR Act deliberately de-centred remedies, making a "ground of review" the key issue instead.'},
+        {h:'Limits of the writs',t:'Certiorari: only for jurisdictional error, or non-jurisdictional error of law on the face of the record. Mandamus: compels the performance of a duty / a lawful exercise of discretion, but cannot dictate the particular decision (M174).'},
+        {h:'Materiality presumption',t:'Hossain made materiality an implied condition: a breach is jurisdictional only if there was a realistic possibility the outcome could have differed. MZAPC places the onus on the applicant; LPDT [2024] HCA 12 forbids the court reconstructing the decision and reaffirms the WZARH inferential approach.'},
+        {h:'Consequences — Bhardwaj',t:'A JE-affected decision is a nullity — "no decision at all". The repository may therefore re-exercise the power; and because there is no valid decision, it cannot found an appeal or otherwise have the legal effects of a valid decision.'}
       ],
       kr:[
-        {h:'Hossain 분석틀',t:'중요성은 묵시적 조건으로 추정된다. 현실적 가능성을 입증하지 못하면 위반은 JE에 이르지 못한다 — 그러나 법원은 가상의 의사결정을 재구성해서는 안 된다.'},
-        {h:'LPDT 확인',t:'LPDT v Minister [2024] HCA 12: "(a) 무시했더라도 같은 결론" 추론을 거부하고, WZARH의 추론 접근을 재확인했다. 현실적 가능성이 자명한 경우 원고의 입증책임은 가볍다.'},
-        {h:'항상-JE 목록',t:'(1) 추정/실제 편향(Ebner);\n(2) Kirk 중대 PF;\n(3) 최종 결정의 비합리성;\n(4) 관할권적 사실 오류(Enfield);\n(5) 위임입법의 무효(중요성 없음).'}
+        {h:'구제수단 개관',t:'특권적/헌법적 영장(certiorari·prohibition·mandamus)과 형평법상 declaration·injunction. declaration은 유연하나 단점이 있다 — 강제력이 없고 취소하지 못한다. ADJR Act는 의도적으로 구제를 탈중심화하고 "심사 사유"를 핵심으로 삼았다.'},
+        {h:'영장의 한계',t:'certiorari: 관할권적 오류, 또는 기록 표면상 비관할권적 법률 오류에만. mandamus: 의무 이행·재량의 적법한 행사를 강제하나 특정 결정을 지시할 수는 없다(M174).'},
+        {h:'중요성 추정',t:'Hossain이 중요성을 묵시적 조건으로 만들었다: 결과가 달라질 현실적 가능성이 있었어야 위반이 관할권적이다. MZAPC는 입증책임을 원고에게 두고, LPDT [2024] HCA 12는 법원의 결정 재구성을 금지하며 WZARH의 추론적 접근을 재확인한다.'},
+        {h:'결과 — Bhardwaj',t:'관할권적 오류 결정은 무효 — "처음부터 결정이 아니다". 따라서 권한 보유자는 권한을 다시 행사할 수 있고, 유효한 결정이 없으므로 항소의 근거가 되거나 유효 결정의 법적 효력을 가질 수 없다.'}
       ]
     },
     cases:['kirk-jurisdiction','kirk-criterion','hossain','mzapc','lpdt','bhardwaj','m174'],
@@ -447,70 +453,80 @@ window.WEEKS_DATA = [
   {
     id:'w6', num:6,
     en:{ title:'Bias rule & reasons requirements',
-         summary:'Ebner two-step apprehended bias; Tickner active intellectual process; Peko-Wallsend mandatory considerations; Schlieske improper purpose; M1/2021 representations.',
+         summary:'Procedural fairness, second branch: the rule against bias (with the hearing rule, the bulk of PF cases). Ebner two-step apprehended-bias test; Jia ministerial pre-judgment; Isbester overlapping roles; CNY17 adviser influence; Hot Holdings interest/association. Plus the duty to give reasons — no general common-law duty, but statutory reasons obligations and the consequences of inadequate reasons.',
          meta:[
-           {label:'Bias test',value:'Ebner double-might'},
-           {label:'Steps',value:'Identify + articulate'},
-           {label:'Reasoning',value:'Active engagement'},
-           {label:'Always-JE',value:'Bias yes'}],
+           {label:'Test',value:'Ebner double-might'},
+           {label:'Step 1',value:'Identify the matter'},
+           {label:'Step 2',value:'Logical connection'},
+           {label:'Reasons',value:'No general CL duty'}],
          points:[
-           {h:'Apprehended bias',t:'Ebner: fair-minded lay observer might reasonably apprehend judge might not be impartial. Two-step articulation required.',c:['ebner']},
-           {h:'Active consideration',t:'Tickner: the mental act cannot be delegated; M1/2021 articulates "read, identify, understand, evaluate" standard.',c:['tickner','m1-2021']},
-           {h:'Mandatory considerations',t:'Peko-Wallsend (Mason J\'s 5 principles): mandatory considerations identified by statutory construction.',c:['peko']},
-           {h:'Improper purpose',t:'Schlieske: dominant operative purpose; disguised extradition under deportation power held invalid.',c:['schlieske']}
+           {h:'Apprehended bias — Ebner two-step',t:'Fair-minded lay observer test:\n(1) identify what might lead the decision-maker to decide other than on the merits;\n(2) articulate the logical connection between that matter and the feared deviation. The connection must not be remote. Bias is always-JE — no materiality inquiry.',c:['ebner']},
+           {h:'Pre-judgment (Jia)',t:'A minister\'s public statements can show a mind so committed that a fair-minded observer apprehends he could not be moved — but allowance is made for the political and policy role of a minister.',c:['jia']},
+           {h:'Overlapping roles (Isbester · Hot Holdings)',t:'Isbester: a person who participated in the prosecution also sat on the decision panel — incompatible roles. Hot Holdings: interest / close association of a person influential in the process can found apprehended bias.',c:['isbester','hotholdings']},
+           {h:'Adviser influence (CNY17)',t:'Apprehended bias can arise from prejudicial material an adviser puts before the decision-maker; the question is the reasonable apprehension, not whether influence is proven.',c:['cny17']},
+           {h:'Reasons requirements',t:'There is no general common-law duty to give reasons, but statutes often impose one (e.g. s 430 Migration Act). Inadequate statutory reasons can themselves found review and may expose another error (e.g. a mandatory consideration not addressed).',c:[]}
          ]},
     kr:{ title:'편향 규칙 · 이유제시 의무',
-         summary:'Ebner 2단계 추정 편향; Tickner 적극적 지적 과정; Peko-Wallsend 의무 고려사항; Schlieske 부정한 목적; M1/2021 의견 진술.',
+         summary:'절차공정의 두 번째 갈래 — 편향 금지 규칙(청문 규칙과 함께 PF 사건의 대부분). Ebner 2단계 추정편향 테스트; Jia 장관 사전판단; Isbester 역할 중첩; CNY17 보좌관 영향; Hot Holdings 이해·연관. 그리고 이유제시 의무 — 보통법상 일반 의무는 없지만 법령상 의무와 부실 이유의 효과가 핵심.',
          meta:[
-           {label:'편향 테스트',value:'Ebner 이중 might'},
-           {label:'단계',value:'식별 + 진술'},
-           {label:'추론',value:'적극적 관여'},
-           {label:'항상-JE',value:'편향 그렇다'}],
+           {label:'테스트',value:'Ebner 이중 might'},
+           {label:'1단계',value:'사정 식별'},
+           {label:'2단계',value:'논리적 연결'},
+           {label:'이유',value:'보통법 일반의무 없음'}],
          points:[
-           {h:'추정 편향',t:'Ebner: 공정한 마음을 가진 일반 관찰자가 재판부의 공정성 결여를 합리적으로 의심할 수 있는가. 2단계 진술 필요.',c:['ebner']},
-           {h:'적극적 고려',t:'Tickner: 자체의 정신적 행위는 위임할 수 없다. M1/2021은 "읽기 식별 이해 평가" 기준을 진술.',c:['tickner','m1-2021']},
-           {h:'의무 고려사항',t:'Peko-Wallsend(Mason J 5원칙): 의무 고려사항은 법령 해석으로 식별된다.',c:['peko']},
-           {h:'부정한 목적',t:'Schlieske: 지배적 작용 목적; 추방 권한 하의 위장 인도는 무효.',c:['schlieske']}
+           {h:'추정 편향 — Ebner 2단계',t:'공정한 마음의 일반 관찰자 기준:\n(1) 결정자를 본안 외 사유로 이끌 수 있는 사정을 식별하고,\n(2) 그 사정과 우려되는 일탈 사이의 논리적 연결을 진술한다. 연결이 너무 멀어선 안 된다. 편향은 항상 JE — 중요성 심사 없음.',c:['ebner']},
+           {h:'사전판단 (Jia)',t:'장관의 공개 발언이 마음을 너무 굳혀 공정한 관찰자가 설득 불가능을 의심할 정도일 수 있다 — 다만 장관의 정치·정책적 역할은 감안한다.',c:['jia']},
+           {h:'역할 중첩 (Isbester · Hot Holdings)',t:'Isbester: 소추에 관여한 사람이 결정 패널에도 앉음 — 양립 불가 역할. Hot Holdings: 과정에 영향력 있는 사람의 이해·밀접 연관이 추정편향을 일으킬 수 있다.',c:['isbester','hotholdings']},
+           {h:'보좌관 영향 (CNY17)',t:'보좌관이 결정자에게 올린 불리한 자료에서 추정편향이 생길 수 있다. 핵심은 합리적 의심이지 실제 영향의 입증이 아니다.',c:['cny17']},
+           {h:'이유제시 의무',t:'보통법상 이유제시의 일반 의무는 없지만, 법령이 의무를 부과하는 경우가 많다(예: Migration Act s 430). 부실한 법령상 이유 자체가 심사 사유가 되고, 다른 오류(예: 의무 고려사항 미검토)를 드러낼 수 있다.',c:[]}
          ]},
     tree:{ en:[
       {id:'b',label:'Bias claim?',children:[
         {id:'b-y',label:'Yes',children:[
-          {id:'art',label:'Two-step articulation:\n(1) what might decision-maker decide for non-impartial reason;\n(2) why a fair-minded observer might think so',leaf:true,result:'always-je',note:'Bias is always-JE — no materiality.'}
+          {id:'art',label:'Ebner two-step:\n(1) what might lead the decision-maker to decide other than on the merits;\n(2) logical connection to the feared deviation',children:[
+            {id:'art-y',label:'Connection made out (not remote)',leaf:true,result:'always-je',note:'Apprehended/actual bias — always-JE, no materiality.'},
+            {id:'art-n',label:'Connection too remote',leaf:true,result:'no-je',note:'No reasonable apprehension established.'}
+          ]}
         ]},
-        {id:'b-n',label:'No',children:[
-          {id:'reas',label:'Reasoning ground?',children:[
-            {id:'reas-tk',label:'Failure to actively consider (Tickner)',leaf:true,result:'check-mat',note:'Materiality required (Hossain).'},
-            {id:'reas-pek',label:'Mandatory consideration ignored (Peko)',leaf:true,result:'check-mat',note:'Materiality required.'},
-            {id:'reas-irr',label:'Irrelevant consideration weighed',leaf:true,result:'check-mat',note:'Materiality required.'},
-            {id:'reas-purp',label:'Improper dominant purpose (Schlieske)',leaf:true,result:'je',note:'Substantive ground; usually JE.'}
+        {id:'b-n',label:'No — reasons issue',children:[
+          {id:'r',label:'Statutory duty to give reasons?',children:[
+            {id:'r-n',label:'No statutory duty',leaf:true,result:'no-je',note:'No general common-law duty to give reasons.'},
+            {id:'r-y',label:'Yes — reasons inadequate?',children:[
+              {id:'r-y-y',label:'Inadequate / no findings on material questions',leaf:true,result:'check-mat',note:'Breach of statutory procedure; may also expose another error. Apply materiality.'},
+              {id:'r-y-n',label:'Adequate',leaf:true,result:'no-je',note:'Statutory reasons obligation satisfied.'}
+            ]}
           ]}
         ]}
       ]}
     ], kr:[
       {id:'b',label:'편향 주장?',children:[
         {id:'b-y',label:'예',children:[
-          {id:'art',label:'2단계 진술:\n(1) 결정자가 비공정한 이유로 무엇을 결정할 수 있는가;\n(2) 왜 공정한 관찰자가 그렇게 생각할 수 있는가',leaf:true,result:'always-je',note:'편향은 항상 JE — 중요성 없음.'}
+          {id:'art',label:'Ebner 2단계:\n(1) 결정자를 본안 외 사유로 이끌 수 있는 사정;\n(2) 우려되는 일탈과의 논리적 연결',children:[
+            {id:'art-y',label:'연결 성립(멀지 않음)',leaf:true,result:'always-je',note:'추정/실제 편향 — 항상 JE, 중요성 없음.'},
+            {id:'art-n',label:'연결이 너무 멂',leaf:true,result:'no-je',note:'합리적 의심 미성립.'}
+          ]}
         ]},
-        {id:'b-n',label:'아니오',children:[
-          {id:'reas',label:'추론 사유?',children:[
-            {id:'reas-tk',label:'적극적 고려 누락(Tickner)',leaf:true,result:'check-mat',note:'중요성 필요(Hossain).'},
-            {id:'reas-pek',label:'의무 고려사항 누락(Peko)',leaf:true,result:'check-mat',note:'중요성 필요.'},
-            {id:'reas-irr',label:'무관 고려사항 고려',leaf:true,result:'check-mat',note:'중요성 필요.'},
-            {id:'reas-purp',label:'부정한 지배적 목적(Schlieske)',leaf:true,result:'je',note:'실체적 사유; 통상 JE.'}
+        {id:'b-n',label:'아니오 — 이유 문제',children:[
+          {id:'r',label:'법령상 이유제시 의무 있는가?',children:[
+            {id:'r-n',label:'법령상 의무 없음',leaf:true,result:'no-je',note:'보통법상 일반 이유제시 의무 없음.'},
+            {id:'r-y',label:'있음 — 이유가 부실한가?',children:[
+              {id:'r-y-y',label:'부실 / 핵심 쟁점에 인정 없음',leaf:true,result:'check-mat',note:'법령 절차 위반; 다른 오류를 드러낼 수 있음. 중요성 적용.'},
+              {id:'r-y-n',label:'충분함',leaf:true,result:'no-je',note:'법령상 이유 의무 충족.'}
+            ]}
           ]}
         ]}
       ]}
     ]},
     detail:{
       en:[
-        {h:'Ebner two-step',t:'(1) Identify what might lead the decision-maker to decide otherwise than on the merits;\n(2) explain the logical connection between that matter and feared deviation. Connection must not be remote.'},
-        {h:'Tickner standard',t:'Active intellectual process required. Reliance on summaries can be acceptable, but the decision-maker must engage with the substance of representations.'},
-        {h:'Improper purpose',t:'Schlieske required dominant operative purpose to be unauthorised. Mixed-purpose cases turn on which purpose actually drove the decision.'}
+        {h:'Ebner two-step',t:'(1) Identify what it is that might lead the decision-maker to decide otherwise than on the merits;\n(2) articulate the logical connection between that matter and the feared deviation. A remote or speculative connection is not enough. Actual bias is rarely run because it is hard to prove; apprehended bias does the work.'},
+        {h:'Ministers and pre-judgment (Jia)',t:'Ministers are expected to have and voice policy views. The bias rule is calibrated to the office: the question is whether the fair-minded observer would apprehend the minister could not be persuaded by the case put, not merely that he held a view.'},
+        {h:'Reasons',t:'No general common-law duty to give reasons (cf. statutory duties). Where a statute requires reasons (e.g. setting out findings on material questions of fact), inadequate reasons breach the procedure and frequently reveal a further error such as a mandatory consideration not addressed.'}
       ],
       kr:[
-        {h:'Ebner 2단계',t:'(1) 결정자를 본안 외 사유로 이끌 수 있는 사정을 식별;\n(2) 그 사정과 우려되는 일탈 사이의 논리적 연결을 설명. 연결이 너무 멀어서는 안 된다.'},
-        {h:'Tickner 기준',t:'적극적 지적 과정이 요구된다. 요약에 의존하는 것 자체는 허용될 수 있으나, 결정자는 의견의 실질에 관여해야 한다.'},
-        {h:'부정한 목적',t:'Schlieske는 지배적 작용 목적이 수권되지 않은 것이어야 한다고 요구했다. 복합 목적 사건은 어느 목적이 실제로 결정을 주도했는가에 달려 있다.'}
+        {h:'Ebner 2단계',t:'(1) 결정자를 본안 외 사유로 이끌 수 있는 것이 무엇인지 식별하고,\n(2) 그 사정과 우려되는 일탈 사이의 논리적 연결을 진술한다. 멀거나 막연한 연결로는 부족하다. 실제 편향은 입증이 어려워 거의 안 쓰고, 추정 편향이 실무를 담당한다.'},
+        {h:'장관과 사전판단 (Jia)',t:'장관은 정책적 견해를 갖고 표명하기 마련이다. 편향 규칙은 직책에 맞춰 조정된다 — 단지 견해를 가졌다가 아니라, 제출된 사안으로 설득될 수 없다고 공정한 관찰자가 의심할지가 기준이다.'},
+        {h:'이유제시',t:'보통법상 일반 이유제시 의무는 없다(법령상 의무와 구별). 법령이 이유(예: 핵심 사실쟁점에 대한 인정 기재)를 요구하면, 부실한 이유는 절차 위반이며 의무 고려사항 미검토 같은 추가 오류를 드러내는 경우가 잦다.'}
       ]
     },
     cases:['ebner','jia','isbester','cny17','hotholdings'],
@@ -528,68 +544,82 @@ window.WEEKS_DATA = [
   {
     id:'w7', num:7,
     en:{ title:'Reasoning process norms — considerations · purpose · policy',
-         summary:'Green v Daniels inflexible application; M64 lawful priority policy with exception clause; cross-cutting reading of multiple grounds.',
+         summary:'Legal controls on how discretionary power is reasoned. Consideration norms (Peko-Wallsend — mandatory/irrelevant by statutory construction; M1/2021 & Tickner — genuine, personal engagement). Purpose norm (Schlieske — dominant unauthorised purpose). No-fettering & policy (Green v Daniels — inflexible application unlawful; M64 — lawful priority policy with an exception clause). Acting under dictation; delegate vs agent.',
          meta:[
-           {label:'Inflexible',value:'Unlawful (Green)'},
-           {label:'Priority',value:'Lawful w/ exception (M64)'},
-           {label:'Cross-cutting',value:'Multi-ground'},
-           {label:'Test',value:'Statutory criteria preserved?'}],
+           {label:'Considerations',value:'By statutory construction'},
+           {label:'Purpose',value:'Dominant operative'},
+           {label:'Policy',value:'Guide, not substitute'},
+           {label:'Delegation',value:'Express vs agent'}],
          points:[
-           {h:'Inflexible application',t:'Green v Daniels: a policy that substitutes for statutory criteria is unlawful — discretion must remain available.',c:['green']},
-           {h:'Lawful priority',t:'M64: tiered priorities lawful where exception clause preserves evaluative discretion.',c:['m64']},
-           {h:'Cross-cutting',t:'Many problems engage multiple grounds (PF + reasoning + policy). Plead in the alternative; identify common materiality.',c:[]}
+           {h:'Considerations (Peko-Wallsend)',t:'Mandatory and irrelevant considerations are identified by construing the statute (Mason J\'s principles). Failing to take a mandatory consideration into account, or taking an irrelevant one into account, is an error — but the weight given to a relevant consideration is generally for the decision-maker (subject to unreasonableness).',c:['peko']},
+           {h:'Proper, personal consideration (M1/2021 · Tickner)',t:'The decision-maker must genuinely engage. Tickner: the mental act of consideration cannot be delegated. M1/2021: the standard is to read, identify, understand and evaluate the material — not a tick-box.',c:['m1-2021','tickner']},
+           {h:'Improper purpose (Schlieske)',t:'A power exercised for a purpose outside the statute is invalid where that unauthorised purpose is the dominant operative purpose (Schlieske — deportation used as disguised extradition). Mixed-purpose cases turn on which purpose actually drove the decision; ministers have a wide policy scope.',c:['schlieske']},
+           {h:'No-fettering & policy (Green · M64)',t:'A policy applied inflexibly as a substitute for the statutory criteria is unlawful (Green v Daniels). A tiered priority policy is lawful where an exception clause preserves a genuine evaluative discretion (M64).',c:['green','m64']},
+           {h:'Dictation & delegation vs agency',t:'Acting under another official\'s dictation is an unauthorised surrender of discretion. A delegate needs express statutory authority; but a repository may act through an agent for administrative necessity (the Carltona-type principle) — an express power to delegate does not necessarily preclude acting through an agent.',c:[]}
          ]},
     kr:{ title:'추론과정 규범 — 고려사항 · 목적 · 정책',
-         summary:'Green v Daniels 경직된 적용; M64 예외 조항 있는 적법한 우선순위 정책; 다중 사유의 교차 분석.',
+         summary:'재량 권한을 어떻게 추론했는지에 대한 법적 통제. 고려사항 규범(Peko-Wallsend — 의무·무관 고려는 법령 해석으로 식별; M1/2021·Tickner — 진정한 직접 관여). 목적 규범(Schlieske — 지배적 무권한 목적). 재량 불구속·정책(Green v Daniels — 경직 적용 위법; M64 — 예외 조항 있는 적법한 우선순위 정책). 지시에 따른 행위; 위임 vs 대리.',
          meta:[
-           {label:'경직성',value:'위법(Green)'},
-           {label:'우선순위',value:'예외 조항 있으면 적법(M64)'},
-           {label:'교차',value:'다중 사유'},
-           {label:'테스트',value:'법적 기준 보존?'}],
+           {label:'고려사항',value:'법령 해석으로'},
+           {label:'목적',value:'지배적 작용'},
+           {label:'정책',value:'지침이지 대체 아님'},
+           {label:'위임',value:'명시 vs 대리'}],
          points:[
-           {h:'경직된 적용',t:'Green v Daniels: 법적 기준을 대체하는 정책은 위법이다 — 재량이 남아 있어야 한다.',c:['green']},
-           {h:'적법한 우선순위',t:'M64: 예외 조항이 평가적 재량을 보존하는 경우 계층적 우선순위 정책은 적법하다.',c:['m64']},
-           {h:'교차 쟁점',t:'많은 사안이 다중 사유(PF + 추론 + 정책)를 작동시킨다. 예비적 주장; 공통 중요성 식별.',c:[]}
+           {h:'고려사항 (Peko-Wallsend)',t:'의무·무관 고려사항은 법령 해석으로 식별된다(Mason J 원칙). 의무 고려사항을 빠뜨리거나 무관한 것을 고려하면 오류다 — 다만 관련 고려사항에 부여하는 가중치는 원칙적으로 결정자의 몫이다(비합리성 한도 내).',c:['peko']},
+           {h:'진정한 직접 고려 (M1/2021 · Tickner)',t:'결정자는 진정으로 관여해야 한다. Tickner: 고려라는 정신적 행위는 위임할 수 없다. M1/2021: 자료를 읽고 식별하고 이해하고 평가하는 것이 기준 — 체크박스가 아니다.',c:['m1-2021','tickner']},
+           {h:'부정한 목적 (Schlieske)',t:'법령 밖 목적으로 권한을 행사하면, 그 무권한 목적이 지배적 작용 목적일 때 무효다(Schlieske — 추방을 위장 인도로 사용). 복합 목적 사건은 어느 목적이 실제로 결정을 주도했는지에 달려 있다. 장관은 정책 재량의 폭이 넓다.',c:['schlieske']},
+           {h:'재량 불구속·정책 (Green · M64)',t:'법적 기준을 대체하여 정책을 경직적으로 적용하면 위법(Green v Daniels). 예외 조항이 진정한 평가적 재량을 보존하면 계층적 우선순위 정책은 적법(M64).',c:['green','m64']},
+           {h:'지시·위임 vs 대리',t:'다른 공무원의 지시에 따라 결정하면 재량의 무권한 포기다. 위임(delegate)은 명시적 법령 수권이 필요하지만, 권한 보유자는 행정상 필요로 대리인(agent)을 통해 행위할 수 있다(Carltona형 원칙) — 명시적 위임 권한이 있다고 대리가 당연히 배제되는 것은 아니다.',c:[]}
          ]},
     tree:{ en:[
-      {id:'p',label:'Policy applied?',children:[
-        {id:'p-y',label:'Yes',children:[
-          {id:'crit',label:'Does policy substitute for statutory criteria?',children:[
-            {id:'crit-y',label:'Yes',leaf:true,result:'invalid',note:'Green v Daniels — inflexible.'},
-            {id:'crit-n',label:'No',children:[
-              {id:'exc',label:'Exception clause preserves discretion?',children:[
-                {id:'exc-y',label:'Yes',leaf:true,result:'valid',note:'M64 — lawful priority policy.'},
-                {id:'exc-n',label:'No',leaf:true,result:'check',note:'Risk of fettering — examine carefully.'}
-              ]}
-            ]}
+      {id:'g',label:'Which reasoning-process norm?',children:[
+        {id:'g-con',label:'Considerations',children:[
+          {id:'con-m',label:'Mandatory consideration ignored / irrelevant one weighed (Peko)',leaf:true,result:'check-mat',note:'Error; weight otherwise for the DM. Apply materiality (Hossain).'},
+          {id:'con-p',label:'No genuine, personal consideration (Tickner / M1-2021)',leaf:true,result:'check-mat',note:'Failure to read/understand/evaluate. Apply materiality.'}
+        ]},
+        {id:'g-pur',label:'Purpose — is the dominant operative purpose unauthorised? (Schlieske)',children:[
+          {id:'pur-y',label:'Yes',leaf:true,result:'je',note:'Improper purpose — substantive ground.'},
+          {id:'pur-n',label:'No (within wide ministerial scope)',leaf:true,result:'no-je',note:'Permissible purpose.'}
+        ]},
+        {id:'g-pol',label:'Policy applied — substitute for the statutory criteria?',children:[
+          {id:'pol-y',label:'Yes (inflexible)',leaf:true,result:'invalid',note:'Green v Daniels — unlawful fettering.'},
+          {id:'pol-n',label:'No — exception preserves discretion?',children:[
+            {id:'pol-e-y',label:'Yes',leaf:true,result:'valid',note:'M64 — lawful priority policy.'},
+            {id:'pol-e-n',label:'No',leaf:true,result:'check',note:'Risk of fettering / dictation — examine.'}
           ]}
         ]}
       ]}
     ], kr:[
-      {id:'p',label:'정책이 적용되었는가?',children:[
-        {id:'p-y',label:'예',children:[
-          {id:'crit',label:'정책이 법적 기준을 대체하는가?',children:[
-            {id:'crit-y',label:'예',leaf:true,result:'invalid',note:'Green v Daniels — 경직됨.'},
-            {id:'crit-n',label:'아니오',children:[
-              {id:'exc',label:'예외 조항이 재량을 보존하는가?',children:[
-                {id:'exc-y',label:'예',leaf:true,result:'valid',note:'M64 — 적법한 우선순위 정책.'},
-                {id:'exc-n',label:'아니오',leaf:true,result:'check',note:'재량 구속 위험 — 주의 필요.'}
-              ]}
-            ]}
+      {id:'g',label:'어느 추론과정 규범?',children:[
+        {id:'g-con',label:'고려사항',children:[
+          {id:'con-m',label:'의무 고려사항 누락 / 무관 고려(Peko)',leaf:true,result:'check-mat',note:'오류; 가중치는 원칙적으로 결정자. 중요성 적용(Hossain).'},
+          {id:'con-p',label:'진정한 직접 고려 없음(Tickner / M1-2021)',leaf:true,result:'check-mat',note:'읽기·이해·평가 실패. 중요성 적용.'}
+        ]},
+        {id:'g-pur',label:'목적 — 지배적 작용 목적이 무권한인가?(Schlieske)',children:[
+          {id:'pur-y',label:'예',leaf:true,result:'je',note:'부정한 목적 — 실체적 사유.'},
+          {id:'pur-n',label:'아니오(넓은 장관 재량 내)',leaf:true,result:'no-je',note:'허용된 목적.'}
+        ]},
+        {id:'g-pol',label:'정책 적용 — 법적 기준을 대체하는가?',children:[
+          {id:'pol-y',label:'예(경직)',leaf:true,result:'invalid',note:'Green v Daniels — 위법한 재량 구속.'},
+          {id:'pol-n',label:'아니오 — 예외가 재량 보존?',children:[
+            {id:'pol-e-y',label:'예',leaf:true,result:'valid',note:'M64 — 적법한 우선순위 정책.'},
+            {id:'pol-e-n',label:'아니오',leaf:true,result:'check',note:'재량 구속·지시 위험 — 검토.'}
           ]}
         ]}
       ]}
     ]},
     detail:{
       en:[
-        {h:'Policy in administrative decisions',t:'Policy is necessary for consistency, but cannot displace the statutory test. Decision-maker must apply policy as a guide, not a substitute.'},
-        {h:'M64 exception clause',t:'PAM 3 included an explicit override allowing departure from priorities. The exception preserved evaluative judgment, distinguishing from Green v Daniels.'},
-        {h:'Cross-cutting grounds',t:'In a single problem, PF + reasoning + policy may all be available. Always plead in alternatives; final-decision unreasonableness may absorb several flaws.'}
+        {h:'Peko-Wallsend — considerations',t:'Mason J: what is mandatory or irrelevant is a question of statutory construction. The Minister erred by not having regard to new representations before the decision. The court does not re-weigh — weight is for the decision-maker, unless the result is legally unreasonable.'},
+        {h:'Schlieske — dominant purpose',t:'Where a power is used to achieve a purpose it was not conferred for, validity turns on whether the unauthorised purpose was the dominant operative purpose. A genuine permissible purpose is not vitiated merely because an incidental impermissible motive existed.'},
+        {h:'Green v Daniels vs M64',t:'Green: applying a policy as if it were a binding rule, displacing the statutory test, is an unlawful fetter. M64: a priority policy with an explicit exception clause preserved a real evaluative discretion, so it was lawful — the exception is what distinguishes the two.'},
+        {h:'Delegate vs agent',t:'A delegate exercises the power in their own name and needs express statutory authority. An agent acts in the repository\'s name; administrative necessity allows a repository to act through officers (Carltona-type principle), and an express power to delegate does not necessarily exclude agency.'}
       ],
       kr:[
-        {h:'행정 결정에서의 정책',t:'정책은 일관성을 위해 필요하나 법적 테스트를 대체할 수 없다. 결정자는 정책을 지침으로 적용하되 대체로 삼아서는 안 된다.'},
-        {h:'M64 예외 조항',t:'PAM 3는 우선순위로부터의 일탈을 허용하는 명시적 override를 포함했다. 이 예외가 평가적 재량을 보존해 Green v Daniels와 구별된다.'},
-        {h:'교차 사유',t:'하나의 문제에서 PF + 추론 + 정책이 모두 가능할 수 있다. 항상 예비적으로 주장하고, 최종 결정의 비합리성이 여러 결함을 흡수할 수 있다.'}
+        {h:'Peko-Wallsend — 고려사항',t:'Mason J: 무엇이 의무·무관 고려인지는 법령 해석의 문제다. 장관은 결정 전 새 의견서를 고려하지 않아 오류를 범했다. 법원은 재형량하지 않는다 — 가중치는 결정자의 몫이며, 결과가 법적으로 비합리적인 경우만 예외다.'},
+        {h:'Schlieske — 지배적 목적',t:'권한을 부여 목적이 아닌 목적 달성에 쓴 경우, 그 무권한 목적이 지배적 작용 목적이었는지에 유효성이 달린다. 부수적 부적절 동기가 있었다는 것만으로 진정한 허용 목적이 무효가 되지는 않는다.'},
+        {h:'Green v Daniels vs M64',t:'Green: 정책을 구속적 규칙처럼 적용해 법적 테스트를 밀어내면 위법한 재량 구속이다. M64: 명시적 예외 조항이 있는 우선순위 정책은 진정한 평가적 재량을 보존해 적법했다 — 둘을 가르는 것은 예외 조항이다.'},
+        {h:'위임 vs 대리',t:'위임받은 자(delegate)는 자기 이름으로 권한을 행사하며 명시적 법령 수권이 필요하다. 대리인(agent)은 권한 보유자의 이름으로 행위한다 — 행정상 필요로 보유자가 공무원을 통해 행위할 수 있고(Carltona형 원칙), 명시적 위임 권한이 대리를 당연히 배제하지 않는다.'}
       ]
     },
     cases:['peko','tickner','m1-2021','schlieske','green','m64'],
