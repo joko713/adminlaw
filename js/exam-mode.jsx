@@ -245,8 +245,21 @@ function ExamHirac({ lang }) {
 }
 
 function ExamPlan({ lang }) {
+  const bud = E.examDayBudget && E.examDayBudget[lang];
   return <div className="exam-section">
-    <p className="ex-lede">{lang==='kr'?'6월 4일까지의 4주 — 매주 한 채점 기준에 집중.':'Four weeks to 4 June — one criterion per week.'}</p>
+    <p className="ex-lede">{E.planLede ? E.planLede[lang] : (lang==='kr'?'시험까지 일자별 플랜.':'Day-by-day plan to the exam.')}</p>
+
+    {bud && <section className="fb-panel" style={{marginBottom:18}}>
+      <h3 className="fb-h">{bud.h}</h3>
+      <table className="fb-table">
+        <tbody>
+          {bud.rows.map((r,i)=>(
+            <tr key={i}><th>{r[0]}</th><td>{r[1]}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </section>}
+
     <ol className="plan-list">
       {E.plan.map((p,i)=>{
         const pl = p[lang];

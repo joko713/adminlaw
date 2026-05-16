@@ -200,12 +200,47 @@ window.EXAM_DATA = {
   ],
 
   // ── 5. Mock exam plan ─────────────────────────────────────────────────────
+  // ── Day-by-day countdown — anchored 16 May, exam 4 June ───────────────────
+  // Format-driven: Part A 60 (problem, 3 sub-Q) + Part B 40 (1×20 + 2×10),
+  // 3 hr + reading time, W1–W12 all examinable, mid-sem cases can recur.
+  planLede: {
+    kr: '16일 집중(5/16–5/31) + 3일 테이퍼(6/1–6/3) → 6/4 시험. 확정 포맷에 맞춰 Part A(문제·3 sub-Q)와 Part B(1×20+2×10)를 따로 단련하고, 중간고사 글쓰기 피드백을 매일 적용한다.',
+    en: '16 focused days (16–31 May) + a 3-day taper (1–3 Jun) → exam 4 Jun. Built around the confirmed format: drill Part A (problem, 3 sub-Q) and Part B (1×20 + 2×10) separately, applying the mid-sem writing feedback every day.',
+  },
+  examDayBudget: {
+    kr: { h:'시험 당일 시간 배분 (3시간 + reading time)', rows:[
+      ['Reading time', '모든 문항 스코핑. Part A 3 sub-Q의 배점 확인, Part B 3문항 중 쓸 순서·thesis 한 줄 메모.'],
+      ['Part A · 60 — ~95분', '3 sub-Q를 배점 비례로 분할. 각 sub-Q: 분석 흐름(관할→적격→Hossain→사유→materiality→구제→헌법→ART) 순서로.'],
+      ['Part B · 20점 — ~35분', '첫 문장 = thesis. 용어 정의 → named case close reading → 한 단락 한 요지.'],
+      ['Part B · 10점 ×2 — 각 ~18분', '서론 1–2문장. 곧바로 본론. 가장 contentious한 지점에 분량 집중.'],
+      ['Proofread — 5분 확보', '용어 정확성, citation, 시제 일관성. 빈 sub-Q 없는지 최종 확인.'],
+    ]},
+    en: { h:'Exam-day time budget (3 hr + reading time)', rows:[
+      ['Reading time', 'Scope every question. Note Part A sub-Q mark splits; pick Part B order and jot a one-line thesis for each.'],
+      ['Part A · 60 — ~95 min', 'Split sub-Q by their marks. Each: walk the flow (jurisdiction → standing → Hossain → grounds → materiality → remedies → constitutional → ART).'],
+      ['Part B · 20 marks — ~35 min', 'First sentence = thesis. Define terms → close-read named cases → one point per paragraph.'],
+      ['Part B · 10 marks ×2 — ~18 min each', '1–2 sentence intro, then straight in. Spend the words on the most contentious point.'],
+      ['Proofread — reserve 5 min', 'Term precision, citations, tense consistency. Confirm no sub-Q left blank.'],
+    ]},
+  },
   plan: [
-    { w:'W-4', kr:{ focus:'기준 1', task:'2021 Problem timed (90 min). Materiality, state JR, doctrine policy 보강.' }, en:{ focus:'Criterion 1', task:'2021 Problem timed (90 min). Shore up materiality, state JR, doctrine policy.' } },
-    { w:'W-3', kr:{ focus:'기준 2 + 4', task:'2022 Q-A. GBA standing 비교. Aronson/Cane 발췌 정리. Counter-argument 연습.' }, en:{ focus:'Criteria 2 + 4', task:'2022 Q-A. Compare GBA standing. Pull Aronson / Cane extracts. Counter-argument drills.' } },
-    { w:'W-2', kr:{ focus:'기준 3', task:'2023 Problem 후 sample answer 비교 → gap 식별. Structure 점검.' }, en:{ focus:'Criterion 3', task:'2023 Problem then compare to sample → identify gaps. Structure audit.' } },
-    { w:'W-1', kr:{ focus:'기준 5 + 통합', task:'2020 Cato (privative 강함) + Argument Q 2개 timed. Proofread 시간 확보 연습.' }, en:{ focus:'Criterion 5 + integration', task:'2020 Cato (strong privative) + 2 timed argument Qs. Practise reserving proofread time.' } },
-    { w:'W-0', kr:{ focus:'마지막 점검', task:'HIRAC 템플릿 + 30개 핵심 케이스 카드 review. 1페이지 policy 노트.' }, en:{ focus:'Final pass', task:'HIRAC template + 30 core case cards. One-page policy note.' } },
+    { w:'D1 · 5/16', kr:{ focus:'진단', task:'분석 흐름 뷰로 과거 Part A problem 1개 무시간 풀이 → 약한 doctrine 표시. Part B는 LPDT식 "qualitative judgements" 에세이 1개 무시간 작성 → 답안 피드백 기준(주장 먼저·용어 정의·close reading)으로 자가 채점. 약점 리스트 작성.' }, en:{ focus:'Diagnostic', task:'Untimed: one past Part-A problem via the analytical-flow view → flag weak doctrine. One LPDT-style "qualitative judgements" essay → self-mark against the feedback rubric (argument-first, define terms, close reading). Build a weak-list.' } },
+    { w:'D2 · 5/17', kr:{ focus:'포맷 내재화', task:'확정 포맷(Part A 60·3 sub-Q / Part B 40·1×20+2×10 / 3시간+reading time)에 맞춰 본인 시간표 확정 — reading time 활용법, sub-Q별 분 배분, proofread 5분. 약점 리스트 우선순위화.' }, en:{ focus:'Absorb the format', task:'Lock your personal timetable to the confirmed format (Part A 60 / 3 sub-Q; Part B 40 = 1×20+2×10; 3 hr + reading time) — reading-time use, per-sub-Q minutes, 5-min proofread. Prioritise the weak-list.' } },
+    { w:'D3 · 5/18', kr:{ focus:'W1–W3 sweep', task:'위임입법·정치적 책임(W1) · 관할/진입(W2) · 원고적격(W3). 토픽마다 끝에 10점짜리 argument 단락 1개 — 핵심 용어 정의 드릴.' }, en:{ focus:'W1–W3 sweep', task:'Delegated leg & political accountability (W1) · jurisdiction/gateway (W2) · standing (W3). Close each topic with one 10-mark argument paragraph — define-the-term drill.' } },
+    { w:'D4 · 5/19', kr:{ focus:'W4–W5', task:'Hossain 3단계 프레임 + 절차공정(청문규칙). Kioa·Saeed·S10·VEAL·M61 정독. 끝에 10점 단락 2개.' }, en:{ focus:'W4–W5', task:'Hossain 3-stage frame + PF (hearing rule). Close-read Kioa, Saeed, S10, VEAL, M61. End with two 10-mark paragraphs.' } },
+    { w:'D5 · 5/20', kr:{ focus:'W6–W7', task:'편향(Ebner 2단계) + 고려사항/부적절목적/비합리성(Wednesbury→Li→SZMDS). 끝에 20점 essay 1개 timed(35분).' }, en:{ focus:'W6–W7', task:'Bias (Ebner two-step) + considerations / improper purpose / unreasonableness (Wednesbury→Li→SZMDS). End with one timed 20-mark essay (35 min).' } },
+    { w:'D6 · 5/21', kr:{ focus:'W8–W9 + LPDT', task:'관할권적 사실 + materiality(Hossain→MZAPC→Nathanson→LPDT) + 통합 시퀀스. LPDT 정독 — materiality는 보편 아님, 입증 부담 낮음, merits 조정 도구 아님.' }, en:{ focus:'W8–W9 + LPDT', task:'Jurisdictional fact + materiality (Hossain→MZAPC→Nathanson→LPDT) + the integration sequence. Close-read LPDT — materiality is not universal, light onus, not a merits dial.' } },
+    { w:'D7 · 5/22', kr:{ focus:'W10–W12', task:'헌법적 한계(S157·Kirk·Futuris·Graham·Bodruddaza) · ART(Shi·Frugtniet·Drake No 2) · 법원 밖 경로. "in practice / substance-and-degree" 테스트 드릴.' }, en:{ focus:'W10–W12', task:'Constitutional limits (S157·Kirk·Futuris·Graham·Bodruddaza) · ART (Shi·Frugtniet·Drake No 2) · beyond courts. Drill the "in practice / substance-and-degree" test.' } },
+    { w:'D8 · 5/23', kr:{ focus:'Part A 실전 ①', task:'과거 problem 1개 timed(~95분, 3 sub-Q). 채점기준으로 자가채점 → 가장 약한 sub-답안 재작성.' }, en:{ focus:'Part A live ①', task:'One past problem timed (~95 min, 3 sub-Q). Self-mark against criteria → rewrite the weakest sub-answer.' } },
+    { w:'D9 · 5/24', kr:{ focus:'Part A 실전 ②', task:'다른 연도 problem timed. 분석 흐름 8단계 체크리스트로 누락 점검(특히 헌법적 안전망·ART 빠뜨리지 말 것).' }, en:{ focus:'Part A live ②', task:'Different-year problem timed. Run the 8-step flow checklist for omissions (don\'t skip constitutional safety nets / ART).' } },
+    { w:'D10 · 5/25', kr:{ focus:'Part B 세트 ①', task:'1×20 + 2×10 timed(35+18+18분). 답안 피드백 규칙 적용 — thesis 문장 먼저·용어 정의·named case close reading·한 단락 한 요지. 끝나고 20분 비평 패스.' }, en:{ focus:'Part B set ①', task:'1×20 + 2×10 timed (35+18+18 min). Apply the feedback rules — thesis first, define terms, close-read named cases, one point per paragraph. 20-min critique pass.' } },
+    { w:'D11 · 5/26', kr:{ focus:'Part B 세트 ②', task:'다른 argument Q 세트. 케이스 페어링(Quin↔Drake No 2, Graham↔Kirk, Li·SZMDS·Hossain 등)으로 비교논증 연습.' }, en:{ focus:'Part B set ②', task:'Different argument-Q set. Use the case pairings (Quin↔Drake No 2, Graham↔Kirk, Li·SZMDS·Hossain) for comparative argument.' } },
+    { w:'D12 · 5/27', kr:{ focus:'약점 패치', task:'D1·D8–D11에서 드러난 3대 약점만 집중 보강 + 해당 ground 10점 단락 재작성. 새 토픽 ✕.' }, en:{ focus:'Patch weaknesses', task:'Target only the 3 biggest gaps from D1 & D8–D11 + rewrite those grounds as 10-mark paragraphs. No new topics.' } },
+    { w:'D13 · 5/28', kr:{ focus:'풀 모의 ①', task:'3시간 + reading time, Part A+B 통째로 실제 조건. 끝나고 전체 자가채점(채점기준).' }, en:{ focus:'Full mock ①', task:'3 hr + reading time, Part A + B together, real conditions. Full self-mark against criteria afterwards.' } },
+    { w:'D14 · 5/29', kr:{ focus:'모의 ① 디브리프', task:'최악 3개 갭만 재작성. 시간 배분 실패 지점 교정(어디서 분초가 샜는지).' }, en:{ focus:'Mock ① debrief', task:'Rewrite only the 3 worst gaps. Fix where the timing leaked.' } },
+    { w:'D15 · 5/30', kr:{ focus:'풀 모의 ②', task:'풀 모의 ②(또는 약점-집중 단축 모의). 1페이지 메모리시트 완성 — HIRAC 템플릿·핵심 30 케이스·정책 1줄·정의 목록.' }, en:{ focus:'Full mock ②', task:'Full mock ② (or a shortened weak-area mock). Finish the one-page memory sheet — HIRAC template, 30 core cases, one-line policy, definitions list.' } },
+    { w:'D16 · 5/31', kr:{ focus:'능동 인출 + 테이퍼', task:'새 자료 ✕. 분석 흐름 8단계 백지 암송, 케이스 페어링 구술, 시간표·reading-time 계획 리허설.' }, en:{ focus:'Active recall + taper', task:'No new material. Recite the 8-step flow from blank, say the case pairings aloud, rehearse the timetable & reading-time plan.' } },
+    { w:'6/1–6/4 · 테이퍼→시험', kr:{ focus:'테이퍼 → 시험', task:'6/1–6/3: 매일 30분 흐름·정의 인출 + 10점 1개 timed. 수면·시험장 동선 점검. 6/4 시험 — reading time에 sub-Q 스코핑·thesis 메모부터.' }, en:{ focus:'Taper → exam', task:'1–3 Jun: 30 min/day of flow & definition recall + one timed 10-marker. Sleep & logistics. 4 Jun exam — start in reading time with sub-Q scoping and one-line theses.' } },
   ],
 
   // ── 6. Argument-question pool & case pairings ─────────────────────────────

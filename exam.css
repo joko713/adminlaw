@@ -299,13 +299,19 @@
 /* Plan */
 .plan-list { list-style: none; padding: 0; margin: 0; }
 .plan-list li {
-  display: grid; grid-template-columns: 60px 1fr;
+  display: grid; grid-template-columns: 104px 1fr;
   gap: 16px; padding: 12px 0;
   border-bottom: 1px dotted var(--rule);
 }
 .plan-w {
-  font-family: var(--font-serif); font-style: italic; font-size: 22px;
-  color: var(--accent, var(--margin-blue)); line-height: 1.1;
+  font-family: var(--font-serif); font-size: 14.5px; font-weight: 600;
+  color: var(--accent, var(--margin-blue)); line-height: 1.3;
+  padding-top: 2px;
+  text-wrap: balance; word-break: keep-all;
+}
+@media (max-width: 560px) {
+  .plan-list li { grid-template-columns: 1fr; gap: 4px; }
+  .plan-w { font-size: 13.5px; }
 }
 .plan-focus {
   font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
