@@ -99,8 +99,8 @@ window.STEPS_DATA = {
 
 window.I18N = {
   en:{
-    appTitle:'Administrative Law W1–W11',
-    subtitle:'ANU LAWS6201 · interactive study',
+    appTitle:'Australian Admin Law Study',
+    subtitle:'administrative law · interactive study',
     nav:{ weeks:'Course content', scenario:'Scenario analyser', db:'Cases & doctrine', glossary:'Glossary', flash:'Flashcards', quiz:'Mixed quiz' },
     tabs:{ overview:'Overview', tree:'Decision tree', detail:'Detail', cases:'Cases', quiz:'Quiz' },
     week:'Week',
@@ -161,8 +161,8 @@ window.I18N = {
     hint:{tree:'Click any node to follow that branch.', case:'Click an icon badge to open the case panel.'}
   },
   kr:{
-    appTitle:'행정법 W1–W11',
-    subtitle:'ANU LAWS6201 · 인터랙티브 학습',
+    appTitle:'호주 행정법 스터디',
+    subtitle:'행정법 · 인터랙티브 학습',
     nav:{ weeks:'주차별 강의', scenario:'시나리오 풀어보기', db:'판례·법리', glossary:'용어 사전', flash:'플래시카드', quiz:'섞기 퀴즈' },
     tabs:{ overview:'개요', tree:'결정 흐름', detail:'자세히', cases:'관련 판례', quiz:'쪽지시험' },
     week:'주차',

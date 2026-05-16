@@ -1,6 +1,7 @@
 /* Examiner-feedback tab — renders window.FEEDBACK_2024 */
 function ExamFeedback({ lang }) {
   const F = window.FEEDBACK_2024;
+  const ms = F.midSem && F.midSem[lang];
   const h = F.hero[lang];
   const four = F.fourStep[lang];
   const dont = F.donts[lang];
@@ -12,6 +13,57 @@ function ExamFeedback({ lang }) {
 
   return (
     <div className="exam-section fb-section">
+
+      {ms && <div className="fb-midsem">
+        <div className="fb-hero">
+          <p className="eyebrow">{ms.eyebrow}</p>
+          <p className="ex-lede" style={{fontSize:18, marginTop:6}}>{ms.lede}</p>
+          <blockquote className="fb-quote">{ms.quote}</blockquote>
+        </div>
+        <div className="fb-grid-2">
+          <section className="fb-panel">
+            <h3 className="fb-h">{ms.craft.h}</h3>
+            <ol className="fb-steps">
+              {ms.craft.items.map((it,i)=>(
+                <li key={i}><span className="fb-num">{String(i+1).padStart(2,'0')}</span><span>{it}</span></li>
+              ))}
+            </ol>
+          </section>
+          <section className="fb-panel fb-mantra-panel">
+            <h3 className="fb-h">{lang==='kr'?'한 줄 규칙':'One-line rules'}</h3>
+            <ul className="fb-mantra">
+              {ms.rules.map((m,i)=><li key={i}>{m}</li>)}
+            </ul>
+          </section>
+        </div>
+        <section className="fb-panel">
+          <h3 className="fb-h">{ms.dont.h}</h3>
+          <div className="fb-dont">
+            {ms.dont.items.map(([bad,good],i)=>(
+              <div className="fb-dont-row" key={i}>
+                <div className="fb-bad"><span className="fb-x">✕</span> {bad}</div>
+                <div className="fb-good"><span className="fb-check">→</span> {good}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="fb-panel">
+          <h3 className="fb-h">{lang==='kr'?'문항별 적용 (close reading 예시)':'Worked by question (close-reading examples)'}</h3>
+          <div className="fb-lines">
+            {ms.questions.map((l,i)=>(
+              <div className={"fb-line fb-line-"+(i+1)} key={i}>
+                <div className="fb-line-num">{i+1}</div>
+                <div>
+                  <p className="fb-line-t">{l.t}</p>
+                  <p className="fb-line-b">{l.b}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div className="section-rule"><span>{lang==='kr'?'이전 채점자 피드백':'Earlier examiner feedback'}</span></div>
+      </div>}
+
       <div className="fb-hero">
         <p className="eyebrow">{h.eyebrow}</p>
         <p className="ex-lede" style={{fontSize:18, marginTop:6}}>{h.lede}</p>

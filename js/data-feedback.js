@@ -1,5 +1,58 @@
-/* 2024 examiner feedback — distilled into a structured tab */
+/* Examiner feedback — distilled into a structured tab */
 window.FEEDBACK_2024 = {
+
+  // Mid-semester general feedback — legal-writing craft (most recent, most actionable)
+  midSem: {
+    kr: {
+      eyebrow: "중간고사 일반 피드백",
+      lede: "이번엔 법리가 아니라 글쓰기 자체의 문제. 질문에 답하는 설득력 있는 주장 + 곧바로 본론.",
+      quote: "주장을 명확히 진술하지 않거나, 긴 서론으로 근거·분석 여력을 깎거나, 구조에 부주의하면 — 명료성과 정밀성이 무너지고 주장의 힘이 약해진다.",
+      craft: { h: "글쓰기 — 좋은 답안이 한 것", items: [
+        "전체 주장을 한 문장으로 먼저 못박고, 곧바로 그 주장을 전개한다.",
+        "서론은 짧게. 긴 서론은 근거·분석 분량을 깎아먹는다.",
+        "한 단락 = 하나의 분명한 요지 = 전체 주장에 기여. 과도하게 긴 단락 금지.",
+        "핵심 용어를 먼저 정의한다. 정의 없이 쓰는 게 가장 흔한 감점.",
+        "generic 배경 설명이 아니라 지명된 케이스를 가까이 읽어 인용한다.",
+        "명료성·정밀성 자체가 점수다 — 독자가 해독하느라 애쓰면 주장이 약해진다.",
+      ]},
+      dont: { h: "절대 하지 말 것", items: [
+        ["주장을 안 밝히고 사실·법리부터 나열", "한 문장 thesis → 곧바로 근거"],
+        ["배경 일반론을 길게 (예: 공정청문 배제의 일반 접근)", "원칙은 간결히, 쟁점에 분량 집중"],
+        ["용어를 정의 없이 사용", "쓰기 전에 정의 + 유형 구분"],
+        ["케이스를 추상적으로만 언급", "지명 케이스 close reading + analogy/distinction"],
+      ]},
+      questions: [
+        { t: "Q1 — LPDT & ‘qualitative judgements’", b: "용어를 정의하고 유형을 구분하라: ① 오랜 사법적 합의로 default norm(공정청문)·materiality threshold를 세우는 판단 ② 추상 규범을 개별 statutory context에 적용할 때의 판단 ③ Project Blue Sky의 contestable한 무효-의도 판단. \"ultimately\"의 의미를 따져 뉘앙스를 넣어라. LPDT는 Hossain 위에서 — materiality는 보편 아님(bias·legal reasonableness 제외), 입증 부담이 낮아 추론·절차 오류는 거의 추정되며, 사건별 merits로 조건의 경중을 조정하는 도구가 아니다." },
+        { t: "Q2 — non-compellable power & 공정청문", b: "non-compellable power가 무엇인지 정의하고 Plaintiff S10·Plaintiff M61로 답하라. S10: 비강제성은 한 factor일 뿐 결정적이지 않다 — 누적적 statutory context(이미 통상 Migration Act 절차로 청문 기회를 거침)로 판단. Brennan J(Kioa) 접근상 비결정적임을 인정하는 게 통찰. M61: IMR 절차가 장관 권한과 연결되면 PF는 곧바로 함의 — 다만 구제는 declaration 한정(mandamus 불가 → certiorari 무의미), 그리고 장관이 \"각 신청을 고려한다\"는 절차적 결정을 했기에 가능. 고려 결정 자체가 없으면 그 단계에 청문 요구는 어렵다." },
+      ],
+      rules: ["주장 먼저, 서론은 짧게", "쓰기 전에 용어를 정의한다", "지명 케이스 close reading — generic 배경 ✕", "한 단락 = 한 요지 = thesis에 기여"],
+    },
+    en: {
+      eyebrow: "Mid-semester general feedback",
+      lede: "This one is about writing craft, not doctrine. Make a persuasive argument that answers the question — then dive straight in.",
+      quote: "Failing to state the argument, a long introduction that eats into reasons and analysis, or inattention to structure — clarity and precision collapse and the argument loses force.",
+      craft: { h: "Writing — what good answers did", items: [
+        "Pin the overall argument in one sentence, then dive straight into making it.",
+        "Keep the introduction short — a long intro eats your reasons-and-analysis budget.",
+        "One paragraph = one clear point that advances the overall argument. No overlong paragraphs.",
+        "Define key terms before using them. Not defining them was the most common loss.",
+        "Read the named cases closely and cite them — not generic background.",
+        "Clarity and precision are themselves marks — if the reader has to struggle, the argument weakens.",
+      ]},
+      dont: { h: "Do not", items: [
+        ["Recite facts/doctrine before stating a position", "One-sentence thesis → straight to reasons"],
+        ["Long background generalities (e.g. the general approach to ousting the fair hearing rule)", "State the principle succinctly; spend the words on the issue"],
+        ["Use terms without defining them", "Define + distinguish types before you use them"],
+        ["Mention cases abstractly", "Close-read the named cases + name the analogy/distinction"],
+      ]},
+      questions: [
+        { t: "Q1 — LPDT & ‘qualitative judgements’", b: "Define the term and distinguish its types: (i) longstanding judicial consensus setting default norms (fair hearing) and the materiality threshold; (ii) judgement in applying abstract norms to a particular statutory context; (iii) the contestable Project Blue Sky invalidity-intent judgement. Interrogate what \"ultimately\" means — that is where the nuance is. LPDT builds on Hossain: materiality is not universal (excludes bias and legal reasonableness), the onus is light (almost presumed for reasoning/procedural errors), and it is not a device to adjust the weight of conditions case-by-case by reference to the merits." },
+        { t: "Q2 — non-compellable power & fair hearing", b: "Define what a non-compellable power is, then answer through Plaintiff S10 and Plaintiff M61. S10: non-compellability is a factor but not conclusive — decided on cumulative statutory context (affected persons had already had fair-hearing opportunities through ordinary Migration Act processes); the insight is that on Brennan J's Kioa approach it is not sufficient either way. M61: once the IMR process is characterised as connected with the Minister's powers, PF is implied straightforwardly — but relief is limited to a declaration (no mandamus → certiorari pointless), and only available because the Minister took the procedural decision to consider each application. If no decision to consider is made, a hearing is hard to require at that step." },
+      ],
+      rules: ["Argument first, short intro", "Define terms before you use them", "Close-read the named cases — no generic background", "One paragraph = one point = advances the thesis"],
+    }
+  },
+
   hero: {
     kr: {
       eyebrow: "2024 시험 채점자 피드백",

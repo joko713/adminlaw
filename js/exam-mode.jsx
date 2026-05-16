@@ -5,8 +5,8 @@ function ExamMode({ lang, onCase }) {
   const [tab, setTab] = React.useState('patterns');
   const T = window.I18N[lang];
   const tabs = lang === 'kr'
-    ? [['patterns','패턴'],['feedback','2024 피드백'],['topics','5대 토픽'],['trees','IF / THEN'],['criteria','채점 기준'],['hirac','HIRAC'],['plan','학습 플랜'],['pairings','케이스 페어링']]
-    : [['patterns','Patterns'],['feedback','2024 feedback'],['topics','Five topics'],['trees','IF / THEN'],['criteria','Criteria'],['hirac','HIRAC'],['plan','Plan'],['pairings','Pairings']];
+    ? [['patterns','패턴'],['feedback','답안 피드백'],['topics','5대 토픽'],['trees','IF / THEN'],['criteria','채점 기준'],['hirac','HIRAC'],['plan','학습 플랜'],['pairings','케이스 페어링']]
+    : [['patterns','Patterns'],['feedback','Answer feedback'],['topics','Five topics'],['trees','IF / THEN'],['criteria','Criteria'],['hirac','HIRAC'],['plan','Plan'],['pairings','Pairings']];
   return (
     <div className="page exam-page">
       <p className="eyebrow">{lang==='kr'?'파이널 시험 대비':'final-exam preparation'}</p>
@@ -35,7 +35,7 @@ function ExamPatterns({ lang }) {
   const f = E.format[lang];
   const KR = lang === 'kr';
   return <div className="exam-section">
-    {/* ── 2026 confirmed format — McDonald 강의 (W10 seminar) 공식 안내 ── */}
+    {/* ── 2026 confirmed format — from the W10 seminar ── */}
     <div className="exam-notice">
       <div className="exam-notice-h">
         <span className="exam-notice-tag">{KR ? '확정 · 2026년 6월 4일' : 'Confirmed · 4 June 2026'}</span>
@@ -46,20 +46,20 @@ function ExamPatterns({ lang }) {
         <li><strong>Part A · 60</strong> — {KR ? 'Problem question · 3 sub-questions' : 'Problem question · 3 sub-questions'}</li>
         <li><strong>Part B · 40</strong> — {KR ? '3개의 argumentative/analytical 문항: 1×20점 + 2×10점 (예전 2 essays 형식 폐지)' : '3 argumentative questions: 1 × 20 marks + 2 × 10 marks (no more two-essay format)'}</li>
         <li><strong>{KR ? '범위' : 'Scope'}</strong> — {KR ? 'W1–W12 전부 examinable. Delegated legislation, political accountability(W1) 포함. Mid-sem에서 다룬 LPDT 등도 재출제 가능.' : 'W1–W12 all examinable, including delegated legislation and political accountability (W1). Cases from mid-sem (e.g. LPDT) may recur.'}</li>
-        <li><strong>{KR ? 'AAT → ART' : 'AAT → ART'}</strong> — {KR ? 'basic powers 동일. AAT case law(Shi · Frugtniet · Drake No 2)는 ART에 그대로 적용. 새 입법 직접 읽을 필요 없음 — 교수가 section numbers 정리해서 줌.' : 'Basic powers identical. AAT case law (Shi, Frugtniet, Drake No 2) carries over. Updated section numbers will be distributed.'}</li>
+        <li><strong>{KR ? 'AAT → ART' : 'AAT → ART'}</strong> — {KR ? 'basic powers 동일. AAT case law(Shi · Frugtniet · Drake No 2)는 ART에 그대로 적용. 새 입법 직접 읽을 필요 없음 — section numbers 는 별도 정리되어 제공됨.' : 'Basic powers identical. AAT case law (Shi, Frugtniet, Drake No 2) carries over. Updated section numbers will be distributed.'}</li>
         <li className="exam-notice-em"><strong>{KR ? '채점 배점' : 'Mark allocation'}</strong> — {KR ? 'Canvas 에 시험 전 indicative allocation 게시 예정.' : 'Indicative allocation will be posted on Canvas before the exam.'}</li>
       </ul>
     </div>
 
-    {/* ── HD 차별화 포인트 — McDonald 강의 (W10 seminar) ── */}
+    {/* ── HD 차별화 포인트 — W10 seminar ── */}
     <div className="exam-hd">
-      <div className="exam-hd-h">{KR ? 'HD 차별화 — 강의에서 강조된 6가지' : 'HD differentiators — 6 lecture-grade moves'}</div>
+      <div className="exam-hd-h">{KR ? 'HD 차별화 — 강의에서 강조된 8가지' : 'HD differentiators — 8 lecture-grade moves'}</div>
       <ol className="exam-hd-list">
         <li>
           <span className="exam-hd-n">01</span>
           <div>
             <p className="exam-hd-t">{KR ? '순수 IRAC 피하기' : 'Avoid pure IRAC'}</p>
-            <p className="exam-hd-w">{KR ? 'McDonald 는 "rule을 진공에서 추출 → apply" 방식에 회의적. Rule 자체를 statutory context 에서 argue 해서 도출해야 함 — 특히 PF. VEAL: "PF의 내용은 statutory context 에 modulated".' : 'McDonald is sceptical of vacuum-extracted rules. The rule itself must be argued out of the statutory context — especially in PF. VEAL: PF\'s content is \"very much modulated to the statutory context.\"'}</p>
+            <p className="exam-hd-w">{KR ? '순수 IRAC("rule을 진공에서 추출 → apply")는 회의적으로 봐야 함. Rule 자체를 statutory context 에서 argue 해서 도출해야 함 — 특히 PF. VEAL: "PF의 내용은 statutory context 에 modulated".' : 'Be sceptical of vacuum-extracted rules. The rule itself must be argued out of the statutory context — especially in PF. VEAL: PF\'s content is \"very much modulated to the statutory context.\"'}</p>
           </div>
         </li>
         <li>
@@ -80,7 +80,7 @@ function ExamPatterns({ lang }) {
           <span className="exam-hd-n">04</span>
           <div>
             <p className="exam-hd-t">{KR ? 'Futuris vs Graham — alternative pathway 가 결정 변수' : 'Futuris vs Graham — alternative pathway is the swing factor'}</p>
-            <p className="exam-hd-w">{KR ? 'Futuris 가 합헌이었던 이유는 Pt IVC TAA (Federal Court appeal on question of law) 라는 "functional equivalent of JR" 이 있었기 때문. Functional equivalent 없으면 S157·Kirk territory. McDonald: Futuris 에서 너무 extrapolate 하지 마라.' : 'Futuris survived because Pt IVC TAA gave a \"functional equivalent of JR.\" Without one, you\'re back in S157/Kirk territory. McDonald: don\'t over-extrapolate from Futuris.'}</p>
+            <p className="exam-hd-w">{KR ? 'Futuris 가 합헌이었던 이유는 Pt IVC TAA (Federal Court appeal on question of law) 라는 "functional equivalent of JR" 이 있었기 때문. Functional equivalent 없으면 S157·Kirk territory. 주의: Futuris 에서 너무 extrapolate 하지 마라.' : 'Futuris survived because Pt IVC TAA gave a \"functional equivalent of JR.\" Without one, you\'re back in S157/Kirk territory. Caution: don\'t over-extrapolate from Futuris.'}</p>
           </div>
         </li>
         <li>

@@ -82,7 +82,7 @@ window.IMP_LABEL = {
    "required"    = Required Reading (must master)
    "recommended" = Recommended Reading
    "mentioned"   = Mentioned in text / reading questions (background)
-   "external"    = Not in seminar plan (Joanne's notes / supplementary)
+   "external"    = Not in seminar plan (supplementary notes)
    ───────────────────────────────────────────────────────────── */
 window.CASE_PRIORITY = {
   /* S1 — delegated legislation */
@@ -165,7 +165,7 @@ window.CASE_PRIORITY = {
   frugtniet:    { priority:'required', seminar:11 },
   drake:        { priority:'required', seminar:11 },
 
-  /* Cross / W1 delegated-leg background (Joanne's notes) */
+  /* Cross / W1 delegated-leg background (supplementary) */
   coco:         { priority:'external', seminar:1 },
   toohey:       { priority:'external', seminar:1 },
   kruse:        { priority:'external', seminar:1 },
