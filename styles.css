@@ -55,14 +55,57 @@ body {
   display: grid;
   grid-template-columns: 248px 1fr;
   min-height: 100vh;
+  transition: grid-template-columns 220ms ease;
 }
+.app.sidebar-collapsed { grid-template-columns: 0 1fr; }
 
 aside.sidebar {
   border-right: 1px solid var(--rule);
   padding: 28px 22px;
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(180,150,100,.03) 100%);
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  transition: opacity 180ms ease, padding 220ms ease;
 }
+.app.sidebar-collapsed aside.sidebar {
+  padding: 0;
+  border-right: none;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Toggle button inside the open sidebar (top-right corner) */
+.sidebar-toggle {
+  position: absolute; top: 14px; right: 10px;
+  width: 28px; height: 28px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: none; cursor: pointer;
+  color: var(--ink-3); border-radius: 4px;
+  font-family: var(--font-serif);
+  font-size: 22px; line-height: 1;
+  transition: all 120ms;
+}
+.sidebar-toggle:hover { background: var(--paper-3); color: var(--ink); }
+
+/* Floating re-open button — only visible when sidebar is collapsed */
+.sidebar-fab {
+  position: fixed; top: 14px; left: 14px;
+  z-index: 60;
+  width: 36px; height: 36px;
+  display: none;
+  align-items: center; justify-content: center;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--ink-2);
+  font-size: 18px; line-height: 1;
+  box-shadow: 0 2px 8px rgba(74, 55, 30, .06);
+  transition: all 120ms;
+}
+.sidebar-fab:hover { background: var(--paper-2); color: var(--ink); border-color: var(--ink-3); }
+.app.sidebar-collapsed .sidebar-fab { display: inline-flex; }
+@media print { .sidebar-toggle, .sidebar-fab { display: none !important; } }
 .brand {
   font-family: var(--font-serif);
   font-weight: 600;
@@ -575,7 +618,7 @@ h3 {
 .panel-backdrop.open { opacity: 1; pointer-events: auto; }
 .panel {
   position: fixed; top: 0; right: 0;
-  width: min(480px, 92vw);
+  width: min(900px, 95vw);
   height: 100vh;
   background: var(--paper);
   background-image: radial-gradient(at 80% 10%, rgba(190, 160, 110, .08) 0, transparent 50%);
@@ -627,9 +670,9 @@ h3 {
   padding: 8px 32px 60px;
 }
 .panel.fullscreen .panel-content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 8px 40px 80px;
+  max-width: none;
+  margin: 0;
+  padding: 8px 5vw 80px;
 }
 
 /* Quick-jump TOC — small chip row under the citation */

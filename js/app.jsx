@@ -867,9 +867,18 @@ function App() {
   const [mode, setMode] = useState('home');
   const [weekIdx, setWeekIdx] = useState(0);
   const [caseId, setCaseId] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   const T = I[lang];
-  return <div className="app">
+  return <div className={"app" + (sidebarOpen ? '' : ' sidebar-collapsed')}>
+    <button className="sidebar-fab"
+            onClick={()=>setSidebarOpen(true)}
+            title={lang==='kr'?'사이드바 열기':'Open sidebar'}
+            aria-label="Open sidebar">≡</button>
     <aside className="sidebar">
+      <button className="sidebar-toggle"
+              onClick={()=>setSidebarOpen(false)}
+              title={lang==='kr'?'사이드바 닫기':'Close sidebar'}
+              aria-label="Close sidebar">‹</button>
       <p className="brand">{T.appTitle}</p>
       <p className="brand-sub">{T.subtitle}</p>
       <nav className="modes">
