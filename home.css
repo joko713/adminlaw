@@ -1,15 +1,6 @@
-/* Framework rail — 6 stage cards, expand-in-place */
+/* Framework rail — 6 stage cards, expand-in-place
+   (full-width layout now lives in the global .page rule in styles.css) */
 .fw-page { padding-bottom: 80px; }
-
-/* Overview / home page — fill the viewport horizontally, no narrow column */
-.page.fw-page {
-  max-width: none;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-@media (max-width: 740px) {
-  .page.fw-page { padding-left: 14px; padding-right: 14px; }
-}
 
 .fw-rail {
   list-style: none;

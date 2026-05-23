@@ -128,8 +128,8 @@ function FullMap({ KR, onCase }) {
       materiality:   '※ 중요성은 결과를 바꿨을 현실적 가능성이 있었는지 묻는다. PF 사안에서는 Nathanson 때문에 문턱이 아주 낮다.',
       w10:           '※ 입법으로 사법심사를 우회하려는 모든 도구는 substance-and-degree로 본다 — 형식이 아니라 실질이 중요. 의도적 위반은 늘 JE로 남는다.',
       remedies:      'JE면 보통 certiorari(무효) + mandamus(다시 결정) + prohibition(금지)이 세트. 주 사법심사에서는 certiorari가 직접 구제.',
-      tribunals:     'AAT가 ART로 바뀌었다(2024년 10월). Shi(시점), Frugtniet(법적 제약), Drake No 2(정책)가 본안 재심사의 3대 축.',
-      beyond:        '옴부즈만(체계 강함·개별 약함) · FOI(s 11A 공개 원칙) · 의회 · McMillan 학술자료.',
+      tribunals:     'AAT가 ART로 바뀜(2024년 10월). s 43 — 원결정자의 "자리에 서서(stand in the shoes)" "옳거나 더 바람직한" 결정을 다시 내림. 본안 재심사 3대 축 — Shi(사실 기준 시점), Frugtniet(같은 제약), Drake No 2(정책 — "일관성이 정의보다 우선하지 않는다").',
+      beyond:        '"청렴 부문(integrity branch)"으로 묶이는 비사법 책임성 장치. 옴부즈만(Ombudsman Act 1976) — maladministration 기준, 권고만(강제력 없음); Robodebt가 도달과 한계 동시에 보여줌. 의회 — 답할 의무지만 형식적 권한 없음; 감사원장은 의회 공무원 지위로 더 강한 보호(Auditor-General Act 1997 s 50). FOI(FOI Act 1982) — 공개 추정, s 11B 공익 테스트, 개인 사생활(s 47F)이 최다 주장 면제.',
     },
   } : {
     sections: {
@@ -173,8 +173,8 @@ function FullMap({ KR, onCase }) {
       materiality:'※ Materiality asks whether a different outcome was realistically possible. In PF context the bar is low (Nathanson).',
       w10:'※ Every legislative device aimed at JR is tested by substance and degree — practical impact, not form. Deliberate wrongdoing always remains JE.',
       remedies:'JE typically yields certiorari + mandamus + prohibition together. In State JR, certiorari is a direct (not ancillary) remedy.',
-      tribunals:'AAT replaced by ART (Oct 2024). The three pillars of merits review: Shi (time), Frugtniet (legal limits), Drake No 2 (policy).',
-      beyond:'Ombuds (strong systemically, weak individually) · FOI (s 11A pro-disclosure) · Parliament · McMillan article.',
+      tribunals:'AAT replaced by ART (Oct 2024). s 43 — "stand in the shoes" of the primary decision-maker and re-make the "correct or preferable" decision. Three pillars of merits review: Shi (time of facts), Frugtniet (same constraints), Drake No 2 (policy — "consistency is not preferable to justice").',
+      beyond:'Non-judicial accountability grouped as the "integrity branch". Ombuds (Ombudsman Act 1976) — maladministration basis, recommend only (non-coercive); Robodebt shows both reach and limits. Parliament — answerable but no formal authority; the Auditor-General has stronger officer-of-parliament protection (Auditor-General Act 1997 s 50). FOI (FOI Act 1982) — pro-disclosure presumption, s 11B public interest test, personal privacy (s 47F) is the most-claimed exemption.',
     },
   };
 
@@ -1076,9 +1076,9 @@ function AnalyticalFlow({ KR, onCase }) {
               ['drake','Cannabis case No 2 — Tribunal applies policy but can depart on the facts'],
             ],
             note: KR ? 'Shi — 시점. Frugtniet — 법적 제약. Drake No 2 — 정책 framework.' : 'Shi (time). Frugtniet (legal limits). Drake No 2 (policy framework).' },
-          { label: KR ? '법원 밖의 길' : 'Beyond courts',
+          { label: KR ? '법원 밖의 길 — "청렴 부문"' : 'Beyond courts — "integrity branch"',
             cases: [],
-            note: KR ? '옴부즈만 · FOI(s 11A) · 의회 · McMillan 학술자료.' : 'Ombuds · FOI · Parliament · McMillan article.' },
+            note: KR ? '옴부즈만(Ombudsman Act 1976) — maladministration 기준, 권고만 · Robodebt가 한계 동시에 보여줌. 의회 — 답할 의무지만 형식적 권한 없음; 감사원장은 의회 공무원 보호. FOI(FOI Act 1982) — 공개 추정 + s 11B 공익 테스트; 강한 면제(s 33/34/37/38) vs 조건부(s 47C 심의·s 47F 사생활 — 최다 주장).' : 'Ombuds (Ombudsman Act 1976) — maladministration basis, recommend only · Robodebt shows the limits. Parliament — answerable but no formal authority; the Auditor-General has officer-of-parliament protection. FOI (FOI Act 1982) — pro-disclosure presumption + s 11B public interest test; hard exemptions (s 33/34/37/38) vs conditional (s 47C deliberative, s 47F personal privacy — the most-claimed).' },
         ]}
       />
 
