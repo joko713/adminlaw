@@ -10,7 +10,7 @@ function Home({ lang, onJump, onCase }) {
               ? (KR ? 'W1부터 W11까지 한 화면에' : 'W1 through W11 — at a glance')
               : (KR ? '사법심사 — 분석 흐름' : 'Judicial review — reasoning flow'),
     lede:    viewMode === 'weeks'
-              ? (KR ? '주차별 핵심 단계와 관련 판례를 한 흐름으로 펼쳐 두었어. 케이스 칩을 누르면 카드가 열린다.' : 'The whole course laid out as one flow — click any case chip to open its card.')
+              ? (KR ? '주차별 핵심 단계와 관련 판례를 한 흐름으로 펼쳐 뒀어. 판례 칩을 누르면 카드가 열려.' : 'The whole course laid out as one flow — click any case chip to open its card.')
               : (KR ? '문제 풀이 순서대로 — 어디서 시작해서 어디로 가는지. 각 단계에서 길이 갈리는 지점도 함께 보인다.' : 'In the order you reason through a problem — where to start, where to branch.'),
   };
 
@@ -91,12 +91,12 @@ function FullMap({ KR, onCase }) {
       // W4 Hossain
       hStage1:       '① 권한 + 조건',
       hStage2:       '② PBS — 권한이 적법하게 행사됐나',
-      hStage3:       '③ 사유 + 중요성 — 위반이 어떤 차원에서 어떻게',
+      hStage3:       '③ 사유 + 중요성 — 어느 사유가, 결과를 바꿀 만큼?',
       // JE Tree
       express:       '명시적 한계',
       implied:       '묵시적 조건',
       factlaw:       '사실·법률 오류',
-      pf:            '절차적 공정 — 공정한 청문',
+      pf:            '절차적 공정 — 청문 규칙',
       bias:          '편향 — Ebner 2단계',
       rc:            '관련 고려사항 — Peko-W',
       reason:        '비합리성 — Wednesbury → Li → DUA16',
@@ -128,7 +128,7 @@ function FullMap({ KR, onCase }) {
       materiality:   '※ 중요성은 결과를 바꿨을 현실적 가능성이 있었는지 묻는다. PF 사안에서는 Nathanson 때문에 문턱이 아주 낮다.',
       w10:           '※ 입법으로 사법심사를 우회하려는 모든 도구는 substance-and-degree로 본다 — 형식이 아니라 실질이 중요. 의도적 위반은 늘 JE로 남는다.',
       remedies:      'JE면 보통 certiorari(무효) + mandamus(다시 결정) + prohibition(금지)이 세트. 주 사법심사에서는 certiorari가 직접 구제.',
-      tribunals:     'AAT가 ART로 바뀜(2024년 10월). s 43 — 원결정자의 "자리에 서서(stand in the shoes)" "옳거나 더 바람직한" 결정을 다시 내림. 본안 재심사 3대 축 — Shi(사실 기준 시점), Frugtniet(같은 제약), Drake No 2(정책 — "일관성이 정의보다 우선하지 않는다").',
+      tribunals:     'AAT가 ART로 바뀜(2024년 10월). s 43 — 원결정자의 "자리에 서서(stand in the shoes)" "옳거나 더 바람직한" 결정을 다시 내림. 실체심사 3대 축 — Shi(사실 기준 시점), Frugtniet(같은 제약), Drake No 2(정책 — "일관성이 정의보다 우선하지 않는다").',
       beyond:        '"청렴 부문(integrity branch)"으로 묶이는 비사법 책임성 장치. 옴부즈만(Ombudsman Act 1976) — maladministration 기준, 권고만(강제력 없음); Robodebt가 도달과 한계 동시에 보여줌. 의회 — 답할 의무지만 형식적 권한 없음; 감사원장은 의회 공무원 지위로 더 강한 보호(Auditor-General Act 1997 s 50). FOI(FOI Act 1982) — 공개 추정, s 11B 공익 테스트, 개인 사생활(s 47F)이 최다 주장 면제.',
     },
   } : {
@@ -1061,7 +1061,7 @@ function AnalyticalFlow({ KR, onCase }) {
 
       {/* Step 10: Alternative path — Merits review */}
       <Step n="⑩"
-        h={KR ? '대안 경로 — 본안 재심사 (ART)' : 'Alternative — merits review (ART)'}
+        h={KR ? '대안 경로 — 실체심사 (ART)' : 'Alternative — merits review (ART)'}
         sub={KR ? '결정을 다시 받고 싶다면 사법심사가 아니라 ART로' : 'When the applicant wants the decision re-made, not just reviewed'}
         branches={[
           { label: KR ? 'ART (2024년 10월~)' : 'ART (from Oct 2024)',

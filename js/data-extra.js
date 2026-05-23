@@ -186,7 +186,7 @@ window.I18N = {
     close:'닫기',
     flashFront:'판례 → 법리',
     flashBack:'법리 → 판례',
-    flashFlip:'탭해서 뒤집기',
+    flashFlip:'눌러서 뒤집기',
     flashAgain:'다시',
     flashHard:'어려움',
     flashGood:'좋음',

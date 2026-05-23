@@ -10,7 +10,7 @@ window.GLOSSARY_DATA = {
       full_en: 'High Court of Australia',
       full_kr: '호주 연방대법원',
       desc_en: 'Australia\'s apex court. Original jurisdiction under s 75(v) of the Constitution to issue constitutional writs (prohibition, mandamus, injunction) against officers of the Commonwealth — the entrenched supervisory jurisdiction at federal level.',
-      desc_kr: '호주의 최고법원. 헌법 s 75(v)에 따라 영연방 공무원에 대한 헌법적 writ(prohibition, mandamus, injunction)를 발부하는 원시 관할을 가진다 — 연방 차원의 보호된 감독관할.',
+      desc_kr: '호주의 최고법원. 헌법 s 75(v)에 따라 영연방 공무원에 대한 헌법적 writ(prohibition, mandamus, injunction)를 발부하는 원시 관할이 있다 — 연방 차원의 보호된 감독관할.',
       cases: ['s157','m70','m68','m61','graham','futuris']
     },
     {
@@ -34,7 +34,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Administrative Appeals Tribunal',
       full_kr: '행정심판소 (구)',
       desc_en: 'Cth merits-review tribunal that operated 1976–2024. Replaced by the ART on 14 October 2024. Conducted "stand-in-the-shoes" merits review (Shi on timing; Frugtniet on legal constraints; Drake No 2 on policy application).',
-      desc_kr: '1976–2024년 운영된 영연방 본안 재심사 심판소. 2024년 10월 14일 ART로 대체됐다. "원결정자의 신발을 신고" 하는 본안 재심사를 수행(시점은 Shi, 법적 제약은 Frugtniet, 정책 적용은 Drake No 2).',
+      desc_kr: '1976–2024년 운영된 영연방 실체심사 심판소. 2024년 10월 14일 ART로 대체됐다. "원결정자의 신발을 신고" 하는 실체심사를 수행(시점은 Shi, 법적 제약은 Frugtniet, 정책 적용은 Drake No 2).',
       cases: ['shi','frugtniet','drake']
     },
     {
@@ -42,7 +42,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Administrative Review Tribunal',
       full_kr: '행정심사심판소 (신, 2024년 10월~)',
       desc_en: 'New Cth merits-review tribunal that replaced the AAT from 14 October 2024. Established by the Administrative Review Tribunal Act 2024 (Cth) in response to concerns about AAT appointment integrity and case management. Substantive merits-review framework (Shi/Frugtniet/Drake No 2) continues to apply.',
-      desc_kr: '2024년 10월 14일 AAT를 대체한 새 영연방 본안 재심사 심판소. AAT의 임명 독립성·사건 관리 우려에 대한 응답으로 Administrative Review Tribunal Act 2024 (Cth)에 따라 설립. 본안 재심사의 실체적 framework(Shi/Frugtniet/Drake No 2)는 그대로 이어진다.',
+      desc_kr: '2024년 10월 14일 AAT를 대체한 새 영연방 실체심사 심판소. AAT의 임명 독립성·사건 관리 우려에 대한 응답으로 Administrative Review Tribunal Act 2024 (Cth)에 따라 설립. 실체심사의 실체적 framework(Shi/Frugtniet/Drake No 2)는 그대로 이어진다.',
       cases: ['shi','frugtniet','drake']
     },
     {
@@ -66,13 +66,13 @@ window.GLOSSARY_DATA = {
       full_en: 'Immigration Assessment Authority',
       full_kr: '이민평가국',
       desc_en: 'Limited fast-track merits-review body created by the Migration Act for "fast track applicants" (boat arrivals). CNY17 raised apprehended-bias issues from prejudicial material being forwarded to IAA members.',
-      desc_kr: 'Migration Act가 "fast-track 신청자"(보트 도착자)를 위해 만든 제한적·신속 본안 재심사 기관. CNY17에서 편견적 자료가 IAA 위원에게 전달된 것이 추정 편향 쟁점이 됐다.',
+      desc_kr: 'Migration Act가 "fast-track 신청자"(보트 도착자)를 위해 만든 제한적·신속 실체심사 기관. CNY17에서 편견적 자료가 IAA 위원에게 전달된 것이 추정 편향 쟁점이 됐다.',
       cases: ['cny17']
     },
     {
       abbr: 'IMR',
       full_en: 'Independent Merits Review',
-      full_kr: '독립 본안 재심사',
+      full_kr: '독립 실체심사',
       desc_en: 'Non-statutory reviewing process used in offshore refugee status assessments by private contractors. Held reviewable on PF grounds in Plaintiff M61 — outsourcing did not insulate the process from JR. WZARH dealt with PF breach when an IMR reviewer was changed mid-process.',
       desc_kr: '민간 계약자가 역외 난민 지위 평가에 사용한 비-법정 재심사 절차. Plaintiff M61에서 PF 사유로 심사 대상이라고 인정 — 외주화가 절차를 JR에서 차단하지 못한다. WZARH는 IMR 심사관이 절차 도중 교체된 PF 위반 사안.',
       cases: ['m61','wzarh']
@@ -82,7 +82,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Migration Agents Registration Authority',
       full_kr: '이민대리인 등록청',
       desc_en: 'Statutory body regulating migration agents under the Migration Act. Made the registration cancellation decision reviewed in Shi v MARA — the leading authority on the temporal frame for merits review.',
-      desc_kr: 'Migration Act 아래에서 이민 대리인을 규율하는 법정 기관. Shi v MARA에서 본안 재심사의 시간 틀에 관한 선도 판례를 낳은 등록 취소 결정을 한 기관.',
+      desc_kr: 'Migration Act 아래에서 이민 대리인을 규율하는 법정 기관. Shi v MARA에서 실체심사의 시간 틀에 관한 선도 판례를 낳은 등록 취소 결정을 한 기관.',
       cases: ['shi']
     },
     {
@@ -277,7 +277,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Crimes Act 1914 (Cth) Pt VIIC — spent-convictions regime',
       full_kr: 'Crimes Act 1914 (Cth) Pt VIIC — 만료 유죄 체계',
       desc_en: 'Statutory regime excluding old/minor convictions from being taken into account. Applied in Frugtniet v ASIC: a merits-review tribunal is bound by the same exclusion as the original decision-maker — cannot rely on spent convictions ASIC could not consider.',
-      desc_kr: '오래된·경미한 유죄를 고려 대상에서 제외하는 법정 체계. Frugtniet v ASIC에서 적용 — 본안 재심사 심판소는 원 결정자와 같은 배제에 묶이며, ASIC가 고려할 수 없었던 만료 유죄에 의존할 수 없다.',
+      desc_kr: '오래된·경미한 유죄를 고려 대상에서 제외하는 법정 체계. Frugtniet v ASIC에서 적용 — 실체심사 심판소는 원 결정자와 같은 배제에 묶이며, ASIC가 고려할 수 없었던 만료 유죄에 의존할 수 없다.',
       cases: ['frugtniet']
     },
     {
@@ -293,7 +293,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Taxation Administration Act 1953 (Cth) Pt IVC — taxation objections and review',
       full_kr: 'Taxation Administration Act 1953 (Cth) Pt IVC — 조세 이의 및 심사 절차',
       desc_en: 'Statutory scheme for tax objections, AAT (now ART) merits review, and Federal Court appeals from the Commissioner. The alternative contestability path that satisfies the constitutional rule that a tax cannot be made incontestable (MacCormick; Richard Walter) — which is why s 175 ITAA (the no-invalidity clause) is constitutionally permissible despite shielding ordinary process errors from constitutional-writ review (Futuris). Burden of proof on the taxpayer (ss 14ZZK, 14ZZO); Commissioner must implement AAT/FCA outcomes (ss 14ZZL, 14ZZQ).',
-      desc_kr: '조세 이의·AAT(현재 ART) 본안 재심사·연방법원 항소를 위한 법정 체계. 조세는 incontestable할 수 없다는 헌법 원칙(MacCormick; Richard Walter)을 충족시키는 대체 다툴 수 있는 경로 — 그래서 s 175 ITAA(no-invalidity 조항)가 통상의 절차 오류를 헌법적 writ 심사에서 차단해도 헌법적으로 허용된다(Futuris). 입증책임은 납세자(ss 14ZZK, 14ZZO); Commissioner는 AAT/FCA 결과를 이행해야 한다(ss 14ZZL, 14ZZQ).',
+      desc_kr: '조세 이의·AAT(현재 ART) 실체심사·연방법원 항소를 위한 법정 체계. 조세는 incontestable할 수 없다는 헌법 원칙(MacCormick; Richard Walter)을 충족시키는 대체 다툴 수 있는 경로 — 그래서 s 175 ITAA(no-invalidity 조항)가 통상의 절차 오류를 헌법적 writ 심사에서 차단해도 헌법적으로 허용된다(Futuris). 입증책임은 납세자(ss 14ZZK, 14ZZO); Commissioner는 AAT/FCA 결과를 이행해야 한다(ss 14ZZL, 14ZZQ).',
       cases: ['futuris']
     },
     {
@@ -627,7 +627,7 @@ window.GLOSSARY_DATA = {
       full_en: 'Tax cannot be made incontestable (MacCormick / Richard Walter)',
       full_kr: '조세는 다툴 수 없게 만들 수 없다 (MacCormick / Richard Walter)',
       desc_en: 'Constitutional principle that a tax must remain legally contestable — otherwise the limits of the federal taxation power would be placed beyond examination. Satisfied for the ITAA by Pt IVC of the Taxation Administration Act, which provides objections, AAT (now ART) review, and FCA appeals as the alternative contestability path. This is why a no-invalidity clause like s 175 can validly shield ordinary process errors from constitutional writ review — the constitutional floor is met through Pt IVC.',
-      desc_kr: '조세는 법적으로 다툴 수 있어야 한다는 헌법 원칙 — 그렇지 않으면 연방 과세권의 한계가 검토 불가능한 자리로 옮겨 가게 된다. ITAA에서는 Taxation Administration Act Pt IVC가 — 이의제기·AAT(현 ART) 본안 재심사·FCA 항소를 대체 다툴 수 있는 경로로 제공함으로써 — 이 원칙을 충족시킨다. 그래서 s 175 같은 no-invalidity 조항이 통상의 절차 오류를 헌법적 writ 심사에서 차단해도 유효 — 헌법적 바닥선이 Pt IVC를 통해 충족되기 때문.',
+      desc_kr: '조세는 법적으로 다툴 수 있어야 한다는 헌법 원칙 — 그렇지 않으면 연방 과세권의 한계가 검토 불가능한 자리로 옮겨 가게 된다. ITAA에서는 Taxation Administration Act Pt IVC가 — 이의제기·AAT(현 ART) 실체심사·FCA 항소를 대체 다툴 수 있는 경로로 제공함으로써 — 이 원칙을 충족시킨다. 그래서 s 175 같은 no-invalidity 조항이 통상의 절차 오류를 헌법적 writ 심사에서 차단해도 유효 — 헌법적 바닥선이 Pt IVC를 통해 충족되기 때문.',
       cases: ['futuris']
     },
     {

@@ -3,10 +3,10 @@
 window.LECTURES = {
   w1: {
     kr: {
-      lead: "행정법은 \"누가 무엇을 결정할 수 있는가\"라는 권한 분배의 학문이다. W1은 사법심사가 정책에 개입하는 것이 아니라 결정권자가 자신의 권한 안에서 머물렀는지를 검토하는 장치임을 분명히 한다.",
+      lead: "행정법은 \"누가 무엇을 결정할 수 있는가\"라는 권한 분배의 학문이다. W1은 사법심사가 정책에 개입하는 것이 아니라 결정자가 자신의 권한 안에서 머물렀는지를 검토하는 장치임을 분명히 한다.",
       paras: [
         "Marbury v Madison(1803)이 \"무엇이 법인가를 말하는 것은 사법부의 영역\"이라고 선언한 이후, 보통법 세계의 사법심사는 결정의 옳고 그름이 아니라 적법성(legality)에 묶여 있다. 호주에서는 Marbury의 명제가 헌법 제75조(v)에 직접 박혀 있어, High Court가 영연방 공무원에 대해 mandamus·prohibition·injunction을 발할 수 있는 권한을 의회조차 박탈할 수 없다.",
-        "이 구도가 \"merits–legality 이분법\"으로 굳어진다. 정책이 현명했는지, 사실 인정이 합리적이었는지는 행정의 영역이지만, 권한의 한계를 넘었거나 법이 요구한 절차를 어겼다면 법원은 이를 무효로 선언할 수 있다. 강의 후반에 나올 모든 사유(부여된 목적, 관련 고려사항, 절차공정, 합리성)는 이 한 쪽 분리선 위에서 작동한다."
+        "이 구도가 \"merits–legality 이분법\"으로 굳어진다. 정책이 현명했는지, 사실 인정이 합리적이었는지는 행정의 영역이지만, 권한의 한계를 넘었거나 법이 요구한 절차를 어겼다면 법원은 이를 무효로 선언할 수 있다. 강의 후반에 나올 모든 사유(부여된 목적, 관련 고려사항, 절차적 공정, 합리성)는 이 한 쪽 분리선 위에서 작동한다."
       ],
       aside: "사법심사는 결정을 다시 내리지 않는다. 결정을 \"존재한 적 없는 것\"으로 만들 뿐이다."
     },
@@ -63,7 +63,7 @@ window.LECTURES = {
     kr: {
       lead: "Hossain(2018)의 3단계 분석 —\n(1) 권한이 부여되었는가,\n(2) 그 권한의 PBS(precondition · breadth · scope)가 충족되었는가,\n(3) 충족되었다 해도 sub-grounds(목적·고려사항·절차·합리성)에 위배되지 않았는가 — 가 이번 주의 뼈대다.",
       paras: [
-        "이 \"empowering provision → PBS → sub-grounds\" 구조는 모든 사유 분석을 같은 도식 위에 올려놓는다. 예컨대 부적절한 목적은 PBS의 \"scope\"를 벗어났는가의 문제이고, 절차공정 위반은 PBS가 묵시적으로 요구한 절차요건을 어긴 것이며, 비합리성은 \"reasonable decision-maker가 도달할 수 있었던 결과의 범위\"를 벗어난 문제로 환원된다.",
+        "이 \"empowering provision → PBS → sub-grounds\" 구조는 모든 사유 분석을 같은 도식 위에 올려놓는다. 예컨대 부적절한 목적은 PBS의 \"scope\"를 벗어났는가의 문제이고, 절차적 공정 위반은 PBS가 묵시적으로 요구한 절차요건을 어긴 것이며, 비합리성은 \"reasonable decision-maker가 도달할 수 있었던 결과의 범위\"를 벗어난 문제로 환원된다.",
         "여기에 W7에서 도입되는 materiality 요건이 더해진다. Hossain·SZMTA·Nathanson는 \"오류가 있어도 결과를 바꿀 현실적 가능성이 없다면 jurisdictional error가 아니다\"는 규칙을 정착시켰고, 이는 사법심사를 \"결과 지향적\" 도구로 다듬는다.",
         "Project Blue Sky(1998)는 두 번째 갈래를 만든다 — 절차요건 위반이 \"의회가 무효를 의도했는가\"의 해석 문제로 처리되어, 자동 무효(invalid)와 단순 위법(unlawful)을 분리한다."
       ],
@@ -84,7 +84,7 @@ window.LECTURES = {
       lead: "위임입법(delegated legislation)은 의회가 \"틀\"만 정하고 세부는 행정에 맡기는 양식이다. 그 틀이 너무 헐거우면 의회가 입법권을 행정에 양도한 것이 되고, 너무 빡빡하면 입법은 무용해진다 — 그 균형이 이번 주의 핵심.",
       paras: [
         "McEldowney v Forde(1971)는 \"수권조항(empowering provision) → 위임입법(delegated legislation)\"의 검토 도식을 정착시켰다. 즉 위임입법은 모법이 부여한 권한의 명시적·묵시적 범위 안에서만 유효하며, 그 범위는 모법의 목적·맥락·기존 권리에 비추어 해석된다.",
-        "W1–W4의 sub-grounds — 부적절한 목적, 고려사항 누락, 절차공정 결여, 비합리성 — 는 그대로 위임입법에도 적용된다. \"의회가 위임한 권한\"이라는 출발점만 바뀔 뿐이다. 추가로 등장하는 것이 (a) sub-delegation 금지(필요시 명시적 권한이 있어야), (b) 모법과의 inconsistency 금지(Federal Capital Commission), (c) 불확실성(uncertainty) 금지다.",
+        "W1–W4의 sub-grounds — 부적절한 목적, 고려사항 누락, 절차적 공정 결여, 비합리성 — 는 그대로 위임입법에도 적용된다. \"의회가 위임한 권한\"이라는 출발점만 바뀔 뿐이다. 추가로 등장하는 것이 (a) sub-delegation 금지(필요시 명시적 권한이 있어야), (b) 모법과의 inconsistency 금지(Federal Capital Commission), (c) 불확실성(uncertainty) 금지다.",
         "ADJR Act는 \"administrative character의 결정\"에 적용되므로 입법성격을 가진 위임입법은 ADJR 밖의 채널 — s 75(v), s 39B, declaration 등 — 으로 다투어야 한다."
       ],
       aside: "위임입법은 \"행정\"이지만 \"법\"이다. 법원이 풀 때 두 얼굴을 동시에 본다."
@@ -123,7 +123,7 @@ window.LECTURES = {
     kr: {
       lead: "Hossain·SZMTA·Nathanson는 \"오류 + 결과를 바꿀 현실적 가능성\"을 jurisdictional error의 새 정의로 굳혔다. 동시에 Wei v Min for Immigration는 \"입증책임은 신청인에게\"라는 부담의 분배를 명확히 했다.",
       paras: [
-        "전통적 \"any error voids the decision\" 접근은 행정부담을 과도하게 늘렸다. Hossain(2018)은 \"realistic possibility of a different outcome\"이라는 문턱을 도입했고, SZMTA(2019)는 그 문턱을 통계적·증거적으로 평가하는 방식을 다듬었다. Nathanson(2022)은 절차공정 위반에서도 같은 문턱을 적용하면서, \"공정성의 본질적 침해\"는 별도로 다뤄야 한다는 단서를 달았다.",
+        "전통적 \"any error voids the decision\" 접근은 행정부담을 과도하게 늘렸다. Hossain(2018)은 \"realistic possibility of a different outcome\"이라는 문턱을 도입했고, SZMTA(2019)는 그 문턱을 통계적·증거적으로 평가하는 방식을 다듬었다. Nathanson(2022)은 절차적 공정 위반에서도 같은 문턱을 적용하면서, \"공정성의 본질적 침해\"는 별도로 다뤄야 한다는 단서를 달았다.",
         "Materiality는 사법심사를 \"기술적\"에서 \"실질적\"으로 옮겨 놓는다. 그러나 동시에, 무엇이 \"realistic\"인지에 대한 판단이 사실상 merits에 가까워질 위험도 있다 — 강의는 이 긴장을 명시적으로 다룬다.",
         "Wei는 입증책임 분배를 정리했다: 오류 자체는 신청인이, 그 오류가 결과를 바꿀 가능성이 없었다는 점은 행정청이 입증해야 한다."
       ],
@@ -192,7 +192,7 @@ window.LECTURES = {
         "No-invalidity clauses 의 일반 원칙(강의에서 Olivia·Cassidy 가 끌어낸 framing): (1) clause 가 broader 일수록 + alternative appeal 부재일수록 → 더 restrictive 한 해석 + S157-style 헌법 위협. (2) 법원은 \"clause 가 실무에서 무엇을 하는지(practical operation)\"를 본다 — Futuris 가 OK 였던 건 Pt IVC 가 있어서 \"complete no JR at all\"이 아니었기 때문. Functional equivalent 가 없으면 → S157·Kirk territory. 추가: Futuris 에서 HCA 는 또한 \"Federal Court 가 재량으로 거부했어야 한다\"고 말함 — alternative avenue 의 존재 자체가 discretionary refusal 의 사유가 된다.",
         "ADJR Act 실무 지침 — 실무 지침 — ADJR 이 적용되면 parallel s 39B 분석 생략. ADJR 만으로 풀어라. 핵심 조항: s 16(order of review = certiorari/mandamus/injunction 등가), s 5(decision not authorised by the Act = 기본 JE 개념), s 5(1)(j)(\"decision was otherwise contrary to law\" = JE species 의 catch-all), s 5(1)(f)(error of law on the face of the record — 유일하게 명시된 non-JE ground).",
         "Reasonableness · Irrationality — 시험 차원의 구별:\n• Wednesbury (ADJR 상 ground) — narrow 한 \"bizarre\" 기준, 실제 판결에서 적용된 예는 거의 없다.\n• Li 의 legal unreasonableness — discretion 결정에 적용; ADJR 에선 s 5(1)(j) catch-all 로 들어간다.\n• SZMDS 의 irrationality — jurisdictional fact / state of mind(satisfaction) 결정에 적용; SZMDS 는 unreasonableness 가 available 하지 않다는 전제에서 출발 (discretion 이 아니라 satisfaction 이라).\nGageler J in Li 는 이 distinction 이 중요하지 않을 수 있다고 시사했지만 minority. Safe approach — jurisdictional fact 결정에 unreasonableness 를 가져갈 때는 그 도전이 어렵다는 점을 인정.",
-        "Agency vs Delegation(짧게): delegation 은 명시적 statutory authority 필요 → delegate 가 own name 으로 권한 행사. Agency 는 statutory authority 불필요 → agent 가 repository(원래 결정권자)의 name 으로 서명. Justification 은 administrative efficiency. 단 agency 가 부적절한 영역 — 권한이 매우 significant 한 경우(예: 형사범죄 활동 승인), rare decisions, criminal element 와 연관된 경우.",
+        "Agency vs Delegation(짧게): delegation 은 명시적 statutory authority 필요 → delegate 가 own name 으로 권한 행사. Agency 는 statutory authority 불필요 → agent 가 repository(원래 결정자)의 name 으로 서명. Justification 은 administrative efficiency. 단 agency 가 부적절한 영역 — 권한이 매우 significant 한 경우(예: 형사범죄 활동 승인), rare decisions, criminal element 와 연관된 경우.",
         "Materiality 의 ADJR 적용: ADJR 에서도 materiality 가 요구된다(long established). Hossain 의 self-sufficient criterion 과 Harold-type \"one of many considerations\" 문제는 구별. LPDT(2024) 의 핵심 — reasoning processes 자체의 오류는 immaterial 하다고 주장하기가 매우 어렵다. Cameron's question 에 대한 답: \"어차피 의존하지 않았을 것\"이라는 admin 의 자기증언만으로는 부족하다 — 다른 factors 와의 weighing 맥락에서 여전히 material 할 수 있다.",
         "AAT → ART 전환(2024년 10월): Scrutiny of Bills Committee 용 explanatory memorandum 상 \"basic powers 가 바뀌지 않도록 한다\"는 intention 이 매우 명확. 따라서 AAT case law (Shi · Frugtniet · Drake No 2) 는 ART 에 그대로 continues to apply. Section numbers 만 바뀐 정도 — 다음 강의에 정리 예정. 학생들에게 새 입법을 직접 읽으라고 요구하지는 않는다."
       ],

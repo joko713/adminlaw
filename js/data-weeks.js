@@ -131,7 +131,7 @@ window.WEEKS_DATA = [
            {h:'본안 아닌 합법성 (Quin)',t:'법원은 권한의 한계를 집행할 뿐, 결정을 다시 내리거나 그 지혜를 판단하지 않는다(Brennan J). 이것이 모든 심사 법원(法源)을 관통하는 조직 원리다.',c:['quin']},
            {h:'연방의 다중 법원',t:'연방 세 가지 원천:\n(1) 헌법 s 75(v) — 연방 공무원에 대한 mandamus / prohibition / injunction(배제 불가);\n(2) s 39B Judiciary Act — s 75(v)을 연방법원으로 끌어옴;\n(3) ADJR Act — 사유 기반·구제 탈중심화이나 "수권법에 따른 행정적 성격의 결정"에 한정.',c:['m68']},
            {h:'Bond — "결정" vs "행위"',t:'Mason CJ: ADJR상 심사 대상 "결정"은 최종·실질·결정적이며 실체적이다; 예비적 인정은 보통 "결정"이 아니지만 s 6의 "행위"로 심사될 수 있다.',c:['bond']},
-           {h:'주 법원 + 헌법적 보호 (Kirk)',t:'주 대법원은 배제조항이 제거할 수 없는 관할권적 오류 감독관할을 가진다(Kirk) — s 75(v) 최소선의 주(州) 등가물. 헌법적 영장은 1990년대 이후 중심이 되었다.',c:[]},
+           {h:'주 법원 + 헌법적 보호 (Kirk)',t:'주 대법원은 배제조항이 제거할 수 없는 관할권적 오류 감독관할이 있다(Kirk) — s 75(v) 최소선의 주(州) 등가물. 헌법적 영장은 1990년대 이후 중심이 되었다.',c:[]},
            {h:'구제의 넓이 (Ainsworth; PBS)',t:'심사는 직접적 법적 효력이 없는 행위에도 미칠 수 있다 — 영장이 안 되는 자리에서 declaration이 가능(Ainsworth). 관할권적/비관할권적 오류 구분(과 위반이 무효화하는지에 관한 Project Blue Sky)은 모든 법원을 관통한다.',c:['ainsworth','pbs']}
          ]},
     tree:{ en:[
@@ -467,7 +467,7 @@ window.WEEKS_DATA = [
            {h:'Reasons requirements',t:'There is no general common-law duty to give reasons, but statutes often impose one (e.g. s 430 Migration Act). Inadequate statutory reasons can themselves found review and may expose another error (e.g. a mandatory consideration not addressed).',c:[]}
          ]},
     kr:{ title:'편향 규칙 · 이유제시 의무',
-         summary:'절차공정의 두 번째 갈래 — 편향 금지 규칙(청문 규칙과 함께 PF 사건의 대부분). Ebner 2단계 추정편향 테스트; Jia 장관 사전판단; Isbester 역할 중첩; CNY17 보좌관 영향; Hot Holdings 이해·연관. 그리고 이유제시 의무 — 보통법상 일반 의무는 없지만 법령상 의무와 부실 이유의 효과가 핵심.',
+         summary:'절차적 공정의 두 번째 갈래 — 편향 금지 규칙(청문 규칙과 함께 PF 사건의 대부분). Ebner 2단계 추정편향 테스트; Jia 장관 사전판단; Isbester 역할 중첩; CNY17 보좌관 영향; Hot Holdings 이해·연관. 그리고 이유제시 의무 — 보통법상 일반 의무는 없지만 법령상 의무와 부실 이유의 효과가 핵심.',
          meta:[
            {label:'테스트',value:'Ebner 이중 might'},
            {label:'1단계',value:'사정 식별'},
@@ -926,7 +926,7 @@ window.WEEKS_DATA = [
         {h:'Graham에서 s 503A(2)(c)가 무효된 이유',
          t:'s 503A(2)(c)로 보호된 정보는 정의상 s 501계 권한의 법적 한계 준수 여부에 관련된 정보였다. 그런데 법원은 처음부터(in limine) 접근을 박탈당했다 — 비교형량도, 평가도, 검토도 없었다. 이게 무효의 구조적 이유다. 구별: (1) PII(Sankey v Whitlam) — 법원이 경합 공익을 비교형량하고 자료의 성격을 조사함; (2) 합헌 법정 비밀 체계(Gypsy Jokers, K-Generation, Condon v Pompano, Totani) — 심사 법원 자체가 정보를 사용할 수 있음; (3) s 503A(2)(c) — 법원이 in limine 박탈. 원고들의 Kable형 주장은 실패 — 부적합성은 법원의 제도적 청렴성이 아니라 s 75(v)에 있었다.'},
         {h:'Futuris에서 s 175 ITAA가 살아남은 이유',
-         t:'Project Blue Sky의 목적론적 분석을 s 175(s 175A 및 s 177(1)과 함께 읽어)에 적용하면, 의회가 통상의 절차 오류로 "assessment"의 유효성이 영향받지 않도록 의도했음이 드러난다. 이게 헌법적으로 허용되는 이유: (a) Taxation Administration Act Pt IVC가 — 조세는 incontestable할 수 없다는 원칙(MacCormick; Richard Walter)을 충족시키는 — 대체 다툴 수 있는 경로(이의·AAT/ART 본안 재심사·FCA 항소)를 제공하기 때문이고, (b) s 175가 잠정·임시 외관상 과세나 의도적 행정부정에는 미치지 않기 때문이다. s 177(1)(통지 제시 = 확정적 증거)은 "통상적 의미의 배제조항이 아니"며 s 75(v) / s 39B(1) 심사를 제한하지 않는다.'},
+         t:'Project Blue Sky의 목적론적 분석을 s 175(s 175A 및 s 177(1)과 함께 읽어)에 적용하면, 의회가 통상의 절차 오류로 "assessment"의 유효성이 영향받지 않도록 의도했음이 드러난다. 이게 헌법적으로 허용되는 이유: (a) Taxation Administration Act Pt IVC가 — 조세는 incontestable할 수 없다는 원칙(MacCormick; Richard Walter)을 충족시키는 — 대체 다툴 수 있는 경로(이의·AAT/ART 실체심사·FCA 항소)를 제공하기 때문이고, (b) s 175가 잠정·임시 외관상 과세나 의도적 행정부정에는 미치지 않기 때문이다. s 177(1)(통지 제시 = 확정적 증거)은 "통상적 의미의 배제조항이 아니"며 s 75(v) / s 39B(1) 심사를 제한하지 않는다.'},
         {h:'의도적 행정부정 carve-out',
          t:'no-invalidity 조항이 통상의 절차 오류를 차단해도, 법을 그 문언대로 집행하지 않은 의도적 위반 — 의도적 행정부정(conscious maladministration) — 은 여전히 관할권적 오류로 헌법적 writ를 발동시킨다. 사기·뇌물·부정직·부적절한 목적도 마찬가지(S157). Futuris의 뒷받침 논거는 misfeasance in public office 불법행위(공무원이 권한 초과를 알면서 행동한 경우)와 s 13 Public Service Act가 APS 구성원에게 부과하는 청렴 의무를 끌어온다. F J Bloemen(Mason & Wilson JJ)은 s 175가 의도적 위반에까지 미친다는 주장에 부합하는 한 따르지 않는다.'},
         {h:'형평법적 구제 — 다른 토대',
@@ -983,7 +983,7 @@ window.WEEKS_DATA = [
            {label:'FOI', value:'공개 추정'}
          ],
          points:[
-           {h:'본안 재심사 vs 사법심사', t:'심판소는 결정을 다시 내리고("옳거나 더 바람직한" — Drake [No 1]), 법원은 적법성만 단속한다. 사례로 들어가기 전에 어느 경로인지부터 정리.', c:['quin']},
+           {h:'실체심사 vs 사법심사', t:'심판소는 결정을 다시 내리고("옳거나 더 바람직한" — Drake [No 1]), 법원은 적법성만 단속한다. 사례로 들어가기 전에 어느 경로인지부터 정리.', c:['quin']},
            {h:'원결정자의 자리에 선다 (s 43 AAT Act)', t:'Frugtniet: 심판소는 원결정자와 같은 법적 권한을 같은 제약 아래 행사한다(ASIC이 효력소멸 유죄판결을 고려할 수 없으면 AAT도 못 한다).', c:['frugtniet']},
            {h:'사실관계 기준 시점', t:'Shi v MARA: 원칙적으로 심판소 결정 시점의 사실로 판단하되, 심사 대상 결정의 성격이 더 이른 시점으로 제한할 수 있다. 행정 과정은 "연속체(continuum)"다.', c:['shi']},
            {h:'정부 정책 (Drake [No 2])', t:'장관에게 부여된 재량권을 심사할 때, 장관 채택의 일반 정책이 적법하고 개별 사안에서 부당한 결과를 낳지 않는 한 심판소는 그 정책을 통상 적용한다. "일관성이 정의보다 우선하지 않는다."', c:['drake']},
@@ -1010,7 +1010,7 @@ window.WEEKS_DATA = [
       ]}
     ], kr:[
       {id:'half', label:'W11의 어느 축인가?', children:[
-        {id:'merits', label:'본안 재심사 — 심판소 경로', children:[
+        {id:'merits', label:'실체심사 — 심판소 경로', children:[
           {id:'shoes', label:'자리에 선다 — 같은 제약(Frugtniet)?', leaf:true, result:'proceed', note:'원결정자가 고려할 수 없는 것은 심판소도 고려할 수 없다.'},
           {id:'time', label:'사실 기준 시점 — Shi', leaf:true, result:'proceed', note:'원칙적으로 심판소 결정 시점; 결정 성격이 이른 시점에 고정시키는지 확인.'},
           {id:'policy', label:'정부 정책 — Drake [No 2]', leaf:true, result:'proceed', note:'사안에서 위법하거나 부당하지 않은 한 적용; 반대하려면 설득력 있는 사유.'}
@@ -1035,7 +1035,7 @@ window.WEEKS_DATA = [
         {h:'FOI — design, exemptions, cognate regimes', t:'Three functions: access by request (s 11); proactive publication (Information Publication Scheme, Part II — s 8A operational information); information as a "national resource" (s 3(3)). Two exemption families — Division 2 ("hard": s 33 security, s 34 Cabinet, s 37 law enforcement, s 38 statutory secrecy) and Division 3 (conditional, subject to the s 11B public interest test; s 47C deliberative processes, s 47F personal privacy). Cognate: Privacy (third-party angle of s 47F); secrecy (FOI operates subject to it); Archives Act 1983; Public Interest Disclosure Act 2013 (whistleblower); PII (Conway v Rimmer; Sankey v Whitlam). FOI is not itself accountability — it is the lifeblood of accountability.'}
       ],
       kr:[
-        {h:'왜 별도의 본안 경로인가', t:'사법심사는 결정이 적법했는지만 다툴 수 있고 결정을 대신 내리지 못한다. 본안 재심사(s 43 AAT Act)는 심판소가 앞의 자료로 "옳거나 더 바람직한" 결정을 다시 내리게 한다 — 인용·변경·취소(대체결정·환송). 강제력은 없지만(심판소는 사법권 행사 불가) 폭과 깊이로 보면 사법심사보다 더 중요한 책임성 장치인 경우가 많다.'},
+        {h:'왜 별도의 본안 경로인가', t:'사법심사는 결정이 적법했는지만 다툴 수 있고 결정을 대신 내리지 못한다. 실체심사(s 43 AAT Act)는 심판소가 앞의 자료로 "옳거나 더 바람직한" 결정을 다시 내리게 한다 — 인용·변경·취소(대체결정·환송). 강제력은 없지만(심판소는 사법권 행사 불가) 폭과 깊이로 보면 사법심사보다 더 중요한 책임성 장치인 경우가 많다.'},
         {h:'AAT → ART 전환 (2024년 10월)', t:'Administrative Review Tribunal Act 2024 (Cth)이 AAT를 ART로 대체 — 임명 독립성 문제를 의식한 개편. 실체적 framework — 정책에 관한 Drake [No 2], 권한 승계에 관한 Frugtniet, 시점에 관한 Shi — 는 그대로 유지.'},
         {h:'옴부즈만 제도', t:'독립 법정기관(Ombudsman Act 1976 (Cth)). 비공개·심문식 조사, 조사 거절 재량이 넓고, 기관 파일 접근에 제한 없으며, 구제는 강제가 아니라 협상으로 만들어낸다. 기준은 "maladministration": 위법뿐 아니라 지연·무례·비효율·무능까지. 직권 조사(own-motion)는 행정 실무에 미치는 "규범적" 영향의 주요 통로. Robodebt(CO 보고서 2017/2019/2021; Amato; Prygodicz [No 2] [2021] FCA 634)는 도달 범위와 한계를 동시에 보여준다 — 권고만으로는 근본 법적 오류를 시정하지 못했다.'},
         {h:'의회와 청렴 부문', t:'의회 책임성은 권한·강제가 아니라 권력과 설득으로 작동한다. 독립 심사기관(옴부즈만·부패방지·AHRC·OAIC·감사원장)의 급증은 입법·행정·사법 3분립을 넘는 "청렴 부문(integrity branch)"로 개념화돼 왔다. 감사원장(Auditor-General Act 1997 (Cth) ss 8, 50)의 강한 의회 공무원 보호와 영연방 옴부즈만의 약한 제도적 지위가 자주 대비된다.'},

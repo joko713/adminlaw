@@ -184,11 +184,11 @@ window.CASES_DATA = {
          keywords:['legality vs merits','judicial review limits','Brennan J','legitimate expectation'],
          facts:'The NSW Government restructured the magistracy, abolishing the office of stipendiary magistrate and creating new positions. Some sitting magistrates were not reappointed and challenged the decision, arguing they had a legitimate expectation of being reappointed.'},
     kr:{ rule:'사법심사는 행정결정의 적법성을 단속하지, 본안의 옳고 그름을 단속하지 않는다. 법원은 결정자가 의회가 부여한 권한과 조건 안에 머물렀는지를 묻고, 결정이 현명했는지·본안에서 공정했는지·법원이라면 어떤 결정을 했을지는 묻지 않는다. Brennan J: 사법심사는 행정작용의 "본안이 아니라 적법성"을 다룬다.',
-         principle:'Quin은 호주 행정법의 적법성·본안 구분을 가장 또렷이 정리한 판결이다. 이 원칙은 구조적이야 — 법원이 고려사항을 다시 가중치 매기거나 자기 선호 결과로 대체한다면, 결정 권한(행정)과 적법성 감독 권한(법원) 사이의 분리가 무너진다. 모든 JR 답안은 이 선을 유지해야 한다. 신청인의 진짜 불만이 "본안에서 틀렸다"라면 맞는 통로는 본안 재심사(W11 ART)지 JR이 아니다. Quin은 정당한 기대(legitimate expectation) 법리도 좁혔는데, 이 법리는 이후 Lam에서 사실상 묻혔다.',
+         principle:'Quin은 호주 행정법의 적법성·본안 구분을 가장 또렷이 정리한 판결이다. 이 원칙은 구조적이야 — 법원이 고려사항을 다시 가중치 매기거나 자기 선호 결과로 대체한다면, 결정 권한(행정)과 적법성 감독 권한(법원) 사이의 분리가 무너진다. 모든 JR 답안은 이 선을 유지해야 한다. 신청인의 진짜 불만이 "본안에서 틀렸다"라면 맞는 통로는 실체심사(W11 ART)지 JR이 아니다. Quin은 정당한 기대(legitimate expectation) 법리도 좁혔는데, 이 법리는 이후 Lam에서 사실상 묻혔다.',
          when:'경계선을 정초할 때 인용한다 — 예컨대 비합리성·관련 고려사항 주장이 점점 가중치 재매김처럼 보이기 시작할 때, 또는 법원이 "옳은 결과"를 대신 정해 주지 않는 이유를 설명할 때.',
          howApply:[
            '쟁점을 결과 질문이 아니라 적법성 질문으로 짠다 — "결정자가 권한을 넘었는가, 조건을 위반했는가, 강행 고려사항을 누락했는가"이지 "결정이 옳았는가"가 아니다.',
-           '신청인의 진짜 불만이 사실판단이나 본안의 잘못이라면 JR이 아니라 본안 재심사(ART)로 돌려야 한다.',
+           '신청인의 진짜 불만이 사실판단이나 본안의 잘못이라면 JR이 아니라 실체심사(ART)로 돌려야 한다.',
            '비합리성 주장에서도 Li가 이 구분을 무너뜨리지 않는다는 점을 잊지 않는다 — 법원은 여전히 가중치를 다시 매기지 않고, 결과에 evident and intelligible justification이 있는지만 묻는다.',
            '"정당한 기대" framing은 피한다 — Quin이 법리를 좁혔고, Lam이 PF 분석을 "실질적 부정의" 축으로 다시 짰다.'
          ],
@@ -282,9 +282,9 @@ window.CASES_DATA = {
            'ADJR 맥락에서는 신청인을 "person aggrieved"로 framing하고, 일반 standing에서는 ACF/Bateman\'s Bay와 나란히 돌린다.'
          ],
          issue:'마트 운영자와 인접 토지 소유자가 ACT의 인근 경쟁 마트 개발 계획 승인을 다툴 standing을 갖는가.',
-         conclusion:'그렇다 — 둘 다 "person aggrieved"로서 standing을 가진다. 경쟁 개발로 인한 경제적 불이익은 계획 결정의 예측 가능한 직접적 결과이며, 법령의 효력을 통해 발생했다.',
+         conclusion:'그렇다 — 둘 다 "person aggrieved"로서 standing이 있다. 경쟁 개발로 인한 경제적 불이익은 계획 결정의 예측 가능한 직접적 결과이며, 법령의 효력을 통해 발생했다.',
          keywords:['제3자','계획','aggrieved','상업적 경쟁자'],
-         facts:'Argos와 인접 토지 소유자가 ACT Macgregor의 경쟁 마트 개발에 대한 ACT 장관의 계획 승인을 다툰 사건. ADJR상 "person aggrieved"로서 standing을 가진다고 주장했다.'}},
+         facts:'Argos와 인접 토지 소유자가 ACT Macgregor의 경쟁 마트 개발에 대한 ACT 장관의 계획 승인을 다툰 사건. ADJR상 "person aggrieved"로서 standing이 있다고 주장했다.'}},
   m61: {
     id:'m61', name:'Plaintiff M61/2010E v Commonwealth', cite:'[2010] HCA 41; (2010) 243 CLR 319', icon:'⚓', color:'c-ochre',
     topic:'W3', category:'Case',
@@ -315,7 +315,7 @@ window.CASES_DATA = {
          issue:'민간 계약자가 수행한 비-법정 RSA·IMR 절차 — 장관의 s 46A 재량에 투입된 — 가 심사 대상이며, PF가 적용되는가.',
          conclusion:'그렇다 — 그 평가들은 법령상 권한 행사의 편입된 단계이며, PF를 포함한 보통법 사유로 심사 대상이다. Declaration이 발부됐다.',
          keywords:['역외 처리','외주화','사적 계약자','declaration'],
-         facts:'크리스마스 섬에 구금된 스리랑카 망명 신청자들의 난민 지위 평가와 본안 재심사가 형식상 비-법정인 협정 아래 민간 계약자에 의해 수행됐고, 그 결과가 장관의 s 46A "bar 풀기" 재량에 투입된 사건.'}},
+         facts:'크리스마스 섬에 구금된 스리랑카 망명 신청자들의 난민 지위 평가와 실체심사가 형식상 비-법정인 협정 아래 민간 계약자에 의해 수행됐고, 그 결과가 장관의 s 46A "bar 풀기" 재량에 투입된 사건.'}},
   hossain: {
     id:'hossain', name:'Hossain v Minister for Immigration and Border Protection', cite:'[2018] HCA 34; (2018) 264 CLR 123', icon:'✓', color:'c-blue',
     topic:'W4', category:'Case',
@@ -502,13 +502,13 @@ window.CASES_DATA = {
          conclusion:'Yes — the refusal was disproportionate and unsupported by any evident, intelligible justification, and therefore legally unreasonable.',
          keywords:['legal unreasonableness','Li framework','adjournment','evident and intelligible justification'],
          facts:'A migration tribunal refused to adjourn a hearing despite knowing that a skills-assessment review — the very thing that could change the outcome — was already underway. The refusal had no apparent reason on the face of the record.'},
-    kr:{ rule:'재량 결정은 "명확하고 이해 가능한 정당화(evident and intelligible justification)"를 결여할 때 법적으로 비합리적이야. 결과가 법령의 목적에 비추어 비례성을 잃었거나, 추론 과정이 너무 불투명해서 같은 법령을 적용하는 합리적 의사결정자라면 도달할 수 없는 결론이라면 이 기준에 걸립니다. Wednesbury의 "합리적 사람이라면 결코 도달할 수 없을 정도" 기준보다 넓다.',
-         principle:'Li는 비합리성 사유를 현대적으로 다시 짠 판결이다. 더 이상 Wednesbury 식의 "극단적" 결정을 입증할 필요가 없고, 합리적 의사결정자라면 제시했을 정당화가 보이지 않는다는 사실만으로도 충분한다. 그 결과 비합리성은 마지막 카드가 아니라 일반적으로 쓰는 사유가 됐다. Stretton(FCAFC), DUA16(HCA의 절차적 비합리성)은 이 토대를 확장한 후속 판결이다.',
+    kr:{ rule:'재량 결정은 "명확하고 이해 가능한 정당화(evident and intelligible justification)"를 결여할 때 법적으로 비합리적이야. 결과가 법령의 목적에 비추어 비례성을 잃었거나, 추론 과정이 너무 불투명해서 같은 법령을 적용하는 합리적 결정자라면 도달할 수 없는 결론이라면 이 기준에 걸립니다. Wednesbury의 "합리적 사람이라면 결코 도달할 수 없을 정도" 기준보다 넓다.',
+         principle:'Li는 비합리성 사유를 현대적으로 다시 짠 판결이다. 더 이상 Wednesbury 식의 "극단적" 결정을 입증할 필요가 없고, 합리적 결정자라면 제시했을 정당화가 보이지 않는다는 사실만으로도 충분한다. 그 결과 비합리성은 마지막 카드가 아니라 일반적으로 쓰는 사유가 됐다. Stretton(FCAFC), DUA16(HCA의 절차적 비합리성)은 이 토대를 확장한 후속 판결이다.',
          when:'재량 행사가 표면상 비례성을 잃었거나, 설명이 빈약하거나, 자의적으로 보이는 경우라면 Li가 출발점이다. 누락된 고려사항이나 PF 위반을 짚어 낼 수 없는데도 결과가 변호하기 어려울 때 가장 자연스럽게 쓰는 사유이다.',
          howApply:[
            '문제된 재량 권한을 특정하고, 결과를 비교할 잣대가 되는 법령상 목적을 확인해(문제된 결정만 보지 말고 수권조항을 함께 읽는다).',
            '판단 이유에서 evident and intelligible justification을 찾습니다. 사실인정 → 법령상 기준 → 결과로 이어지는 일관된 흐름이 보이는지.',
-           '같은 법령을 적용하는 합리적 의사결정자가 도달할 수 있는 결과의 범위 안에 들어가는지 묻는다. 목적에 대한 비례성 상실, 가중치 부여의 큰 오류, 불투명한 추론이 모두 해당돼.',
+           '같은 법령을 적용하는 합리적 결정자가 도달할 수 있는 결과의 범위 안에 들어가는지 묻는다. 목적에 대한 비례성 상실, 가중치 부여의 큰 오류, 불투명한 추론이 모두 해당돼.',
            '정당화가 보이지 않는다면 그 공백을 구체적으로 짚어내고, materiality(Hossain 3단계)는 여전히 적용된다는 점을 잊지 마.'
          ],
          issue:'기능 평가 검토가 진행 중인 상황에서 이민 tribunal이 연기를 거부한 것이 법적으로 비합리적인가.',
@@ -1384,7 +1384,7 @@ window.CASES_DATA = {
          facts:'A detention authority forwarded prejudicial material about CNY17 to the IAA decision-maker reviewing his refugee claim. The IAA member said the material had been disregarded, but the material was on the file before the decision was made.'},
     kr:{ rule:'추정 편향은 결정자 앞에 놓였던 편견적 자료를 공정한 마음의 사정에 밝은 관찰자가 어떻게 읽을지로 판단된다 — 결정자 자신이 "무시했다"고 말한 것으로 판단되지 않는다. 그 자료가 기록에 존재했다는 사실로 생긴 위험을 법원이 가정으로 지워 버리지 못한다. (CNY17 자체에서는 다수와 소수가 사실 결론에서 갈렸지만, 법적 기준은 공통이었다.)',
          principle:'CNY17은 두 명제를 굳혔다. 첫째, 기준은 관찰자 측면 — 질문은 공정한 마음의 사정에 밝은 관찰자가 무엇을 의심할 것인가지, 결정자가 주관적으로 무엇을 했는가가 아니다. 둘째, "읽었지만 무시했다"는 안심시킴만으로 의심이 풀리지 않는다 — 편견적 자료에 노출됐다는 구조적 사실이 결정적이다. 행정 맥락(IAA, AAT, 규제기관)에서는 불리한 기록이 본안 자료와 함께 결정자에게 일상적으로 전달되는데 — Ebner의 관찰자는 이를 안다고 보고, 그것이 동반하는 위험도 의심한다.',
-         when:'결정자가 의존하지 않았다고 말하더라도 편견적 자료가 결정자 앞에 놓였던 경우에 인용한다. 흔한 시나리오: 경찰 전과 자료가 이민 tribunal에 전달, 이전의 무관한 불리한 인정이 본안 재심사 기관에 전달, 기록에 있어서는 안 됐던 "배경" 자료 등.',
+         when:'결정자가 의존하지 않았다고 말하더라도 편견적 자료가 결정자 앞에 놓였던 경우에 인용한다. 흔한 시나리오: 경찰 전과 자료가 이민 tribunal에 전달, 이전의 무관한 불리한 인정이 실체심사 기관에 전달, 기록에서는 안 됐던 "배경" 자료 등.',
          howApply:[
            '결정자 앞에 놓였던 편견적 자료를 식별하고, 실제로 수령됐음을 확인한다.',
            'Ebner 관찰자 기준을 적용한다 — 공정한 마음의 사정에 밝은 관찰자가 결정자가 그 자료를 마음에서 지우지 못할 수 있다고 합리적으로 의심할 만한가.',
@@ -1536,7 +1536,7 @@ window.CASES_DATA = {
          keywords:['economic detriment','competitive','liberal approach','batemans'],
          facts:'The Aboriginal Community Benefit Fund (a private funeral-benefit organisation) challenged Bateman\'s Bay LSC\'s expansion into funeral services, alleging the LSC was acting beyond its statutory power.'},
     kr:{ rule:'권한을 넘어 운영하는 공기관과 경쟁하게 되는 경제적 불이익은 special-interest standing의 근거가 될 수 있다. 법원은 standing 규칙을 "협소하게" 적용해야 한다는 과거 권위를 거부했다 — 이제는 더 열린, 기능적 접근을 선호한다.',
-         principle:'Bateman\'s Bay는 상업적 경쟁자에게 standing을 자유화했다. Argos(계획 맥락의 상업적 경쟁자)와 짝짓고, ACF의 기본선 너머에 자리한다 — 권한 외 공공 부문 거래로 불리해진 기성 경쟁자는 실체적 경제적 standing을 가진다.',
+         principle:'Bateman\'s Bay는 상업적 경쟁자에게 standing을 자유화했다. Argos(계획 맥락의 상업적 경쟁자)와 짝짓고, ACF의 기본선 너머에 자리한다 — 권한 외 공공 부문 거래로 불리해진 기성 경쟁자는 실체적 경제적 standing이 있다.',
          when:'상업적 주체가 공기관의 권한 외 경쟁시장 확장을 다투려 할 때 인용한다. 일반 상업적 경쟁자 standing 주장에서 Argos와 짝짓는다.',
          howApply:[
            '공기관의 다투어진 활동과 그것이 의존하는 법령상 권한을 식별한다.',
@@ -1591,11 +1591,11 @@ window.CASES_DATA = {
          conclusion:'Yes — the AAT was entitled to decide on the material before it at the time of its own decision, including supervening evidence about reform of conduct.',
          keywords:['stand in the shoes','contemporaneous','new evidence','merits review timing'],
          facts:'A migration agent had his registration cancelled by MARA. On AAT review he put forward evidence of post-decision conduct showing reform. The question was whether the AAT could consider that supervening material.'},
-    kr:{ rule:'본안 재심사에서 tribunal은 원 결정자의 "신발을 신고", 원 결정 시점이 아니라 tribunal 결정 시점의 자료로 판단한다. 따라서 원 결정 이후의 사건이나 증거도 고려할 수 있다 — 다른 법령상 지시가 없는 한. 2024년 개편 이후 ART에도 그대로 이어진다.',
-         principle:'Shi는 본안 재심사의 시간 규칙을 정한 판결이다. 구조적 이유 — 본안 재심사 tribunal의 임무는 지금 입수 가능한 자료로 정확 또는 선호되는 결정에 이르는 것이지, 원 결정자의 지식 상태를 스냅샷으로 재현하는 것이 아니다. 실무적 효과가 크다 — 신청인이 새 증거, 후속 사건, 개선된 상황을 ART 앞에 내놓을 수 있고, 원 결정자의 사실 기반에 묶이지 않는다. Frugtniet(tribunal이 신발을 신지만 원 결정자와 같은 법적 제약에 묶임)과 Drake No 2(정책 적용 framework)와 함께 읽는다. 이 셋이 본안 재심사의 운영 규칙을 정의한다.',
-         when:'본안 재심사의 쟁점이 tribunal이 어떤 증거를 고려할 수 있는가일 때 — 특히 원 결정 시점에 존재하지 않던 후속 증거, 변경된 상황, 새 자료가 있을 때 — 인용한다.',
+    kr:{ rule:'실체심사에서 tribunal은 원 결정자의 "신발을 신고", 원 결정 시점이 아니라 tribunal 결정 시점의 자료로 판단한다. 따라서 원 결정 이후의 사건이나 증거도 고려할 수 있다 — 다른 법령상 지시가 없는 한. 2024년 개편 이후 ART에도 그대로 이어진다.',
+         principle:'Shi는 실체심사의 시간 규칙을 정한 판결이다. 구조적 이유 — 실체심사 tribunal의 임무는 지금 입수 가능한 자료로 정확 또는 선호되는 결정에 이르는 것이지, 원 결정자의 지식 상태를 스냅샷으로 재현하는 것이 아니다. 실무적 효과가 크다 — 신청인이 새 증거, 후속 사건, 개선된 상황을 ART 앞에 내놓을 수 있고, 원 결정자의 사실 기반에 묶이지 않는다. Frugtniet(tribunal이 신발을 신지만 원 결정자와 같은 법적 제약에 묶임)과 Drake No 2(정책 적용 framework)와 함께 읽는다. 이 셋이 실체심사의 운영 규칙을 정의한다.',
+         when:'실체심사의 쟁점이 tribunal이 어떤 증거를 고려할 수 있는가일 때 — 특히 원 결정 시점에 존재하지 않던 후속 증거, 변경된 상황, 새 자료가 있을 때 — 인용한다.',
          howApply:[
-           '절차가 본안 재심사(ART)이지 JR이 아닌지 확인한다 — Shi는 본안 재심사 시간 규칙이다.',
+           '절차가 실체심사(ART)이지 JR이 아닌지 확인한다 — Shi는 실체심사 시간 규칙이다.',
            '시간 틀을 식별한다: tribunal은 자기 결정 시점의 자료로 판단하지, 원 결정 일자에 묶이지 않는다.',
            '후속 증거를 모은다 — 원 결정 이후의 사건도 증거로 가능(법령 한도 내).',
            '반대되는 법령상 지시를 확인한다 — 특정 법이 시간 틀을 원 결정으로 고정할 수 있다(드물다).',
@@ -1603,7 +1603,7 @@ window.CASES_DATA = {
          ],
          issue:'AAT가 MARA의 이민 대리인 등록 취소를 재심사하면서, MARA 원 결정 이후의 Shi씨 행위에 관한 증거로 판단할 수 있는가.',
          conclusion:'그렇다 — AAT는 자기 결정 시점의 자료로 판단할 수 있고, 행위 개선에 관한 후속 증거도 포함된다.',
-         keywords:['신발을 신음','동시점','새 증거','본안 재심사 시점'],
+         keywords:['신발을 신음','동시점','새 증거','실체심사 시점'],
          facts:'한 이민 대리인이 MARA에 의해 등록이 취소됐다. AAT 재심사에서 그는 행위 개선을 보여 주는 후속 증거를 제출했다. AAT가 그 후속 자료를 고려할 수 있는지가 쟁점이었다.'}},
   frugtniet:{
     id:'frugtniet', name:'Frugtniet v Australian Securities and Investments Commission', cite:'[2019] HCA 16; (2019) 266 CLR 250', icon:'⊝', color:'c-coral',
@@ -1622,9 +1622,9 @@ window.CASES_DATA = {
          conclusion:'No — the AAT was bound by the same legal constraints as ASIC. The spent convictions remained excluded on review.',
          keywords:['same constraints','spent convictions','stand in shoes','legal limits'],
          facts:'ASIC made a banning order against Mr Frugtniet. On AAT review the AAT relied on his spent criminal convictions — material that, under the spent-convictions regime in the Crimes Act, ASIC itself could not lawfully consider.'},
-    kr:{ rule:'본안 재심사 tribunal은 원 결정자의 신발을 신지만 같은 법적 제약에도 묶인다 — 원 결정자가 고려할 수 없었던 자료를 tribunal도 적법하게 고려할 수 없다. 즉 수권법(또는 Crimes Act의 만료 유죄 체계 같은 다른 법)이 원 결정자에게 어떤 범주의 자료를 배제했다면, 그 배제는 재심사에서도 그대로 이어진다.',
-         principle:'Frugtniet은 Shi의 증거 확장 규칙에 대응하는 법적 제약 짝이다. Shi가 tribunal이 시간적으로 볼 수 있는 범위를 넓혔다면, Frugtniet은 원 결정자를 묶었던 법적 한계로 그것을 다시 가둔다. 요점은 "신발을 신는다"가 양방향이라는 점 — tribunal은 같은 권한과 같은 제약을 함께 얻는다. 만료 유죄, 법령상 특권, 법령으로 배제된 자료 같은 체계가 본안 재심사를 통해 우회되어 다시 들어오는 것을 막는다. Shi(시간), Drake No 2(정책)와 함께 본안 재심사의 완전한 운영 규칙을 이룬다.',
-         when:'본안 재심사 신청인이나 피고가 원 결정자가 고려할 수 없었던 자료에 의존하고 싶어할 때 인용한다. "tribunal은 원 결정자의 법적 제약까지 함께 신는다"는 답이 되는 판례.',
+    kr:{ rule:'실체심사 tribunal은 원 결정자의 신발을 신지만 같은 법적 제약에도 묶인다 — 원 결정자가 고려할 수 없었던 자료를 tribunal도 적법하게 고려할 수 없다. 즉 수권법(또는 Crimes Act의 만료 유죄 체계 같은 다른 법)이 원 결정자에게 어떤 범주의 자료를 배제했다면, 그 배제는 재심사에서도 그대로 이어진다.',
+         principle:'Frugtniet은 Shi의 증거 확장 규칙에 대응하는 법적 제약 짝이다. Shi가 tribunal이 시간적으로 볼 수 있는 범위를 넓혔다면, Frugtniet은 원 결정자를 묶었던 법적 한계로 그것을 다시 가둔다. 요점은 "신발을 신는다"가 양방향이라는 점 — tribunal은 같은 권한과 같은 제약을 함께 얻는다. 만료 유죄, 법령상 특권, 법령으로 배제된 자료 같은 체계가 실체심사를 통해 우회되어 다시 들어오는 것을 막는다. Shi(시간), Drake No 2(정책)와 함께 실체심사의 완전한 운영 규칙을 이룬다.',
+         when:'실체심사 신청인이나 피고가 원 결정자가 고려할 수 없었던 자료에 의존하고 싶어할 때 인용한다. "tribunal은 원 결정자의 법적 제약까지 함께 신는다"는 답이 되는 판례.',
          howApply:[
            '문제된 자료와 그것을 원 결정자에게 배제했던 법적 제약을 식별한다(예: 만료 유죄 체계, 법령상 특권, 특정 증거 배제).',
            'Frugtniet을 적용한다: tribunal은 원 결정자와 같은 제약에 묶인다.',
@@ -1654,9 +1654,9 @@ window.CASES_DATA = {
          conclusion:'Yes — apply lawful policy as a presumption in the interests of consistency, but preserve the tribunal\'s independent judgment to depart on cogent reasons in the particular case.',
          keywords:['Brennan policy framework','consistency','independence','ART'],
          facts:'Mr Drake\'s deportation was re-heard before the AAT (President Brennan J presiding) after an earlier appeal. The question was how the tribunal should treat the published Ministerial deportation policy.'},
-    kr:{ rule:'본안 재심사 tribunal은 일관성과 예측 가능성 차원에서 일반적으로 적법한 장관 정책을 적용해야 하지만, 독립 기능을 포기해선 안 된다. 정책은 가중치 매겨야 할 고려사항이지, tribunal의 자체 판단을 대체하는 구속 규칙이 아니다. 개별 사실관계에 비추어 정책에서 벗어날 설득력 있는 사유가 있다면 그렇게 할 수 있다. Brennan J의 framework는 2024년 개편 이후 ART 의사결정에도 계속 적용된다.',
-         principle:'Drake No 2는 본안 재심사 tribunal과 행정 정책의 관계를 보정한다. 구조적 문제 — 정책을 일률 적용하면 평등 대우는 촉진되지만 tribunal이 도장 찍는 기관이 될 위험; 정책에서 자유롭게 벗어나면 개별 정의는 살지만 일관성·정치적 긴장을 잃는다. Brennan J의 해법 — 정책을 추정으로 적용하되 설득력 있는 사유에 대한 예외 여지를 둠 — 은 40년 넘게 살아남아 ART 시대로 넘어왔다. Shi(시간), Frugtniet(법적 한계)와 함께 본안 재심사의 운영 규칙을 이룬다.',
-         when:'본안 재심사 tribunal이 공개된 장관 정책을 어떻게 다루어야 하는가 — 특히 신청인의 사건이 정책 기본값에 비해 특이하거나 동정적으로 보일 때 — 인용한다.',
+    kr:{ rule:'실체심사 tribunal은 일관성과 예측 가능성 차원에서 일반적으로 적법한 장관 정책을 적용해야 하지만, 독립 기능을 포기해선 안 된다. 정책은 가중치 매겨야 할 고려사항이지, tribunal의 자체 판단을 대체하는 구속 규칙이 아니다. 개별 사실관계에 비추어 정책에서 벗어날 설득력 있는 사유가 있다면 그렇게 할 수 있다. Brennan J의 framework는 2024년 개편 이후 ART 의사결정에도 계속 적용된다.',
+         principle:'Drake No 2는 실체심사 tribunal과 행정 정책의 관계를 보정한다. 구조적 문제 — 정책을 일률 적용하면 평등 대우는 촉진되지만 tribunal이 도장 찍는 기관이 될 위험; 정책에서 자유롭게 벗어나면 개별 정의는 살지만 일관성·정치적 긴장을 잃는다. Brennan J의 해법 — 정책을 추정으로 적용하되 설득력 있는 사유에 대한 예외 여지를 둠 — 은 40년 넘게 살아남아 ART 시대로 넘어왔다. Shi(시간), Frugtniet(법적 한계)와 함께 실체심사의 운영 규칙을 이룬다.',
+         when:'실체심사 tribunal이 공개된 장관 정책을 어떻게 다루어야 하는가 — 특히 신청인의 사건이 정책 기본값에 비해 특이하거나 동정적으로 보일 때 — 인용한다.',
          howApply:[
            '관련 장관 정책을 식별하고 그것이 적법한지(권한 내, 법령과 모순 없음) 확인한다.',
            'Tribunal의 출발점은 정책 적용 — 유사 사건들 사이의 일관성과 예측 가능성을 촉진한다.',
@@ -1687,7 +1687,7 @@ window.CASES_DATA = {
          keywords:['objective JF','Ministerial declaration','court determines','Malaysia Solution'],
          facts:'The Commonwealth proposed to transfer asylum seekers to Malaysia for processing under the so-called "Malaysia Solution". The transfer required a Ministerial declaration under s 198A of the Migration Act 1958 (Cth), which was conditioned on Malaysia providing certain specified legal protections.'},
     kr:{ rule:'법령이 장관 선언을 세상의 객관적 사실 상태에 — 예컨대 어떤 국가가 난민에게 특정 법적 보호를 제공한다는 사실에 — 조건 지운 경우, 그 보호의 존재 여부는 관할권적 사실이다. High Court가 증거로 그 기준 충족 여부를 직접 판단하며, 그 질문이 큰 규모이거나 정치적으로 민감하더라도 장관의 견해는 deference 받지 않는다.',
-         principle:'M70은 Enfield의 관할권적 사실 법리를 영연방의 주요 정책 결정("Malaysia Solution")에 적용한 판결이다. 두 명제를 세웠다:\n(1) 관할권적 사실 법리는 정치적 부담이 가장 큰 자리에서도 무게를 가진다 — 법원이 권한에 붙은 복잡한 사실 조건을 독립적으로 평가한다\n(2) 전제로 짜인 법령상 보호는 단순한 의견의 문제가 아니라 실체적으로 해석된다. 이 판결은 대규모로 적용된 관할권적 사실 분석의 선도 예시이며, Enfield(교리적 원천), SZMDS(주관적 state-of-mind 변형)와 짝짓는다.',
+         principle:'M70은 Enfield의 관할권적 사실 법리를 영연방의 주요 정책 결정("Malaysia Solution")에 적용한 판결이다. 두 명제를 세웠다:\n(1) 관할권적 사실 법리는 정치적 부담이 가장 큰 자리에서도 무게가 있다 — 법원이 권한에 붙은 복잡한 사실 조건을 독립적으로 평가한다\n(2) 전제로 짜인 법령상 보호는 단순한 의견의 문제가 아니라 실체적으로 해석된다. 이 판결은 대규모로 적용된 관할권적 사실 분석의 선도 예시이며, Enfield(교리적 원천), SZMDS(주관적 state-of-mind 변형)와 짝짓는다.',
          when:'영연방 장관 결정이 복잡한 객관적 사실 상태의 존재 여부에 달려 있을 때 — 국가 상황, 보호 수준, 규제 산업의 구조적 사실 — 인용한다. 큰 규모의 객관적 JF에서도 법원의 독립성을 확인한 판례.',
          howApply:[
            '수권조항과 그것이 권한을 조건 지운 객관적 사실을 식별한다(예: 국가가 특정 난민 보호를 제공해야 함).',
@@ -1912,7 +1912,7 @@ window.CASES_DATA = {
          conclusion:'The court — not the executive — balances the competing interests; PII protection is not absolute and admits judicial inquiry into the document.',
          keywords:['public interest immunity','PII','court weighing','disclosure'],
          facts:'Conspiracy proceedings against former Cth Ministers; PII claim over Cabinet documents. High Court emphasised judicial control over the PII determination.'},
-    kr:{ rule:'공익면책(PII) 아래에서, 경합하는 공적 이해의 비교형량은 법원 자신이 한다. 관련 증거는 "공익이 그것을 요구하는 한도에서만" 보류된다. 법원은 그 문서의 성격을 조사하고, 공개가 가져올 손해의 성격에 대한 어느 정도의 표시를 요구할 수 있는 reserve power를 가진다.',
+    kr:{ rule:'공익면책(PII) 아래에서, 경합하는 공적 이해의 비교형량은 법원 자신이 한다. 관련 증거는 "공익이 그것을 요구하는 한도에서만" 보류된다. 법원은 그 문서의 성격을 조사하고, 공개가 가져올 손해의 성격에 대한 어느 정도의 표시를 요구할 수 있는 reserve power가 있다.',
          principle:'Sankey는 Graham이 구별하는 PII 기본선이다. PII는 법원의 비교형량 역할을 보존한다. Graham에서 s 503A(2)(c)는 이를 제거했다(처음부터 박탈, "in limine"). Crown 측이 PII와의 유사성을 들어 비밀조항을 방어하려 하면, 답은 — PII에서는 법원이 여전히 공개를 통제하고, 다투어진 비밀조항에서는 행정부가 통제한다는 것. 이 구조적 차이가 s 503A(2)(c)를 무효로 만든 핵심이다.',
          when:'비밀조항을 PII와 구별할 때 — Crown이 PII를 유사성으로 들먹이면, 비교형량 기능을 누가 통제하는지 짚는다.',
          howApply:[
@@ -2278,7 +2278,7 @@ window.CASES_DATA = {
          conclusion:'No — Ch III restricts federal courts to judicial power only. Non-judicial functions (including merits review) must be located in non-court bodies.',
          keywords:['separation of powers','Ch III','federal courts','judicial power only','legality/merits constitutional basis'],
          facts:'Industrial arbitration commission challenged for exercising mixed judicial/non-judicial functions; High Court held federal courts cannot validly exercise non-judicial powers.'},
-    kr:{ rule:'헌법 Ch III 아래에서 연방법원은 사법권만 행사할 수 있다. 비-사법 기능은 연방법원에 부여될 수 없다. 호주 연방 체계의 엄격한 권력분립은 영국·뉴질랜드보다 더 엄격하며, 이것이 본안 재심사가 법원이 아닌 심판소(현 ART)에 제도적으로 위치하는 이유다.',
+    kr:{ rule:'헌법 Ch III 아래에서 연방법원은 사법권만 행사할 수 있다. 비-사법 기능은 연방법원에 부여될 수 없다. 호주 연방 체계의 엄격한 권력분립은 영국·뉴질랜드보다 더 엄격하며, 이것이 실체심사가 법원이 아닌 심판소(현 ART)에 제도적으로 위치하는 이유다.',
          principle:'Boilermakers는 적법성·본안 구분을 단순한 교리적 선호가 아니라 헌법적 권력분립에 닻을 내린다. Quin(Brennan J)이 이 헌법 원칙을 행정법 교리 형태로 옮긴다 — 법원은 적법성만 심사하고 본안은 보지 않는다, 왜냐하면 본안 심사 = 비-사법권이고 연방법원은 그것을 행사할 수 없기 때문이다. 호주 행정법이 영국·뉴질랜드가 받아들이는 실체적 법리들(예: substantive legitimate expectations)을 거부하는 이유.',
          when:'적법성·본안 구분의 헌법적 토대로 인용 — 특히 "왜 호주 행정법이 영국·뉴질랜드보다 엄격한가"를 묻는 논술 형 문제에서.',
          howApply:[
@@ -2287,7 +2287,7 @@ window.CASES_DATA = {
            '적법성 사유로 위장한 실체적 본안 주장을 깨는 데 사용.'
          ],
          issue:'연방법원이 헌법 아래에서 비-사법 기능을 적법하게 행사할 수 있는가.',
-         conclusion:'없다 — Ch III가 연방법원을 사법권에 한정. 비-사법 기능(본안 재심사 포함)은 비-법원 기관에 위치해야 한다.',
+         conclusion:'없다 — Ch III가 연방법원을 사법권에 한정. 비-사법 기능(실체심사 포함)은 비-법원 기관에 위치해야 한다.',
          keywords:['권력분립','Ch III','연방법원','사법권만','적법성/본안 헌법적 토대'],
          facts:'산업 중재위원회가 사법·비-사법 혼합 기능 행사로 다투어진 사건. High Court가 연방법원이 비-사법권을 적법하게 행사할 수 없다고 판시.'}},
 
