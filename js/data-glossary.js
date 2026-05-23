@@ -165,6 +165,38 @@ window.GLOSSARY_DATA = {
       desc_kr: '법정 기능을 가진 NSW 원주민 토지위원회. Bateman\'s Bay LSC의 권한 외 장례 서비스 확장이 상업적 경쟁자 standing의 선도 판례에서 다투어졌다.',
       cases: ['batemans']
     },
+    {
+      abbr: 'CO',
+      full_en: 'Commonwealth Ombudsman',
+      full_kr: '영연방 옴부즈만',
+      desc_en: 'Independent statutory office (Ombudsman Act 1976 (Cth)) investigating complaints of maladministration in Cth administration. Reports and recommends — has no power to determine legal rights. Jurisdiction reaches "action that relates to a matter of administration" (broader than ADJR), including contracted-out services (s 3BA). The "Robodebt" inquiries (2017/2019/2021) and the OPCAT NPM Coordinator role are recent examples.',
+      desc_kr: '영연방 행정의 maladministration 진정을 조사하는 독립 법정기관(Ombudsman Act 1976 (Cth)). 보고·권고만 하고 법적 권리를 결정할 권한은 없다. 관할은 "행정에 관한 행위(action relating to a matter of administration)"로 ADJR보다 넓고, 외주 서비스(s 3BA)도 포함. Robodebt 조사(2017/2019/2021)와 OPCAT NPM 조정자 역할이 최근 예.',
+      cases: []
+    },
+    {
+      abbr: 'OAIC',
+      full_en: 'Office of the Australian Information Commissioner',
+      full_kr: '호주 정보위원회 사무국',
+      desc_en: 'Established by the AIC Act 2010 (Cth). Three offices in one: Information Commissioner (IC), FOI Commissioner (FOIC), Privacy Commissioner (PC). Handles first-tier merits review of FOI decisions (appeal to AAT/ART), monitors compliance, promotes good practice, and (uniquely the IC) advises on strategic public-sector information management.',
+      desc_kr: 'AIC Act 2010 (Cth)으로 설립. Information Commissioner(IC)·FOI Commissioner(FOIC)·Privacy Commissioner(PC) 세 직책을 묶은 기관. FOI 결정의 1차 실체심사(이후 AAT/ART 항소), 준수 감독, 우수 관행 촉진, 그리고 IC만이 수행하는 공공부문 정보의 전략적 관리 자문.',
+      cases: []
+    },
+    {
+      abbr: 'AG (Auditor)',
+      full_en: 'Auditor-General (Commonwealth)',
+      full_kr: '영연방 감사원장',
+      desc_en: 'Independent officer of parliament under the Auditor-General Act 1997 (Cth). Performs financial and performance audits of Cth entities; reports go directly to parliament. Unlike the Commonwealth Ombudsman, the Auditor-General enjoys statutory funding protection (s 50) and a Joint Committee oversight role — often contrasted with the CO\'s weaker institutional standing.',
+      desc_kr: 'Auditor-General Act 1997 (Cth)에 따른 독립 의회 공무원. 영연방 기관의 재무·성과 감사를 수행하고 보고서를 직접 의회에 제출. 영연방 옴부즈만과 달리 법정 예산 보호(s 50)와 합동위원회 감독을 받음 — CO의 약한 제도적 지위와 자주 대비된다.',
+      cases: []
+    },
+    {
+      abbr: 'ARC',
+      full_en: 'Administrative Review Council',
+      full_kr: '행정심사위원회',
+      desc_en: 'Established under the AAT Act with a "watching brief" over the federal administrative-justice system. Issued ~50 reports including the influential Internal Review of Agency Decision Making (Report No 44, 2000). Effectively defunded; statutory membership included the CO, the AHRC President, the ALRC President, and the Information Commissioner.',
+      desc_kr: 'AAT Act에 따라 설립되어 연방 행정정의 체계 전반을 감시하는 "watching brief"를 수행. 약 50개의 영향력 있는 보고서를 발표(예: Internal Review of Agency Decision Making, Report No 44, 2000). 사실상 예산 삭감으로 기능 정지. 법정 구성원으로는 CO·AHRC 위원장·ALRC 위원장·Information Commissioner가 포함.',
+      cases: []
+    },
   ],
 
   statutes: [
@@ -272,6 +304,46 @@ window.GLOSSARY_DATA = {
       desc_kr: '"관보 지정 기관(gazetted agency)"에 비밀 조건으로 전달된 정보의 사람·법원 공개 금지. Graham에서 s 503A(2)(c)는 s 501계 결정의 HCA s 75(v) 및 FCA s 476A 심사 적용 범위에서 — 권한의 법적 한계 준수 여부에 관련된 바로 그 자료를 법원이 처음부터(in limine) 박탈당하게 했으므로 — 헌법적으로 무효 판정.',
       cases: ['graham']
     },
+    {
+      abbr: 'AAT Act',
+      full_en: 'Administrative Appeals Tribunal Act 1975 (Cth)',
+      full_kr: '행정심판소법 1975 (Cth)',
+      desc_en: 'Foundation of federal merits review (succeeded operationally by the ART from October 2024). s 25 confers jurisdiction; s 43(1) confers "all the powers and discretions" of the original decision-maker plus the remedial powers to affirm / vary / set aside (then substitute or remit); s 43(6) deems a varied/substituted decision to be the original decision-maker\'s; s 28 imposes reasons obligations; s 44 provides appeal to the Federal Court on questions of law only.',
+      desc_kr: '연방 실체심사의 토대(2024년 10월부터 ART가 운영 승계). s 25 관할 부여, s 43(1)이 원결정자의 "모든 권한과 재량"과 인용/변경/취소(대체결정 또는 환송) 권한을 부여, s 43(6)이 변경·대체 결정을 원결정자의 결정으로 의제, s 28은 이유제시 의무, s 44는 법률문제에 한정한 연방법원 항소를 규정.',
+      cases: ['shi','frugtniet','drake']
+    },
+    {
+      abbr: 'Ombudsman Act',
+      full_en: 'Ombudsman Act 1976 (Cth)',
+      full_kr: '옴부즈만법 1976 (Cth)',
+      desc_en: 'Establishes the Commonwealth Ombudsman. Jurisdiction over "action that relates to a matter of administration" (broader than ADJR). Wide discretion to decline/cease investigations (s 6); contracted-out services reachable (s 3BA); investigations private (s 8); confidentiality rules (s 35, s 35A); recommendations are wide (s 15) but non-binding. Ministerial action is excepted, but officials\' advice to ministers is investigable (s 5(3A)).',
+      desc_kr: '영연방 옴부즈만을 설립. 관할은 "행정에 관한 행위"(ADJR보다 넓음). 조사 거절·중단 재량이 넓음(s 6), 외주 서비스도 포함(s 3BA), 조사는 비공개(s 8), 비밀유지(s 35, s 35A), 권고는 광범위(s 15)하지만 구속력 없음. 장관의 행위는 원칙적 제외이나 장관 자문 공무원의 행위는 조사 가능(s 5(3A)).',
+      cases: []
+    },
+    {
+      abbr: 'FOI Act',
+      full_en: 'Freedom of Information Act 1982 (Cth)',
+      full_kr: '정보자유법 1982 (Cth)',
+      desc_en: 'Creates an enforceable right of access to documents held by Cth agencies, subject to defined exemptions. Objects (s 3) reinforce a pro-disclosure presumption. "Every person" has access (s 11) and reasons for asking are irrelevant (s 11(2)). Conditional exemptions (Part IV Division 3) apply the public-interest test (s 11B). Cabinet documents (s 34), national security (s 33), law enforcement (s 37), statutory secrecy (s 38) are "hard" exemptions. Personal privacy (s 47F) is the most-claimed exemption.',
+      desc_kr: '영연방 기관 보유 문서에 대한 법적 접근권을 만들어 명시된 면제만 예외로 둠. s 3 목적조항이 공개 추정을 강화. s 11에 따라 "모든 사람"이 접근권을 가지고 신청 사유는 무관(s 11(2)). 조건부 면제(Part IV Division 3)는 공익 테스트(s 11B) 적용. 내각문서(s 34)·국가안보(s 33)·법집행(s 37)·법령상 비밀(s 38)은 "강한" 면제. 개인 사생활(s 47F)이 가장 많이 주장되는 면제.',
+      cases: []
+    },
+    {
+      abbr: 'AIC Act',
+      full_en: 'Australian Information Commissioner Act 2010 (Cth)',
+      full_kr: '호주 정보위원회법 2010 (Cth)',
+      desc_en: 'Establishes the OAIC and the Information Commissioner role (s 7). Reorients the FOI regime around the OAIC as a single agency for FOI, privacy and strategic information management. The 2010 reforms also abolished ministerial conclusive certificates so all exemption claims are reviewable.',
+      desc_kr: 'OAIC와 Information Commissioner 직책(s 7)을 설립. FOI·사생활·전략적 정보관리를 OAIC라는 단일 기관 중심으로 재편. 2010 개혁은 장관 확정증명서도 폐지해 모든 면제 주장이 심사 가능하도록 함.',
+      cases: []
+    },
+    {
+      abbr: 'PID Act',
+      full_en: 'Public Interest Disclosure Act 2013 (Cth)',
+      full_kr: '공익신고법 2013 (Cth)',
+      desc_en: 'Protects public-sector whistleblowers from criminal/civil/disciplinary consequences when they make an open disclosure of significant wrongdoing motivated by public interest. The Commonwealth Ombudsman plays a significant administering role. Shares the FOI Act\'s goals of transparency, openness, and accountability — but operates subject to secrecy laws (cf. FOI s 38).',
+      desc_kr: '공공부문 내부고발자가 공익 동기로 중대한 부정행위에 대해 공개 진술할 때 형사·민사·징계상 보호를 제공. 영연방 옴부즈만이 운영에서 중요한 역할을 수행. 투명성·개방성·책임성이라는 FOI 목적과 공유되지만, 비밀유지법에 종속되어 작동(FOI s 38과 같은 맥락).',
+      cases: []
+    },
   ],
 
   abbreviations: [
@@ -370,6 +442,38 @@ window.GLOSSARY_DATA = {
       desc_en: 'A specific category of legal error in an admin-law challenge — e.g. failure to consider relevant considerations, improper purpose, unreasonableness, bias, denial of PF. Post-Hossain (2018), every GoR (except the always-JE categories) carries a materiality limb.',
       desc_kr: '행정법 다툼에서의 특정 법적 오류 범주 — 관련 고려사항 누락, 부정한 목적, 비합리성, 편향, PF 거부 등. Hossain(2018) 이후 모든 GoR(always-JE 범주 제외)에는 materiality 단계가 붙는다.',
       cases: ['hossain','peko','schlieske','li','ebner','kioa']
+    },
+    {
+      abbr: 's 43 AAT Act',
+      full_en: 's 43 AAT Act — "correct or preferable" + "stand in the shoes"',
+      full_kr: 's 43 AAT Act — "옳거나 더 바람직한" + "원결정자의 자리에 선다"',
+      desc_en: 'The core merits-review provision: the AAT/ART exercises all the powers and discretions of the original decision-maker (subject to the same constraints — Frugtniet) and may affirm, vary, set aside + substitute, or set aside + remit. The standard is the "correct or preferable" decision on the material before the Tribunal (Drake [No 1]). s 43(6) deems substituted/varied decisions to be those of the original decision-maker.',
+      desc_kr: '실체심사의 핵심 조항: AAT/ART는 원결정자의 모든 권한·재량을 같은 제약 아래(Frugtniet) 행사하고, 인용·변경·취소+대체·취소+환송을 할 수 있다. 기준은 심판소 앞 자료를 기준으로 "옳거나 더 바람직한(correct or preferable)" 결정인가(Drake [No 1]). s 43(6)은 변경·대체 결정을 원결정자의 결정으로 의제.',
+      cases: ['shi','frugtniet','drake']
+    },
+    {
+      abbr: 'IPS',
+      full_en: 'Information Publication Scheme (FOI Act Part II)',
+      full_kr: '정보공표제도 (FOI Act Part II)',
+      desc_en: 'Mandatory proactive-publication scheme: agencies publish an agency plan plus specified categories of information. s 10 bars an agency from relying — to a citizen\'s detriment — on unpublished "operational information" (s 8A). Shifts FOI from purely request-based access toward routine open publication.',
+      desc_kr: '의무적 사전 공표 제도: 기관은 기관계획과 지정된 정보 범주를 공표해야 한다. s 10은 공표되지 않은 "operational information"(s 8A)을 시민에게 불리하게 원용하는 것을 금지. FOI를 청구 기반 접근에서 일상적 공개 쪽으로 이동시키는 장치.',
+      cases: []
+    },
+    {
+      abbr: 'PII',
+      full_en: 'Public Interest Immunity',
+      full_kr: '공익면책특권',
+      desc_en: 'Evidence-law principle (originally "Crown privilege") under which a litigant may resist disclosing material whose disclosure would harm the public interest. Conway v Rimmer [1968] AC 910 ended ministerial conclusive certificates; Sankey v Whitlam (1978) 142 CLR 1 confirmed Australian courts weigh competing public interests. Applies before merits-review tribunals too. Distinct from FOI exemptions, though grounds overlap (national security, law enforcement).',
+      desc_kr: '증거법상 원칙(원래는 "Crown privilege")으로, 공개가 공익을 해칠 자료의 공개에 저항할 수 있게 한다. Conway v Rimmer [1968] AC 910이 장관 확정증명서를 종결시켰고, Sankey v Whitlam (1978) 142 CLR 1이 호주 법원이 공익을 형량한다는 점을 확립. 실체심사 심판소에도 적용. FOI 면제와는 별개이나(국가안보·법집행 등) 사유가 겹친다.',
+      cases: ['sankey']
+    },
+    {
+      abbr: 'PSI',
+      full_en: 'Public Sector Information',
+      full_kr: '공공부문 정보',
+      desc_en: 'Information held or controlled by public agencies. The FOI Act increasingly treats PSI as a "national resource" (s 3(3)) to be managed for public purposes — a managerial framing that sits alongside (and sometimes in tension with) the older accountability rationale for access.',
+      desc_kr: '공공기관이 보유·통제하는 정보. FOI Act는 PSI를 점차 공공 목적으로 관리해야 하는 "국가 자원"(s 3(3))으로 다루는데, 이 관리주의적 prizing은 더 오래된 접근권의 책임성 근거와 함께 — 때로는 긴장 관계로 — 공존한다.',
+      cases: []
     },
   ],
 
@@ -533,6 +637,110 @@ window.GLOSSARY_DATA = {
       desc_en: 'Foundational constitutional proposition stated three ways: (i) it is impossible for Parliament to impose jurisdictional limits on a body and at the same time deprive the HCA of authority to enforce them by prohibition; (ii) impossible to impose a public duty and deprive the HCA of mandamus; (iii) impossible to constrain the exercise of power and deprive the HCA of injunction. The conceptual root of s 75(v) entrenchment (Plaintiff S157) and the Graham substance-and-degree test.',
       desc_kr: '세 형태로 진술되는 헌법적 기초 명제: (i) 어떤 기관에 관할권의 한계를 부과하면서 동시에 HCA로부터 prohibition으로 그 한계를 강제할 권한을 박탈하는 것은 의회에게 불가능; (ii) 공적 의무를 부과하면서 HCA로부터 mandamus를 박탈하는 것은 불가능; (iii) 권한 행사를 제약하면서 HCA로부터 injunction을 박탈하는 것은 불가능. s 75(v) 보호(Plaintiff S157)와 Graham 실질-정도 테스트의 개념적 뿌리.',
       cases: ['s157','graham','futuris']
+    },
+    {
+      abbr: 'Merits review',
+      full_en: 'Merits review (correct or preferable decision)',
+      full_kr: '실체심사 (옳거나 더 바람직한 결정)',
+      desc_en: 'Review in which the tribunal reconsiders the decision and reaches its own decision on the material before it — not merely policing legality. The standard is "correct" (only one acceptable decision) or "preferable" (more than one acceptable decision, and the tribunal selects the best). Established via Drake [No 1] / Brian Lawlor Automotive; confirmed by the High Court in Shi.',
+      desc_kr: '심판소가 결정 자체를 다시 검토해 자기 앞 자료에 따라 자기 결정을 내리는 심사 — 적법성만 보지 않는다. 기준은 "옳은(correct)"(허용되는 결정이 하나뿐) 또는 "더 바람직한(preferable)"(허용 가능한 여러 결정 중 가장 나은 것 선택). Drake [No 1] / Brian Lawlor Automotive가 정립하고 Shi에서 HCA가 확인.',
+      cases: ['shi','frugtniet','drake']
+    },
+    {
+      abbr: 'Stand in the shoes',
+      full_en: '"Stand in the shoes" principle (s 43 AAT Act)',
+      full_kr: '"원결정자의 자리에 선다" 원칙 (s 43 AAT Act)',
+      desc_en: 'The tribunal exercises the same powers as the primary decision-maker, subject to the same constraints. Frugtniet: a spent conviction that ASIC could not consider is one the AAT also could not consider. The metaphor has limits — the tribunal is solely a reviewer, exercises original powers only "for the purpose of reviewing the decision", and is not confined to the material before the original decision-maker.',
+      desc_kr: '심판소는 원결정자와 같은 권한을 같은 제약 아래에서 행사한다. Frugtniet: ASIC이 고려할 수 없는 효력소멸 유죄판결은 AAT도 고려할 수 없다. 비유에는 한계가 있다 — 심판소는 단지 심사자이고, 원권한은 오직 "결정을 심사할 목적"으로만 행사하며, 원결정자가 가진 자료에 제한되지 않는다.',
+      cases: ['frugtniet','shi']
+    },
+    {
+      abbr: 'Drake [No 2] practice',
+      full_en: 'Drake [No 2] practice — tribunal and government policy',
+      full_kr: 'Drake [No 2] 실무 — 심판소와 정부 정책',
+      desc_en: 'When reviewing a discretionary power reposed in a Minister who has adopted a general policy, the tribunal will ordinarily apply that policy unless the policy is unlawful or its application would produce an unjust decision in the particular case. Brennan J: "Inconsistency is not merely inelegant"; but "consistency is not preferable to justice." Cogent reasons must be shown against the policy — especially where parliament has scrutinised it.',
+      desc_kr: '장관에게 부여된 재량권을 심사할 때, 장관이 채택한 일반 정책이 적법하고 그 적용이 부당한 결과를 낳지 않는 한 심판소는 그 정책을 통상 적용한다. Brennan J: "비일관성은 단지 미관상 문제가 아니다"; 그러나 "일관성이 정의보다 우선하지 않는다." 정책에 반하는 설득력 있는 사유가 제시되어야 하며 — 특히 의회가 검토한 정책에 대해서는 더욱.',
+      cases: ['drake']
+    },
+    {
+      abbr: 'Maladministration',
+      full_en: 'Maladministration (ombud basis)',
+      full_kr: 'Maladministration (옴부즈만 기준)',
+      desc_en: 'Wider than illegality or a non-preferable decision — also covers delay, rudeness, inefficiency, incompetence. The Commonwealth Ombudsman\'s residual power lets it recommend a remedy where action was "otherwise, in all the circumstances, wrong" (s 15(1)(a)(v)) or the law is "unreasonable, unjust, oppressive or improperly discriminatory" (s 15(1)(a)(iii)). A former CO suggested action would only be recommended if the decision was "unsupportable".',
+      desc_kr: '위법성이나 더 바람직하지 못한 결정보다 넓은 개념 — 지연·무례·비효율·무능까지 포함. 영연방 옴부즈만은 행위가 "그 밖에 모든 정황상 잘못된" 경우(s 15(1)(a)(v)) 또는 법 자체가 "비합리·부정·억압·부당하게 차별적인" 경우(s 15(1)(a)(iii)) 시정을 권고할 수 있다. 전직 CO는 결정이 "옹호 불가능(unsupportable)"한 경우에만 권고한다고 시사.',
+      cases: []
+    },
+    {
+      abbr: 'Robodebt',
+      full_en: 'Robodebt scheme (Online Compliance Intervention)',
+      full_kr: 'Robodebt 스킴 (온라인 컴플라이언스 개입)',
+      desc_en: 'Centrelink\'s 2016 automated debt-raising system that averaged ATO income data fortnightly and reversed the onus onto customers to disprove debts. CO reports (2017/2019/2021) flagged fairness/transparency failures; Amato (Federal Court, consent declarations) and Prygodicz [No 2] [2021] FCA 634 (Murphy J: "a shameful chapter…and a massive failure of public administration") confirmed the scheme was unlawful. Lessons: automating discretionary decisions carries high legal risk; ombud and parliamentary recommendations alone did not correct the underlying legal error (Carney critique).',
+      desc_kr: 'Centrelink의 2016년 자동 부채 발생 시스템 — ATO 소득 데이터를 격주 단위로 평균화하고 입증책임을 부채를 부정하는 쪽으로 뒤집었다. CO 보고서(2017/2019/2021)가 공정성·투명성 문제를 지적했고, Amato(연방법원 합의 선언)와 Prygodicz [No 2] [2021] FCA 634(Murphy J: "수치스러운 장이자 행정의 거대한 실패")가 위법성을 확인. 교훈: 재량 결정 자동화는 법적 위험이 크고, 옴부즈만·의회 권고만으로는 근본 법적 오류를 시정하지 못한다(Carney 비판).',
+      cases: []
+    },
+    {
+      abbr: 'Integrity branch',
+      full_en: 'Integrity branch / fourth branch of government',
+      full_kr: '청렴(integrity) 부문 / 정부 제4부문',
+      desc_en: 'Conceptual framing of the proliferating independent non-judicial bodies — ombuds, anti-corruption commissions (e.g. NSW ICAC), AHRC, OAIC, Auditor-General — as a fourth branch outside the classic legislative-executive-judicial trichotomy, charged with ensuring executive integrity. "Integrity" is contested and elastic (corruption, illegality, incompetence, inefficiency).',
+      desc_kr: '옴부즈만·부패방지위(예: NSW ICAC)·AHRC·OAIC·감사원장 등 독립 비사법기관의 급증을 입법·행정·사법 3분립을 넘는 "제4부문"으로 개념화한 것. 행정의 청렴을 보장하는 역할. "Integrity"는 다툼의 여지가 큰 탄력적 개념(부패·위법성·무능·비효율 모두 포함).',
+      cases: []
+    },
+    {
+      abbr: 'Internal review',
+      full_en: 'Internal review (vs reconsideration)',
+      full_kr: '내부 검토 (재고려와의 구별)',
+      desc_en: 'Merits review of a decision conducted within the same agency by a different (usually more senior) decision-maker. Distinct from "reconsideration" (done personally by the original decision-maker). Often statutorily required before external review; criticised as risking "appeal fatigue" (ARC Report No 44, 2000) and a "soft option" for primary decision-makers. Standard formula: "fair, just, economical, informal and quick" (s 2A(b) AAT Act).',
+      desc_kr: '같은 기관 내에서 다른(보통 더 선임) 결정자가 결정을 실체심사하는 것. 원결정자가 직접 다시 보는 "reconsideration"과 구별. 외부 심사의 전제로 자주 법정화되며, "appeal fatigue"(ARC Report No 44, 2000)와 1차 결정자의 "soft option" 위험으로 비판됨. 표준 공식: "fair, just, economical, informal and quick"(s 2A(b) AAT Act).',
+      cases: []
+    },
+    {
+      abbr: 'Own-motion investigation',
+      full_en: 'Own-motion investigation (ombud)',
+      full_kr: '직권 조사 (옴부즈만)',
+      desc_en: 'An investigation the ombud commences on its own initiative — not in response to a complaint — into a perceived systemic problem. The prime medium for the ombud\'s "normative" impact on administrative practice (reports, recommendations, guidelines).',
+      desc_kr: '진정에 응하는 것이 아니라 옴부즈만이 직권으로 체계적 문제를 인지해 개시하는 조사. 옴부즈만이 행정 실무에 미치는 "규범적" 영향(보고서·권고·지침)의 주요 통로.',
+      cases: []
+    },
+    {
+      abbr: 'Ministerial responsibility',
+      full_en: 'Ministerial responsibility / responsible government',
+      full_kr: '장관 책임 / 책임정부',
+      desc_en: 'Constitutional convention that ministers are collectively and individually answerable to parliament — for both their own acts and those of the bureaucracy acting in their name. "Responsible" means answerable, not blameworthy — about openness, explanation and eliminating bad practices. Limit: ministers need only answer for matters they are "responsible" for — privatisation, contracting-out and quasi-autonomous agencies shrink that scope.',
+      desc_kr: '장관이 의회에 집단적·개별적으로 답할 의무를 지는 헌법적 관행 — 본인의 행위뿐 아니라 자신의 이름으로 행위하는 관료의 행위까지. "Responsible"은 책임을 지는 것이 아니라 답하는 것 — 공개·설명·악습 제거에 관한 것이다. 한계: 장관은 자신이 "책임지는" 사안에 대해서만 답하면 됨 — 민영화·외주화·준자율기관이 그 범위를 줄인다.',
+      cases: []
+    },
+    {
+      abbr: 'Soft law',
+      full_en: 'Soft law (administrative policy)',
+      full_kr: '연성법 (행정 정책)',
+      desc_en: 'Non-binding norms — policies, guidelines, directions, Procedures Advice Manuals — that nevertheless strongly influence administrative decision-making in practice. Lawful policy guides discretion; an inflexible application of policy that substitutes for the statutory criteria is unlawful (Green v Daniels). The Drake [No 2] practice governs how the tribunal treats government soft law on review.',
+      desc_kr: '비구속적 규범 — 정책·지침·지시·PAM 등 — 으로 실무상 행정 결정에 강하게 영향을 미친다. 적법한 정책은 재량을 안내하지만, 법령 기준을 대체하는 경직된 정책 적용은 위법(Green v Daniels). 심판소가 정부 연성법을 어떻게 다루는지는 Drake [No 2] 실무가 규율한다.',
+      cases: ['green','m64','drake']
+    },
+    {
+      abbr: 'Spent conviction',
+      full_en: 'Spent conviction (Crimes Act 1914 (Cth) Pt VIIC)',
+      full_kr: '효력소멸 유죄판결 (Crimes Act 1914 (Cth) Pt VIIC)',
+      desc_en: 'A minor criminal conviction that, after a waiting period or pardon, need not be disclosed and that Commonwealth authorities are prohibited from taking into account (Div 3). s 85ZZH(c) disapplies Div 3 to courts/tribunals — but only as a non-application; it does NOT alter their jurisdiction. Frugtniet: because ASIC could not consider the spent conviction, the AAT also could not.',
+      desc_kr: '경미한 유죄판결이 일정 대기기간이나 사면 후 공개할 필요가 없어지고 영연방 기관이 고려할 수 없게 되는 것(Div 3). s 85ZZH(c)는 법원·심판소에 Div 3 적용을 제외할 뿐 — 관할을 바꾸지는 않는다. Frugtniet: ASIC이 효력소멸 유죄판결을 고려할 수 없으므로 AAT도 고려할 수 없다.',
+      cases: ['frugtniet']
+    },
+    {
+      abbr: 'Public interest test (FOI)',
+      full_en: 'Public interest test for conditional FOI exemptions (s 11B)',
+      full_kr: 'FOI 조건부 면제의 공익 테스트 (s 11B)',
+      desc_en: 'For Part IV Division 3 ("conditional") exemptions, access is granted unless disclosure would be contrary to the public interest. Pro-disclosure factors include promoting the Act\'s objects, informing public debate, oversight of public expenditure, and access to one\'s own personal information. The Act expressly lists IRRELEVANT factors — including embarrassment to, or loss of confidence in, the government.',
+      desc_kr: 'Part IV Division 3("조건부") 면제에서, 공개가 공익에 반하지 않는 한 접근이 허용된다. 공개를 지지하는 요소: Act 목적 증진, 공적 논의 정보 제공, 공공지출 감독, 본인 개인정보 접근 등. Act가 명시적으로 무관한 요소도 열거 — 정부에 대한 당혹·신뢰 상실 등이 포함된다.',
+      cases: []
+    },
+    {
+      abbr: 'Cabinet exemption (FOI)',
+      full_en: 'Cabinet documents exemption (FOI Act s 34)',
+      full_kr: '내각 문서 면제 (FOI Act s 34)',
+      desc_en: 'Protects Cabinet confidentiality and the convention of collective ministerial responsibility. Sits alongside the conditional "deliberative processes" exemption (s 47C), which preserves bureaucratic "thinking space" for candid advice. In Patrick v PM&C [2021] AATA 2719 the AAT held the National Cabinet was NOT a "committee of Cabinet" — a narrow, pro-disclosure reading. The government\'s legislative response (COAG Legislation Amendment Bill 2021) lapsed.',
+      desc_kr: '내각의 비밀과 집단 장관책임의 관행을 보호. 관료의 솔직한 자문을 위한 "thinking space"를 보존하는 조건부 면제인 "deliberative processes"(s 47C)와 짝지어 다루어짐. Patrick v PM&C [2021] AATA 2719에서 AAT는 National Cabinet이 "Cabinet의 위원회"가 아니라고 판단 — 좁은 공개 우호적 해석. 이에 대한 정부 입법 대응(COAG Legislation Amendment Bill 2021)은 의회 해산으로 폐기.',
+      cases: []
     },
   ],
 };

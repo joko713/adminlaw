@@ -957,61 +957,89 @@ window.WEEKS_DATA = [
   },
   {
     id:'w11', num:11,
-    en:{ title:'Tribunals & merits review (ART)',
-         summary:'Merits-review pathway alongside JR — the new Administrative Review Tribunal (ART, Oct 2024) replaces the AAT, with continuing reliance on the Drake No 2 policy framework. Frugtniet (2019) confirms tribunals stand in the shoes of the original decision-maker; Shi (2008) on the time of relevant facts.',
+    en:{ title:'Tribunals (ART) · ombuds · parliament · FOI',
+         summary:'Two halves. (1) Merits review through the ART (replaced the AAT, Oct 2024): "stand in the shoes" of the primary decision-maker and re-make the "correct or preferable" decision — Frugtniet on same-constraints, Shi on time of facts, Drake [No 2] on policy. (2) Beyond courts and tribunals: the "integrity branch" — ombuds (maladministration, recommend only; Robodebt), parliament (answerability not coercion; Auditor-General contrast), and FOI (presumption in favour of disclosure, subject to defined exemptions).',
          meta:[
-           {label:'Body', value:'ART (from Oct 2024)'},
-           {label:'Stands in shoes', value:'Frugtniet'},
-           {label:'Time of facts', value:'Shi'},
-           {label:'Policy use', value:'Drake No 2'}
+           {label:'Tribunal', value:'ART (from Oct 2024) — s 43'},
+           {label:'Stands in shoes', value:'Frugtniet · Shi'},
+           {label:'Ombud basis', value:'Maladministration (recommend)'},
+           {label:'FOI', value:'Pro-disclosure presumption'}
          ],
          points:[
-           {h:'Merits vs JR', t:'Tribunals re-make the decision (correct/preferable); courts only review legality. Pick the right pathway first.', c:['quin']},
-           {h:'Standing in shoes', t:'Frugtniet — the tribunal exercises the same statutory power as the primary decision-maker, with the same constraints.', c:['frugtniet']},
-           {h:'Time of relevant facts', t:'Shi v MARA — the tribunal generally decides on the facts as they stand at the time of the tribunal\'s decision, not the primary decision.', c:['shi']},
-           {h:'Treatment of policy', t:'Drake No 2 — tribunal is to apply lawful government policy unless cogent reasons not to; not bound rigidly.', c:['drake']}
+           {h:'Merits vs JR', t:'Tribunals re-make the decision ("correct or preferable" — Drake [No 1]); courts only police legality. Pick the right pathway before reaching for cases.', c:['quin']},
+           {h:'Stand in the shoes (s 43 AAT Act)', t:'Frugtniet: the tribunal exercises the same statutory power as the primary decision-maker, subject to the same constraints (spent conviction ASIC could not consider → AAT could not consider).', c:['frugtniet']},
+           {h:'Time of relevant facts', t:'Shi v MARA: generally the tribunal decides on facts as at the time of its own decision, unless the nature of the decision under review confines it to an earlier time. The administrative process is a "continuum".', c:['shi']},
+           {h:'Government policy (Drake [No 2])', t:'When reviewing a discretionary power reposed in a Minister who has adopted a general policy, the tribunal will ordinarily apply that policy unless it is unlawful or its application would produce an unjust outcome in the particular case. "Consistency is not preferable to justice."', c:['drake']},
+           {h:'Ombuds — investigate & recommend', t:'Commonwealth Ombudsman (Ombudsman Act 1976 (Cth)) investigates "action that relates to a matter of administration" (broader than ADJR; reaches contracted-out services — s 3BA). Basis is "maladministration" (wider than illegality). No power to determine legal rights — only reports and recommends; that non-coercion enables remedies courts cannot (apology, explanation, monetary compensation, systemic change). "Robodebt" is the case study.', c:[]},
+           {h:'Parliament — answerability, not coercion', t:'To be accountable is to be answerable. Tools: debates, motions, questions, committee inquiries, MPs as grievance-handlers. Inherent limit: no formal authority over governments. Ministers answer for matters they are "responsible" for — privatisation / contracting-out shrinks that. Contrast: the Auditor-General has statutory funding protection (s 50) and an officer-of-parliament role the Commonwealth Ombudsman lacks.', c:[]},
+           {h:'FOI — pro-disclosure with defined exemptions', t:'FOI Act 1982 (Cth): every person has a right of access to documents (s 11, reasons irrelevant — s 11(2)). "Hard" exemptions (s 33 security, s 34 Cabinet, s 37 law enforcement, s 38 statutory secrecy) and conditional exemptions (s 47C deliberative processes, s 47F personal privacy — the most-claimed) subject to the s 11B public interest test, which expressly excludes irrelevant factors like government embarrassment. The OAIC (AIC Act 2010) is the modern reform anchor.', c:[]}
          ]},
-    kr:{ title:'심판소(ART) · 본안 재심사',
-         summary:'사법심사와 나란히 가는 본안 재심사 경로야. 2024년 10월부터 AAT를 대체하는 ART(Administrative Review Tribunal)가 도입됐고, 정책 적용은 여전히 Drake No 2 framework를 따른다. Frugtniet(2019)은 심판소가 원결정자와 동일한 권한을 그대로 행사한다는 점을, Shi(2008)는 사실관계 기준 시점을 정리한 판례.',
+    kr:{ title:'심판소(ART) · 옴부즈만 · 의회 · FOI',
+         summary:'두 축. (1) ART(2024년 10월 AAT 대체)의 실체심사 — 원결정자의 "자리에 서서(stand in the shoes)" "옳거나 더 바람직한" 결정을 다시 내림: 같은 제약은 Frugtniet, 사실 기준 시점은 Shi, 정책 취급은 Drake [No 2]. (2) 법원·심판소 너머의 책임성 — "청렴(integrity) 부문": 옴부즈만(maladministration, 권고만; Robodebt), 의회(강제력 없는 답할 의무; 감사원장과의 대비), FOI(공개 추정 + 명시 면제).',
          meta:[
-           {label:'기관', value:'ART (2024년 10월~)'},
-           {label:'권한 승계', value:'Frugtniet'},
-           {label:'사실 기준 시점', value:'Shi'},
-           {label:'정책 적용', value:'Drake No 2'}
+           {label:'심판소', value:'ART (2024년 10월~) — s 43'},
+           {label:'권한 승계', value:'Frugtniet · Shi'},
+           {label:'옴부즈만 기준', value:'Maladministration (권고)'},
+           {label:'FOI', value:'공개 추정'}
          ],
          points:[
-           {h:'본안 재심사 vs 사법심사', t:'심판소는 결정을 다시 내리는 곳이고(correct/preferable 결정), 법원은 적법성만 본다는 점을 먼저 구분해야 해. 어느 경로가 맞는지 진입 단계에서 정리.', c:['quin']},
-           {h:'원결정자의 자리에 선다', t:'Frugtniet — 심판소는 원결정자와 같은 법적 권한을 같은 제약 아래에서 행사한다.', c:['frugtniet']},
-           {h:'사실관계 기준 시점', t:'Shi v MARA — 심판소는 원칙적으로 심판소 결정 시점의 사실관계로 판단한다(원결정 시점이 아님).', c:['shi']},
-           {h:'정책의 취급', t:'Drake No 2 — 심판소는 적법한 정부 정책을 적용해야 하지만, 이를 따르지 않을 설득력 있는 사유가 있으면 따르지 않을 수 있다(경직된 구속이 아님).', c:['drake']}
+           {h:'본안 재심사 vs 사법심사', t:'심판소는 결정을 다시 내리고("옳거나 더 바람직한" — Drake [No 1]), 법원은 적법성만 단속한다. 사례로 들어가기 전에 어느 경로인지부터 정리.', c:['quin']},
+           {h:'원결정자의 자리에 선다 (s 43 AAT Act)', t:'Frugtniet: 심판소는 원결정자와 같은 법적 권한을 같은 제약 아래 행사한다(ASIC이 효력소멸 유죄판결을 고려할 수 없으면 AAT도 못 한다).', c:['frugtniet']},
+           {h:'사실관계 기준 시점', t:'Shi v MARA: 원칙적으로 심판소 결정 시점의 사실로 판단하되, 심사 대상 결정의 성격이 더 이른 시점으로 제한할 수 있다. 행정 과정은 "연속체(continuum)"다.', c:['shi']},
+           {h:'정부 정책 (Drake [No 2])', t:'장관에게 부여된 재량권을 심사할 때, 장관 채택의 일반 정책이 적법하고 개별 사안에서 부당한 결과를 낳지 않는 한 심판소는 그 정책을 통상 적용한다. "일관성이 정의보다 우선하지 않는다."', c:['drake']},
+           {h:'옴부즈만 — 조사하고 권고만', t:'영연방 옴부즈만(Ombudsman Act 1976 (Cth))은 "행정에 관한 행위"를 조사한다(ADJR보다 넓은 관할; 외주서비스 s 3BA 포섭). 기준은 "maladministration"(위법성보다 넓음). 법적 권리를 결정할 권한은 없고 보고·권고만 하는데, 그 비강제성이 법원이 만들 수 없는 구제(사과·설명·금전 보상·체계 변경)를 가능케 한다. "Robodebt"가 대표 사례.', c:[]},
+           {h:'의회 — 강제력 아닌 답할 의무', t:'책임성은 "답하는 것"이다. 도구: 토론·동의안·질문·위원회 심사·MP의 민원 처리. 본질적 한계: 정부에 대한 공식적 권한 없음. 장관은 "책임지는" 사안에만 답하면 되니 민영화·외주화가 그 범위를 줄인다. 대비: 감사원장은 법정 예산 보호(s 50)와 의회 공무원 지위를 갖는데, CO는 그런 보호가 없다.', c:[]},
+           {h:'FOI — 공개 추정 + 명시 면제', t:'FOI Act 1982 (Cth): 모든 사람이 문서 접근권을 가지고(s 11, 사유 무관 — s 11(2)), 강한 면제(s 33 안보·s 34 내각·s 37 법집행·s 38 법령상 비밀)와 조건부 면제(s 47C 심의 과정·s 47F 개인 사생활 — 가장 많이 주장됨)는 s 11B 공익 테스트에 종속. 그 테스트는 정부에 대한 당혹 같은 무관 요소를 명시적으로 배제한다. OAIC(AIC Act 2010)가 현대 개혁의 중심.', c:[]}
          ]},
     tree:{ en:[
-      {id:'pathway', label:'JR or merits review?', children:[
-        {id:'pathway-jr', label:'Legality only — pursue JR', leaf:true, result:'proceed', note:'Switch to W2 jurisdiction analysis.'},
-        {id:'pathway-merits', label:'Want decision re-made — go to ART', children:[
-          {id:'time', label:'When are the facts assessed?', leaf:true, result:'proceed', note:'Shi — usually at the time of tribunal decision.'},
-          {id:'policy', label:'Is government policy in play?', leaf:true, result:'proceed', note:'Drake No 2 — apply lawful policy unless cogent reasons not to.'}
+      {id:'half', label:'Which half of W11?', children:[
+        {id:'merits', label:'Merits review — tribunal pathway', children:[
+          {id:'shoes', label:'Stand in shoes — same constraints (Frugtniet)?', leaf:true, result:'proceed', note:'Tribunal cannot consider what the primary DM could not.'},
+          {id:'time', label:'Time of facts — Shi', leaf:true, result:'proceed', note:'Usually tribunal-decision time; check if the decision\'s nature fixes an earlier time.'},
+          {id:'policy', label:'Government policy — Drake [No 2]', leaf:true, result:'proceed', note:'Apply unless unlawful or unjust in the case; cogent reasons against.'}
+        ]},
+        {id:'beyond', label:'Beyond courts and tribunals', children:[
+          {id:'ombud', label:'Ombud — maladministration?', leaf:true, result:'proceed', note:'Investigates, reports and recommends. Non-coercive — but reaches outsourced services and broader bases (delay, rudeness, inefficiency).'},
+          {id:'parliament', label:'Parliament — political answerability?', leaf:true, result:'proceed', note:'Questions, committees, motions. No formal authority over government; ministers only answer for what they are "responsible" for.'},
+          {id:'foi', label:'FOI — access to documents?', children:[
+            {id:'foi-hard', label:'Hard exemption (s 33/34/37/38)?', leaf:true, result:'no-access', note:'Refusal usually upheld; "in confidence" / Cabinet etc.'},
+            {id:'foi-cond', label:'Conditional exemption (Div 3)?', leaf:true, result:'check', note:'Apply s 11B public-interest test; irrelevant factors (e.g. embarrassment) excluded.'},
+            {id:'foi-none', label:'No exemption applies', leaf:true, result:'access', note:'Pro-disclosure presumption — access granted.'}
+          ]}
         ]}
       ]}
     ], kr:[
-      {id:'pathway', label:'사법심사인가, 본안 재심사인가?', children:[
-        {id:'pathway-jr', label:'적법성만 다툼 — 사법심사로', leaf:true, result:'proceed', note:'W2 관할 분석으로 이동.'},
-        {id:'pathway-merits', label:'결정을 다시 내리고 싶음 — ART로', children:[
-          {id:'time', label:'사실관계는 어느 시점 기준?', leaf:true, result:'proceed', note:'Shi — 원칙적으로 심판소 결정 시점.'},
-          {id:'policy', label:'정부 정책이 관련되는가?', leaf:true, result:'proceed', note:'Drake No 2 — 적법 정책은 따르되 설득력 있는 사유가 있으면 예외.'}
+      {id:'half', label:'W11의 어느 축인가?', children:[
+        {id:'merits', label:'본안 재심사 — 심판소 경로', children:[
+          {id:'shoes', label:'자리에 선다 — 같은 제약(Frugtniet)?', leaf:true, result:'proceed', note:'원결정자가 고려할 수 없는 것은 심판소도 고려할 수 없다.'},
+          {id:'time', label:'사실 기준 시점 — Shi', leaf:true, result:'proceed', note:'원칙적으로 심판소 결정 시점; 결정 성격이 이른 시점에 고정시키는지 확인.'},
+          {id:'policy', label:'정부 정책 — Drake [No 2]', leaf:true, result:'proceed', note:'사안에서 위법하거나 부당하지 않은 한 적용; 반대하려면 설득력 있는 사유.'}
+        ]},
+        {id:'beyond', label:'법원·심판소 너머', children:[
+          {id:'ombud', label:'옴부즈만 — maladministration?', leaf:true, result:'proceed', note:'조사·보고·권고. 강제력은 없으나 외주 서비스까지 미치고 기준이 더 넓다(지연·무례·비효율).'},
+          {id:'parliament', label:'의회 — 정치적 답할 의무?', leaf:true, result:'proceed', note:'질문·위원회·동의안. 정부에 대한 공식 권한 없음; 장관은 "책임지는" 사안에만 답함.'},
+          {id:'foi', label:'FOI — 문서 접근?', children:[
+            {id:'foi-hard', label:'강한 면제(s 33/34/37/38)?', leaf:true, result:'no-access', note:'거부가 통상 유지됨; "in confidence" / 내각 등.'},
+            {id:'foi-cond', label:'조건부 면제(Div 3)?', leaf:true, result:'check', note:'s 11B 공익 테스트 적용; 무관 요소(예: 당혹)는 배제.'},
+            {id:'foi-none', label:'면제 없음', leaf:true, result:'access', note:'공개 추정 — 접근 허용.'}
+          ]}
         ]}
       ]}
     ]},
     detail:{
       en:[
-        {h:'Why a separate pathway?', t:'JR can only ask whether the decision was lawfully made; it cannot replace the decision. Where the applicant wants a substantively different outcome on the same evidence, merits review through the ART is the appropriate channel.'},
-        {h:'ART transition (Oct 2024)', t:'The Administrative Review Tribunal Act 2024 (Cth) replaced the AAT with the ART, addressing concerns about appointment integrity and case-management. The substantive merits-review framework — Drake No 2 on policy, Frugtniet on standing-in-shoes, Shi on time — continues to apply.'},
-        {h:'Practice tip', t:'In an exam, identify whether the issue is legality or merits before reaching for cases. If the applicant\'s real complaint is "the decision was wrong on the facts", merits review is usually the right pathway, not JR.'}
+        {h:'Why a separate merits pathway', t:'JR can only ask whether the decision was lawfully made; it cannot replace the decision. Merits review (s 43 AAT Act) lets the tribunal re-make the "correct or preferable" decision on the material before it — affirm / vary / set aside (substitute or remit). Unenforceable (tribunals cannot exercise judicial power) but by breadth and depth often a more significant accountability mechanism than JR.'},
+        {h:'AAT → ART transition (Oct 2024)', t:'The Administrative Review Tribunal Act 2024 (Cth) replaced the AAT with the ART, addressing appointment-integrity concerns. The substantive framework — Drake [No 2] on policy, Frugtniet on standing-in-shoes, Shi on time — continues to apply.'},
+        {h:'The ombud institution', t:'Independent statutory office (Ombudsman Act 1976 (Cth)). Inquisitorial, private investigations; wide discretion not to investigate; unrestricted access to agency files; remedies negotiated, not enforced. Basis = "maladministration": delay, rudeness, inefficiency, incompetence as well as illegality. Own-motion investigations are the prime medium of "normative" impact on administrative practice. Robodebt (CO reports 2017/2019/2021; Amato; Prygodicz [No 2] [2021] FCA 634) shows both reach and limits: recommendations alone did not correct the underlying legal error.'},
+        {h:'Parliament and the integrity branch', t:'Parliamentary accountability runs on power and persuasion, not authority and coercion. The proliferation of independent review bodies (ombuds, anti-corruption bodies, AHRC, OAIC, Auditor-General) has been framed as a fourth "integrity branch" outside the classic three-branch separation. Strong officer-of-parliament protection (Auditor-General Act 1997 (Cth), ss 8, 50) contrasts with the Commonwealth Ombudsman\'s weaker institutional standing.'},
+        {h:'FOI — design, exemptions, cognate regimes', t:'Three functions: access by request (s 11); proactive publication (Information Publication Scheme, Part II — s 8A operational information); information as a "national resource" (s 3(3)). Two exemption families — Division 2 ("hard": s 33 security, s 34 Cabinet, s 37 law enforcement, s 38 statutory secrecy) and Division 3 (conditional, subject to the s 11B public interest test; s 47C deliberative processes, s 47F personal privacy). Cognate: Privacy (third-party angle of s 47F); secrecy (FOI operates subject to it); Archives Act 1983; Public Interest Disclosure Act 2013 (whistleblower); PII (Conway v Rimmer; Sankey v Whitlam). FOI is not itself accountability — it is the lifeblood of accountability.'}
       ],
       kr:[
-        {h:'왜 별도의 경로인가', t:'사법심사는 결정이 적법하게 내려졌는지만 다툴 수 있고, 결정을 대신 내려 주지는 않다. 같은 증거로 다른 결론을 받고 싶다면 ART의 본안 재심사가 맞는 통로야.'},
-        {h:'ART 전환 (2024년 10월)', t:'Administrative Review Tribunal Act 2024 (Cth)에 따라 AAT가 ART로 대체됐다. 임명의 독립성·사건 관리 문제를 의식한 개편이지만, 본안 재심사의 실체적 framework — 정책에 관한 Drake No 2, 권한 승계에 관한 Frugtniet, 시점에 관한 Shi — 는 그대로 유지돼.'},
-        {h:'시험에서의 팁', t:'쟁점이 적법성인지 본안인지부터 가르고 케이스로 들어가. 신청인의 진짜 불만이 "결정 자체가 사실판단에서 틀렸다"라면 보통 사법심사가 아니라 본안 재심사야.'}
+        {h:'왜 별도의 본안 경로인가', t:'사법심사는 결정이 적법했는지만 다툴 수 있고 결정을 대신 내리지 못한다. 본안 재심사(s 43 AAT Act)는 심판소가 앞의 자료로 "옳거나 더 바람직한" 결정을 다시 내리게 한다 — 인용·변경·취소(대체결정·환송). 강제력은 없지만(심판소는 사법권 행사 불가) 폭과 깊이로 보면 사법심사보다 더 중요한 책임성 장치인 경우가 많다.'},
+        {h:'AAT → ART 전환 (2024년 10월)', t:'Administrative Review Tribunal Act 2024 (Cth)이 AAT를 ART로 대체 — 임명 독립성 문제를 의식한 개편. 실체적 framework — 정책에 관한 Drake [No 2], 권한 승계에 관한 Frugtniet, 시점에 관한 Shi — 는 그대로 유지.'},
+        {h:'옴부즈만 제도', t:'독립 법정기관(Ombudsman Act 1976 (Cth)). 비공개·심문식 조사, 조사 거절 재량이 넓고, 기관 파일 접근에 제한 없으며, 구제는 강제가 아니라 협상으로 만들어낸다. 기준은 "maladministration": 위법뿐 아니라 지연·무례·비효율·무능까지. 직권 조사(own-motion)는 행정 실무에 미치는 "규범적" 영향의 주요 통로. Robodebt(CO 보고서 2017/2019/2021; Amato; Prygodicz [No 2] [2021] FCA 634)는 도달 범위와 한계를 동시에 보여준다 — 권고만으로는 근본 법적 오류를 시정하지 못했다.'},
+        {h:'의회와 청렴 부문', t:'의회 책임성은 권한·강제가 아니라 권력과 설득으로 작동한다. 독립 심사기관(옴부즈만·부패방지·AHRC·OAIC·감사원장)의 급증은 입법·행정·사법 3분립을 넘는 "청렴 부문(integrity branch)"로 개념화돼 왔다. 감사원장(Auditor-General Act 1997 (Cth) ss 8, 50)의 강한 의회 공무원 보호와 영연방 옴부즈만의 약한 제도적 지위가 자주 대비된다.'},
+        {h:'FOI — 설계·면제·인접 제도', t:'세 기능: 청구권(s 11)·사전 공표(IPS, Part II — s 8A operational information)·"국가 자원"으로서의 정보(s 3(3)). 두 면제 계열 — Division 2 "강한 면제"(s 33 안보·s 34 내각·s 37 법집행·s 38 법령상 비밀)와 Division 3 조건부(s 11B 공익 테스트 종속; s 47C 심의 과정·s 47F 개인 사생활). 인접 제도: Privacy(s 47F 제3자 측면), 비밀(FOI는 비밀법에 종속), Archives Act 1983, Public Interest Disclosure Act 2013(내부고발자 보호), PII(Conway v Rimmer; Sankey v Whitlam). FOI 자체는 책임성 장치가 아니지만 — 책임성의 생명선이다.'}
       ]
     },
     cases:['shi','frugtniet','drake'],
