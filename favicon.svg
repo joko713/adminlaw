@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Admin Law Study">
+  <!-- Background: editorial deep blue (matches --margin-blue) with rounded corners -->
+  <rect width="64" height="64" rx="14" fill="#1f3559"/>
+  <!-- Subtle inner highlight at top for a slight 'card' feel -->
+  <rect x="1" y="1" width="62" height="30" rx="13" fill="url(#hi)" opacity="0.18"/>
+  <!-- Section sign — the universal legal glyph -->
+  <text x="32" y="48"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="48"
+        font-weight="600"
+        text-anchor="middle"
+        fill="#fafaf7"
+        style="font-style: italic;">§</text>
+  <defs>
+    <linearGradient id="hi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
