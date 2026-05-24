@@ -668,126 +668,212 @@ h3 {
   opacity: 1;
 }
 
-/* Sticky toolbar with print / fullscreen / close */
+/* ─── Frosted-glass toolbar (sticky top) ──────────────────────── */
 .panel-toolbar {
   position: sticky; top: 0; z-index: 5;
-  display: flex; justify-content: flex-end; gap: 2px;
-  padding: 10px 14px 6px;
-  background: linear-gradient(to bottom, var(--paper) 80%, rgba(244, 236, 217, 0) 100%);
+  display: flex; justify-content: flex-end; gap: 4px;
+  padding: 12px 18px;
+  background: color-mix(in srgb, var(--paper) 60%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid rgba(0,0,0,.04);
 }
 .panel-tool {
   background: transparent; border: none;
-  width: 32px; height: 32px;
+  width: 34px; height: 34px;
   display: inline-flex; align-items: center; justify-content: center;
   font-family: var(--font-serif);
-  font-size: 18px; line-height: 1;
+  font-size: 17px; line-height: 1;
   color: var(--ink-3);
   cursor: pointer;
-  border-radius: 4px;
-  transition: all 120ms;
+  border-radius: 7px;
+  transition: all 140ms ease;
 }
-.panel-tool:hover { background: var(--paper-3); color: var(--ink); }
-.panel-tool.panel-close-x { font-size: 22px; font-weight: 300; }
+.panel-tool:hover {
+  background: rgba(255,255,255,.55);
+  color: var(--ink);
+  box-shadow: inset 0 1px 0 var(--glass-edge);
+}
+.panel-tool.panel-close-x { font-size: 20px; font-weight: 300; }
 
-/* Content wrapper inside panel */
+/* ─── Content wrapper inside panel ────────────────────────────── */
 .panel-content {
-  padding: 8px 32px 60px;
+  padding: 28px 44px 80px;
 }
 .panel.fullscreen .panel-content {
   max-width: none;
   margin: 0;
-  padding: 8px 5vw 80px;
+  padding: 28px 6vw 100px;
 }
 
-/* Quick-jump TOC — small chip row under the citation */
+/* ─── Hero header — case name + cite + topic/category pills ───── */
+.panel h2 {
+  margin: 0 0 12px;
+  display: flex; gap: 16px; align-items: flex-start;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -.005em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.panel h2 .peg { flex-shrink: 0; margin-top: 2px; }
+.panel .panel-cite {
+  font-style: italic;
+  color: var(--ink-3);
+  font-size: 13.5px;
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  line-height: 1.5;
+}
+.panel .panel-cite em {
+  font-style: normal;
+  color: var(--ink-2);
+  font-weight: 500;
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--glass-border);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  letter-spacing: .02em;
+}
+
+/* ─── TOC chips — refined glass pills ─────────────────────────── */
 .panel-toc {
-  display: flex; flex-wrap: wrap; gap: 4px;
-  margin: -2px 0 18px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--rule);
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin: 0 0 28px;
+  padding: 0;
+  border-bottom: none;
 }
 .panel-toc-btn {
   font-family: var(--font-serif);
-  font-size: 11.5px;
-  letter-spacing: .04em;
-  padding: 3px 10px;
-  background: transparent;
-  border: 1px solid var(--rule);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  padding: 5px 12px;
+  background: color-mix(in srgb, var(--paper) 45%, transparent);
+  backdrop-filter: blur(8px) saturate(130%);
+  -webkit-backdrop-filter: blur(8px) saturate(130%);
+  border: 1px solid var(--glass-border);
   border-radius: 999px;
   color: var(--ink-3);
   cursor: pointer;
-  transition: all 120ms;
+  transition: all 140ms ease;
 }
 .panel-toc-btn:hover {
-  background: var(--paper-3); color: var(--ink); border-color: var(--ink-3);
+  background: var(--glass-bg-strong);
+  border-color: var(--ink-3);
+  color: var(--ink);
+  transform: translateY(-1px);
 }
 
-/* Memory peg — surfaced at top */
+/* ─── Memory peg — elegant accent card ───────────────────────── */
 .panel-peg {
-  margin: 0 0 18px;
-  padding: 12px 14px;
-  background: var(--paper-2);
-  border-left: 3px solid var(--margin-blue);
-  border-radius: 0 4px 4px 0;
+  margin: 0 0 32px;
+  padding: 18px 20px 18px 22px;
+  background:
+    linear-gradient(135deg, rgba(31, 53, 89, .06) 0%, rgba(31, 53, 89, .015) 100%),
+    color-mix(in srgb, var(--paper) 35%, transparent);
+  backdrop-filter: blur(10px) saturate(135%);
+  -webkit-backdrop-filter: blur(10px) saturate(135%);
+  border: 1px solid rgba(31, 53, 89, .12);
+  border-radius: 10px;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+}
+.panel-peg::before {
+  content: '';
+  position: absolute; left: 0; top: 16px; bottom: 16px;
+  width: 3px;
+  background: var(--margin-blue);
+  border-radius: 0 2px 2px 0;
 }
 .panel-peg-tag {
   display: inline-block;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 10.5px;
+  font-weight: 500;
+  font-size: 11px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--margin-blue);
-  margin-bottom: 4px;
+  margin: 0 0 6px;
 }
 .panel-peg-body {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 14.5px;
-  line-height: 1.5;
+  font-size: 15.5px;
+  line-height: 1.6;
   color: var(--ink);
   white-space: pre-line;
+  text-wrap: pretty;
 }
 
-.panel h2 {
-  margin: 0 0 4px;
-  display: flex; gap: 10px; align-items: center;
-  font-size: 22px;
+/* ─── Sections — calm typography, more breathing room ─────────── */
+.panel-section {
+  margin: 0;
+  padding: 28px 0 0;
 }
-.panel .panel-cite {
-  font-style: italic; color: var(--ink-3);
-  font-size: 14px; margin: 0 0 18px;
+.panel-section + .panel-section {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(0,0,0,.05);
 }
-.panel-section { margin: 18px 0; }
 .panel-section h4 {
-  margin: 0 0 6px;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--margin-red);
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .005em;
+  text-transform: none;
+  color: var(--ink);
+  display: flex; align-items: center; gap: 10px;
+}
+.panel-section h4::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background: var(--margin-red);
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 .panel-section p {
   margin: 0;
   font-size: 15.5px;
-  line-height: 1.55;
+  line-height: 1.7;
   color: var(--ink-2);
-  white-space: pre-line; /* preserve \n in source data so numbered list items break onto new lines */
+  white-space: pre-line;
+  text-wrap: pretty;
 }
-/* Visually emphasise inline list markers like (1), (2), (i), (ii), ① ② that now sit at line starts */
-.panel-section p::first-line { /* no-op anchor; per-line styling handled by content */ }
+.panel-section p::first-line { /* no-op anchor */ }
+
+/* ─── Keywords — refined chip group ──────────────────────────── */
 .kw {
   display: flex; flex-wrap: wrap; gap: 6px;
 }
 .kw span {
-  background: var(--tag-bg);
-  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 50%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--glass-border);
   font-style: italic;
-  font-size: 12.5px;
-  padding: 2px 8px;
+  font-size: 12px;
+  padding: 3px 10px;
   border-radius: 999px;
   color: var(--ink-2);
+  letter-spacing: .01em;
+  transition: all 120ms ease;
+}
+.kw span:hover {
+  background: var(--glass-bg-strong);
+  color: var(--ink);
 }
 
 /* ─── DB search — compact, sticky, two-line cards ────────────── */
